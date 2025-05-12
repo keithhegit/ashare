@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "ogcloud-458110",
+  "private_key_id": "41f8cddeb576afc4c10c021d0c77cfe4c2fbf493",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDSInwp/JFotupv\nfZHSELVzW88gTyQv7Ts/s2LeKLvIWla0EV1oGHHUAkTbaLhZ8kKN+tggK5TmzQK5\nxK8pV/mGnYu+GiwRpuI7BKAiwCC1m4KqktP2b3KBo4TOmnEoZYCMvV9sQHF4JJS+\npmLd65w+nJ+hvbrmf7fTC1bzjciCokZcGFIcn5fg5R1koHAH5UbcliFp8oGeMqTk\nSGMalHWAkNH89qP2Gcn4PvRW2KW/ji4M/LeOjxfARdej2fpw7sawfri2jx/L7wzd\nysTqm59nn3NKdyqyuN52vEwcG2Atc5pOhdxl4vHcoHJlR1RNZTYmcOEL/EkFNMck\nsIE+v4/tAgMBAAECgf99QlU/ocGabgPPhTmMcbccVaxuMyaRSrNCshupzTz4gIaP\nvJMTa3HmxmnAZtSHJCE6amUJcLBdOGMBeeBuXpYgLtZ6aYptQpCldrMU5rlUuM4p\nautM0onfFKisjDYiJBfsj5GBEWQw9Bh/cwBO15ne9lca/bug+JEreGf8480VW0OK\n8TPsdwAdc2zHbjONdOjtxEAL+RoF22NJkY3ukUQECh6KKS2WaVxLUxpy2O/4YWKY\nNAYBUlf77VCr+F62XarpO3GuEQGBW5xiCQIcNHrsP5ZdEIjbKoou44IZE2UiCWcF\nZqgjQ/q65/JXrVMw3C+NhcClWkEn5diXsVE0oq8CgYEA7/09Ttbnd7MC84pa32vv\nx7FMr7PcHwl9FIBv37oTbgsA+HfZA7kaxAnj8/mnQ3iB++6ZidMLR0Z01pWycKOp\nxollAK1viRDBOOtQqxtGakclvhsmzTsAa3TB1OUMEYpcrEzL5LBhBEAE8Yr4u0sy\naC1WX0vA3NjGNNludhdC+pMCgYEA4CdcvYGhACD61dqJGq0zwebIm5eUjzPktQXL\nUMXbRqyyT4dXtdTuhpFlYytR59V1b3olEddI6uDiLi8huWQyAWBWgNVrZPPXBozK\nsKzW84IaSrccyThjxLJ6Loy1dmZrIZ4EfbuwmPcaGOdsrtj3yW0Z+S5yVXAYzLIx\nqdWhW38CgYEAsZkTbKumwbMs5POnSh3DZWE04fXVWPaZpLljkQpP5KiqADYY2CN8\nxkSXd+5xtIGSl9C7uP4AI6/lOQOw+KB1PGJi53xxxNosU6X4nZdipbWfHa9UKJ6Y\nMe1Gn/kc1EIzUKLIZKWONin2PpXceiYs2GFswLr7r7OQAn5Bu4x9WZcCgYEA1W2F\nR0ejRd0hGPiQ7R6Xlnuo7UVCBawyiw5uTYVmyP9sdH74y8BoMSdFs0wvG6BKxg82\nNquW2VWw5qqn4L7/QgI5u0f6jtACIFF0OQ8JSCjL4fJCbXHMxR/vaF0/9vGD9ilg\nO1u3xZ4acjYAbOdX36mLPpCz+pfWdSkCUqR/k/8CgYAFb/IY81gyynQXJwW/qczf\nM5eseVlsipxU+M8o85oJIdPIcV7WWu9kieyWVh7v7P7KPUte8qKx7mTnEBoA56Rz\nyKhqxMYCs+V/CkU4J8tkyCWwlh5B2MCAVLkFZsf0O77fADPtGFVjmCUK0/1Y55gr\noqGZA+Y7h6fRbyPjUhHs2Q==\n-----END PRIVATE KEY-----\n",
+  "client_email": "olivia-huang@ogcloud-458110.iam.gserviceaccount.com",
+  "client_id": "112734170826859801670",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/olivia-huang%40ogcloud-458110.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
