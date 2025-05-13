@@ -9,6 +9,13 @@ from src.utils.api_utils import agent_endpoint, log_llm_interaction
 import json
 import ast
 
+# 兼容中英文key的访问函数
+def get_value(d, *keys):
+    for key in keys:
+        if key in d:
+            return d[key]
+    return None
+
 ##### Risk Management Agent #####
 
 
@@ -109,10 +116,38 @@ def risk_management_agent(state: AgentState):
         }
 
     # 5. Risk-Adjusted Signal Analysis
-    # Consider debate room confidence levels
-    bull_confidence = debate_results["bull_confidence"]
-    bear_confidence = debate_results["bear_confidence"]
-    debate_confidence = debate_results["confidence"]
+    # 兼容中英文key
+    bull_confidence = get_value(debate_results, "bull_confidence", "多头置信度", "多方置信度")
+    bear_confidence = get_value(debate_results, "bear_confidence", "空头置信度", "空方置信度")
+    debate_confidence = get_value(debate_results, "confidence", "置信度", "辩论置信度")
+    debate_signal = get_value(debate_results, "signal", "信号", "辩论信号", "多空信号")
+
+    # 缺失时降级处理
+    if bull_confidence is None or bear_confidence is None or debate_confidence is None or debate_signal is None:
+        message_content = {
+            "最大持仓规模": float('nan'),
+            "风险评分": "暂无分析",
+            "交易建议": "暂无分析",
+            "风险指标": "暂无分析",
+            "辩论分析": "暂无分析",
+            "分析说明": "未能获取到完整的辩论分析数据，无法进行风险评估。"
+        }
+        message = HumanMessage(
+            content=json.dumps(message_content),
+            name="risk_management_agent",
+        )
+        if show_reasoning:
+            show_agent_reasoning(message_content, "Risk Management Agent")
+            state["metadata"]["agent_reasoning"] = message_content
+        show_workflow_status("Risk Manager", "completed")
+        return {
+            "messages": state["messages"] + [message],
+            "data": {
+                **data,
+                "risk_analysis": message_content
+            },
+            "metadata": state["metadata"],
+        }
 
     # Add to risk score if confidence is low or debate was close
     confidence_diff = abs(bull_confidence - bear_confidence)
@@ -126,8 +161,6 @@ def risk_management_agent(state: AgentState):
 
     # 6. Generate Trading Action
     # Consider debate room signal along with risk assessment
-    debate_signal = debate_results["signal"]
-
     if risk_score >= 9:
         trading_action = "hold"
     elif risk_score >= 7:
@@ -140,26 +173,30 @@ def risk_management_agent(state: AgentState):
         else:
             trading_action = "hold"
 
+    # 中文结构化输出
     message_content = {
-        "max_position_size": float(max_position_size),
-        "risk_score": risk_score,
-        "trading_action": trading_action,
-        "risk_metrics": {
-            "volatility": float(volatility),
-            "value_at_risk_95": float(var_95),
-            "max_drawdown": float(max_drawdown),
-            "market_risk_score": market_risk_score,
-            "stress_test_results": stress_test_results
+        "最大持仓规模": float(max_position_size),
+        "风险评分": risk_score,
+        "交易建议": (
+            "买入" if trading_action == "buy" else
+            "卖出" if trading_action == "sell" else
+            "减仓" if trading_action == "reduce" else
+            "持有"
+        ),
+        "风险指标": {
+            "波动率": float(volatility),
+            "95%风险价值": float(var_95),
+            "最大回撤": float(max_drawdown),
+            "市场风险评分": market_risk_score,
+            "压力测试结果": stress_test_results
         },
-        "debate_analysis": {
-            "bull_confidence": bull_confidence,
-            "bear_confidence": bear_confidence,
-            "debate_confidence": debate_confidence,
-            "debate_signal": debate_signal
+        "辩论分析": {
+            "多方置信度": bull_confidence,
+            "空方置信度": bear_confidence,
+            "辩论置信度": debate_confidence,
+            "辩论信号": debate_signal
         },
-        "reasoning": f"Risk Score {risk_score}/10: Market Risk={market_risk_score}, "
-                     f"Volatility={volatility:.2%}, VaR={var_95:.2%}, "
-                     f"Max Drawdown={max_drawdown:.2%}, Debate Signal={debate_signal}"
+        "分析说明": f"风险评分{risk_score}/10：市场风险={market_risk_score}，波动率={volatility:.2%}，VaR={var_95:.2%}，最大回撤={max_drawdown:.2%}，辩论信号={debate_signal}"
     }
 
     # Create the risk management message

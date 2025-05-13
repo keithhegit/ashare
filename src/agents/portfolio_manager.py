@@ -160,9 +160,35 @@ def portfolio_management_agent(state: AgentState):
             "reasoning": "API error occurred. Following risk management signal to hold. This is a conservative decision based on the mixed signals: bullish fundamentals and sentiment vs bearish valuation, with neutral technicals."
         })
 
+    # 中文结构化输出
+    try:
+        result_json = json.loads(result)
+        action_map = {"buy": "买入", "sell": "卖出", "hold": "持有"}
+        message_content = {
+            "投资组合决策": action_map.get(result_json.get("action", "hold"), "持有"),
+            "操作数量": result_json.get("quantity", 0),
+            "置信度": f"{float(result_json.get('confidence', 0)):.0%}",
+            "各分析信号": [
+                {
+                    "分析模块": s.get("agent_name", ""),
+                    "信号": ("看多" if s.get("signal") == "bullish" else "看空" if s.get("signal") == "bearish" else "中性"),
+                    "置信度": f"{float(s.get('confidence', 0)):.0%}"
+                } for s in result_json.get("agent_signals", [])
+            ],
+            "分析说明": result_json.get("reasoning", "")
+        }
+    except Exception as e:
+        message_content = {
+            "投资组合决策": "持有",
+            "操作数量": 0,
+            "置信度": "0%",
+            "各分析信号": [],
+            "分析说明": f"投资组合管理分析出错: {str(e)}"
+        }
+
     # Create the portfolio management message
     message = HumanMessage(
-        content=result,
+        content=json.dumps(message_content, ensure_ascii=False),
         name="portfolio_management",
     )
 

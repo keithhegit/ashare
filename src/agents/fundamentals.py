@@ -150,10 +150,28 @@ def fundamentals_agent(state: AgentState):
     total_signals = len(signals)
     confidence = max(bullish_signals, bearish_signals) / total_signals
 
+    # 中文结构化输出
     message_content = {
-        "signal": overall_signal,
-        "confidence": f"{round(confidence * 100)}%",
-        "reasoning": reasoning
+        "投资信号": "看多" if overall_signal == 'bullish' else "看空" if overall_signal == 'bearish' else "中性",
+        "置信度": f"{round(confidence * 100)}%",
+        "分析说明": {
+            "盈利能力分析": {
+                "信号": "看多" if signals[0] == 'bullish' else "看空" if signals[0] == 'bearish' else "中性",
+                "详情": f"ROE（净资产收益率）为{metrics.get('return_on_equity', 0):.2%}，净利率为{metrics.get('net_margin', 0):.2%}，营业利润率为{metrics.get('operating_margin', 0):.2%}。数值越高代表公司盈利能力越强。"
+            },
+            "增长能力分析": {
+                "信号": "看多" if signals[1] == 'bullish' else "看空" if signals[1] == 'bearish' else "中性",
+                "详情": f"营收增长率为{metrics.get('revenue_growth', 0):.2%}，净利润增长率为{metrics.get('earnings_growth', 0):.2%}。正值且较高代表公司成长性较好。"
+            },
+            "财务健康分析": {
+                "信号": "看多" if signals[2] == 'bullish' else "看空" if signals[2] == 'bearish' else "中性",
+                "详情": f"流动比率为{metrics.get('current_ratio', 0):.2f}，资产负债率（D/E）为{metrics.get('debt_to_equity', 0):.2f}。流动比率高且负债率低说明公司财务稳健。"
+            },
+            "估值分析": {
+                "信号": "看多" if signals[3] == 'bullish' else "看空" if signals[3] == 'bearish' else "中性",
+                "详情": f"市盈率（P/E）为{pe_ratio:.2f}，市净率（P/B）为{price_to_book:.2f}，市销率（P/S）为{price_to_sales:.2f}。数值越低代表估值越合理。"
+            }
+        }
     }
 
     # Create the fundamental analysis message

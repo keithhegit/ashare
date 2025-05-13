@@ -42,11 +42,11 @@ def sentiment_agent(state: AgentState):
         signal = "neutral"
         confidence = str(round((1 - abs(sentiment_score)) * 100)) + "%"
 
-    # 生成分析结果
+    # 中文结构化输出
     message_content = {
-        "signal": signal,
-        "confidence": confidence,
-        "reasoning": f"Based on {len(recent_news)} recent news articles, sentiment score: {sentiment_score:.2f}"
+        "情感信号": "看多" if signal == 'bullish' else "看空" if signal == 'bearish' else "中性",
+        "置信度": confidence,
+        "分析说明": f"基于最近{len(recent_news)}条新闻，情感得分为{sentiment_score:.2f}。情感分高于0.5为看多，低于-0.5为看空，介于两者之间为中性。"
     }
 
     # 如果需要显示推理过程

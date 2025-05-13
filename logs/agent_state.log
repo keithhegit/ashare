@@ -1,0 +1,2759 @@
+2025-05-12 21:34:21 - agent_state - INFO - 🔄 Market Data Agent is analyzing...
+2025-05-12 21:38:11 - agent_state - INFO - {
+  "ticker": "301312",
+  "start_date": "2024-05-11",
+  "end_date": "2025-05-11",
+  "data_collected": {
+    "price_history": true,
+    "financial_metrics": true,
+    "financial_statements": true,
+    "market_data": true
+  },
+  "summary": "\u4e3a301312\u6536\u96c6\u4e86\u4ece2024-05-11\u52302025-05-11\u7684\u5e02\u573a\u6570\u636e\uff0c\u5305\u62ec\u4ef7\u683c\u5386\u53f2\u3001\u8d22\u52a1\u6307\u6807\u548c\u5e02\u573a\u4fe1\u606f"
+}
+2025-05-12 21:38:11 - agent_state - INFO - 🔄 Technical Analyst is analyzing...
+2025-05-12 21:38:11 - agent_state - INFO - 🔄 Fundamentals Analyst is analyzing...
+2025-05-12 21:38:11 - agent_state - INFO - {
+  "signal": "neutral",
+  "confidence": "25%",
+  "reasoning": {
+    "profitability_signal": {
+      "signal": "neutral",
+      "details": "ROE: 2.04%, Net Margin: 15.00%, Op Margin: 15.90%"
+    },
+    "growth_signal": {
+      "signal": "neutral",
+      "details": "Revenue Growth: 98.78%, Earnings Growth: nan%"
+    },
+    "financial_health_signal": {
+      "signal": "bullish",
+      "details": "Current Ratio: 6.64, D/E: 0.14"
+    },
+    "price_ratios_signal": {
+      "signal": "bearish",
+      "details": "P/E: 40.05, P/B: 3.28, P/S: 24.86"
+    }
+  }
+}
+2025-05-12 21:38:11 - agent_state - INFO - 🔄 Sentiment Analyst is analyzing...
+2025-05-12 21:38:11 - agent_state - INFO - ✅ Fundamentals Analyst analysis completed
+2025-05-12 21:38:11 - agent_state - INFO - 🔄 Valuation Agent is analyzing...
+2025-05-12 21:38:11 - agent_state - INFO - {
+  "signal": "bearish",
+  "confidence": "100%",
+  "reasoning": {
+    "dcf_analysis": {
+      "signal": "bearish",
+      "details": "Intrinsic Value: $0.00, Market Cap: $3,990,065,622.00, Gap: -100.0%"
+    },
+    "owner_earnings_analysis": {
+      "signal": "bearish",
+      "details": "Owner Earnings Value: $0.00, Market Cap: $3,990,065,622.00, Gap: -100.0%"
+    }
+  }
+}
+2025-05-12 21:38:11 - agent_state - INFO - ✅ Valuation Agent analysis completed
+2025-05-12 21:38:11 - agent_state - INFO - {
+  "signal": "neutral",
+  "confidence": "6%",
+  "strategy_signals": {
+    "trend_following": {
+      "signal": "neutral",
+      "confidence": "50%",
+      "metrics": {
+        "adx": 31.19485973380492,
+        "trend_strength": 0.3119485973380492
+      }
+    },
+    "mean_reversion": {
+      "signal": "neutral",
+      "confidence": "50%",
+      "metrics": {
+        "z_score": 0.27072973560319724,
+        "price_vs_bb": 0.8778429122474426,
+        "rsi_14": 84.47265624999997,
+        "rsi_28": 49.765765765765764
+      }
+    },
+    "momentum": {
+      "signal": "neutral",
+      "confidence": "50%",
+      "metrics": {
+        "momentum_1m": 0.294793091279568,
+        "momentum_3m": 0.045206105678409436,
+        "momentum_6m": -0.011773158716459453,
+        "volume_momentum": 0.6774464868166445
+      }
+    },
+    "volatility": {
+      "signal": "bullish",
+      "confidence": "56%",
+      "metrics": {
+        "historical_volatility": 0.36301503384902517,
+        "volatility_regime": 0.5490273516203941,
+        "volatility_z_score": -1.6785458993997118,
+        "atr_ratio": 0.029002026342451907
+      }
+    },
+    "statistical_arbitrage": {
+      "signal": "bearish",
+      "confidence": "100%",
+      "metrics": {
+        "hurst_exponent": 4.410881380903355e-15,
+        "skewness": -2.1799491776465794,
+        "kurtosis": 12.05924901015098
+      }
+    }
+  }
+}
+2025-05-12 21:38:11 - agent_state - INFO - ✅ Technical Analyst analysis completed
+2025-05-12 21:39:04 - agent_state - INFO - {
+  "signal": "neutral",
+  "confidence": "100%",
+  "reasoning": "Based on 1 recent news articles, sentiment score: 0.00"
+}
+2025-05-12 21:39:04 - agent_state - INFO - ✅ Sentiment Analyst analysis completed
+2025-05-12 21:39:04 - agent_state - INFO - 🔄 Bullish Researcher is analyzing...
+2025-05-12 21:39:04 - agent_state - INFO - 🔄 Bearish Researcher is analyzing...
+2025-05-12 21:39:04 - agent_state - INFO - {
+  "perspective": "bullish",
+  "confidence": 0.3,
+  "thesis_points": [
+    "Technical indicators may be conservative, presenting buying opportunities",
+    "Company fundamentals show potential for improvement",
+    "Market sentiment may be overly pessimistic, creating value opportunities",
+    "Current valuation may not fully reflect growth potential"
+  ],
+  "reasoning": "Bullish thesis based on comprehensive analysis of technical, fundamental, sentiment, and valuation factors"
+}
+2025-05-12 21:39:04 - agent_state - INFO - {
+  "perspective": "bearish",
+  "confidence": 0.475,
+  "thesis_points": [
+    "Technical rally may be temporary, suggesting potential reversal",
+    "Current fundamental strength may not be sustainable",
+    "Market sentiment may be overly optimistic, indicating potential risks",
+    "Stock appears overvalued with 100% confidence"
+  ],
+  "reasoning": "Bearish thesis based on comprehensive analysis of technical, fundamental, sentiment, and valuation factors"
+}
+2025-05-12 21:39:04 - agent_state - INFO - ✅ Bullish Researcher analysis completed
+2025-05-12 21:39:04 - agent_state - INFO - ✅ Bearish Researcher analysis completed
+2025-05-12 21:39:04 - agent_state - INFO - 🔄 Debate Room is analyzing...
+2025-05-12 21:39:46 - agent_state - INFO - {
+  "signal": "bearish",
+  "confidence": 0.475,
+  "bull_confidence": 0.3,
+  "bear_confidence": 0.475,
+  "confidence_diff": -0.175,
+  "llm_score": "None",
+  "llm_analysis": "None",
+  "llm_reasoning": "None",
+  "mixed_confidence_diff": -0.12249999999999998,
+  "debate_summary": [
+    "Bullish Arguments:",
+    "+ Technical indicators may be conservative, presenting buying opportunities",
+    "+ Company fundamentals show potential for improvement",
+    "+ Market sentiment may be overly pessimistic, creating value opportunities",
+    "+ Current valuation may not fully reflect growth potential",
+    "\nBearish Arguments:",
+    "- Technical rally may be temporary, suggesting potential reversal",
+    "- Current fundamental strength may not be sustainable",
+    "- Market sentiment may be overly optimistic, indicating potential risks",
+    "- Stock appears overvalued with 100% confidence"
+  ],
+  "reasoning": "Bearish arguments more convincing"
+}
+2025-05-12 21:39:46 - agent_state - INFO - ✅ Debate Room analysis completed
+2025-05-12 21:39:46 - agent_state - INFO - 🔄 Risk Manager is analyzing...
+2025-05-12 21:39:46 - agent_state - INFO - {
+  "max_position_size": 12500.0,
+  "risk_score": 4,
+  "trading_action": "hold",
+  "risk_metrics": {
+    "volatility": 0.682344906104243,
+    "value_at_risk_95": -0.05816203372723831,
+    "max_drawdown": -0.3449477351916376,
+    "market_risk_score": 4,
+    "stress_test_results": {
+      "market_crash": {
+        "potential_loss": -0.0,
+        "portfolio_impact": -0.0
+      },
+      "moderate_decline": {
+        "potential_loss": -0.0,
+        "portfolio_impact": -0.0
+      },
+      "slight_decline": {
+        "potential_loss": -0.0,
+        "portfolio_impact": -0.0
+      }
+    }
+  },
+  "debate_analysis": {
+    "bull_confidence": 0.3,
+    "bear_confidence": 0.475,
+    "debate_confidence": 0.475,
+    "debate_signal": "bearish"
+  },
+  "reasoning": "Risk Score 4/10: Market Risk=4, Volatility=68.23%, VaR=-5.82%, Max Drawdown=-34.49%, Debate Signal=bearish"
+}
+2025-05-12 21:39:46 - agent_state - INFO - ✅ Risk Manager analysis completed
+2025-05-12 21:39:46 - agent_state - INFO - 🔄 Macro Analyst is analyzing...
+2025-05-12 21:40:29 - agent_state - INFO - {
+  "macro_environment": "neutral",
+  "impact_on_stock": "neutral",
+  "key_factors": [],
+  "reasoning": "LLM\u5206\u6790\u5931\u8d25\uff0c\u65e0\u6cd5\u83b7\u53d6\u5b8f\u89c2\u5206\u6790\u7ed3\u679c"
+}
+2025-05-12 21:40:29 - agent_state - INFO - ✅ Macro Analyst analysis completed
+2025-05-12 21:40:29 - agent_state - INFO - 🔄 Portfolio Manager is analyzing...
+2025-05-12 21:41:13 - agent_state - INFO - {
+  "action": "hold",
+  "quantity": 0,
+  "confidence": 0.7,
+  "agent_signals": [
+    {
+      "agent_name": "technical_analysis",
+      "signal": "neutral",
+      "confidence": 0.0
+    },
+    {
+      "agent_name": "fundamental_analysis",
+      "signal": "bullish",
+      "confidence": 1.0
+    },
+    {
+      "agent_name": "sentiment_analysis",
+      "signal": "bullish",
+      "confidence": 0.6
+    },
+    {
+      "agent_name": "valuation_analysis",
+      "signal": "bearish",
+      "confidence": 0.67
+    },
+    {
+      "agent_name": "risk_management",
+      "signal": "hold",
+      "confidence": 1.0
+    }
+  ],
+  "reasoning": "API error occurred. Following risk management signal to hold. This is a conservative decision based on the mixed signals: bullish fundamentals and sentiment vs bearish valuation, with neutral technicals."
+}
+2025-05-12 21:41:13 - agent_state - INFO - ✅ Portfolio Manager analysis completed
+2025-05-12 21:59:06 - agent_state - INFO - 🔄 Market Data Agent is analyzing...
+2025-05-12 22:05:23 - agent_state - INFO - 🔄 Market Data Agent is analyzing...
+2025-05-12 22:07:28 - agent_state - INFO - {
+  "ticker": "600519",
+  "start_date": "2024-05-11",
+  "end_date": "2025-05-11",
+  "data_collected": {
+    "price_history": true,
+    "financial_metrics": true,
+    "financial_statements": true,
+    "market_data": true
+  },
+  "summary": "\u4e3a600519\u6536\u96c6\u4e86\u4ece2024-05-11\u52302025-05-11\u7684\u5e02\u573a\u6570\u636e\uff0c\u5305\u62ec\u4ef7\u683c\u5386\u53f2\u3001\u8d22\u52a1\u6307\u6807\u548c\u5e02\u573a\u4fe1\u606f"
+}
+2025-05-12 22:07:28 - agent_state - INFO - 🔄 Technical Analyst is analyzing...
+2025-05-12 22:07:28 - agent_state - INFO - 🔄 Fundamentals Analyst is analyzing...
+2025-05-12 22:07:28 - agent_state - INFO - 🔄 Sentiment Analyst is analyzing...
+2025-05-12 22:07:28 - agent_state - INFO - {
+  "signal": "bearish",
+  "confidence": "75%",
+  "reasoning": {
+    "profitability_signal": {
+      "signal": "bearish",
+      "details": "ROE: N/A, Net Margin: N/A, Op Margin: N/A"
+    },
+    "growth_signal": {
+      "signal": "bearish",
+      "details": "Revenue Growth: N/A, Earnings Growth: N/A"
+    },
+    "financial_health_signal": {
+      "signal": "bearish",
+      "details": "Current Ratio: N/A, D/E: N/A"
+    },
+    "price_ratios_signal": {
+      "signal": "bullish",
+      "details": "P/E: N/A, P/B: N/A, P/S: N/A"
+    }
+  }
+}
+2025-05-12 22:07:28 - agent_state - INFO - 🔄 Valuation Agent is analyzing...
+2025-05-12 22:07:28 - agent_state - INFO - ✅ Fundamentals Analyst analysis completed
+2025-05-12 22:07:28 - agent_state - INFO - {
+  "signal": "bullish",
+  "confidence": "39%",
+  "strategy_signals": {
+    "trend_following": {
+      "signal": "bullish",
+      "confidence": "19%",
+      "metrics": {
+        "adx": 18.868816937051527,
+        "trend_strength": 0.18868816937051527
+      }
+    },
+    "mean_reversion": {
+      "signal": "neutral",
+      "confidence": "50%",
+      "metrics": {
+        "z_score": 0.9633532527099437,
+        "price_vs_bb": 1.1949589319559788,
+        "rsi_14": 67.6053239467605,
+        "rsi_28": 52.274498052142654
+      }
+    },
+    "momentum": {
+      "signal": "neutral",
+      "confidence": "50%",
+      "metrics": {
+        "momentum_1m": 0.05985533305508528,
+        "momentum_3m": 0.1312389607740716,
+        "momentum_6m": 0.0648009293074212,
+        "volume_momentum": 0.8778151741284747
+      }
+    },
+    "volatility": {
+      "signal": "bullish",
+      "confidence": "82%",
+      "metrics": {
+        "historical_volatility": 0.1392523444841101,
+        "volatility_regime": 0.5650808786094303,
+        "volatility_z_score": -2.4519117728057873,
+        "atr_ratio": 0.01176395595003171
+      }
+    },
+    "statistical_arbitrage": {
+      "signal": "neutral",
+      "confidence": "50%",
+      "metrics": {
+        "hurst_exponent": 4.410881380903355e-15,
+        "skewness": 0.8214179663337018,
+        "kurtosis": 6.602312448468542
+      }
+    }
+  }
+}
+2025-05-12 22:07:28 - agent_state - INFO - ✅ Technical Analyst analysis completed
+2025-05-12 22:07:32 - agent_state - INFO - {
+  "signal": "neutral",
+  "confidence": "100%",
+  "reasoning": "Based on 5 recent news articles, sentiment score: 0.00"
+}
+2025-05-12 22:07:32 - agent_state - INFO - ✅ Sentiment Analyst analysis completed
+2025-05-12 22:26:42 - agent_state - INFO - 🔄 Market Data Agent is analyzing...
+2025-05-12 22:29:42 - agent_state - INFO - {
+  "ticker": "600519",
+  "start_date": "2024-05-11",
+  "end_date": "2025-05-11",
+  "data_collected": {
+    "price_history": true,
+    "financial_metrics": true,
+    "financial_statements": true,
+    "market_data": true
+  },
+  "summary": "\u4e3a600519\u6536\u96c6\u4e86\u4ece2024-05-11\u52302025-05-11\u7684\u5e02\u573a\u6570\u636e\uff0c\u5305\u62ec\u4ef7\u683c\u5386\u53f2\u3001\u8d22\u52a1\u6307\u6807\u548c\u5e02\u573a\u4fe1\u606f"
+}
+2025-05-12 22:29:42 - agent_state - INFO - 🔄 Technical Analyst is analyzing...
+2025-05-12 22:29:42 - agent_state - INFO - 🔄 Fundamentals Analyst is analyzing...
+2025-05-12 22:29:42 - agent_state - INFO - 🔄 Sentiment Analyst is analyzing...
+2025-05-12 22:29:42 - agent_state - INFO - {
+  "signal": "bearish",
+  "confidence": "75%",
+  "reasoning": {
+    "profitability_signal": {
+      "signal": "bearish",
+      "details": "ROE: N/A, Net Margin: N/A, Op Margin: N/A"
+    },
+    "growth_signal": {
+      "signal": "bearish",
+      "details": "Revenue Growth: N/A, Earnings Growth: N/A"
+    },
+    "financial_health_signal": {
+      "signal": "bearish",
+      "details": "Current Ratio: N/A, D/E: N/A"
+    },
+    "price_ratios_signal": {
+      "signal": "bullish",
+      "details": "P/E: N/A, P/B: N/A, P/S: N/A"
+    }
+  }
+}
+2025-05-12 22:29:42 - agent_state - INFO - 🔄 Valuation Agent is analyzing...
+2025-05-12 22:29:42 - agent_state - INFO - ✅ Fundamentals Analyst analysis completed
+2025-05-12 22:29:42 - agent_state - INFO - {
+  "signal": "bullish",
+  "confidence": "39%",
+  "strategy_signals": {
+    "trend_following": {
+      "signal": "bullish",
+      "confidence": "19%",
+      "metrics": {
+        "adx": 18.868816937051527,
+        "trend_strength": 0.18868816937051527
+      }
+    },
+    "mean_reversion": {
+      "signal": "neutral",
+      "confidence": "50%",
+      "metrics": {
+        "z_score": 0.9633532527099437,
+        "price_vs_bb": 1.1949589319559788,
+        "rsi_14": 67.6053239467605,
+        "rsi_28": 52.274498052142654
+      }
+    },
+    "momentum": {
+      "signal": "neutral",
+      "confidence": "50%",
+      "metrics": {
+        "momentum_1m": 0.05985533305508528,
+        "momentum_3m": 0.1312389607740716,
+        "momentum_6m": 0.0648009293074212,
+        "volume_momentum": 0.8778151741284747
+      }
+    },
+    "volatility": {
+      "signal": "bullish",
+      "confidence": "82%",
+      "metrics": {
+        "historical_volatility": 0.1392523444841101,
+        "volatility_regime": 0.5650808786094303,
+        "volatility_z_score": -2.4519117728057873,
+        "atr_ratio": 0.01176395595003171
+      }
+    },
+    "statistical_arbitrage": {
+      "signal": "neutral",
+      "confidence": "50%",
+      "metrics": {
+        "hurst_exponent": 4.410881380903355e-15,
+        "skewness": 0.8214179663337018,
+        "kurtosis": 6.602312448468542
+      }
+    }
+  }
+}
+2025-05-12 22:29:42 - agent_state - INFO - ✅ Technical Analyst analysis completed
+2025-05-12 22:29:43 - agent_state - INFO - {
+  "signal": "bullish",
+  "confidence": "70%",
+  "reasoning": "Based on 5 recent news articles, sentiment score: 0.70"
+}
+2025-05-12 22:29:43 - agent_state - INFO - ✅ Sentiment Analyst analysis completed
+2025-05-13 10:27:40 - agent_state - INFO - 🔄 Market Data Agent is analyzing...
+2025-05-13 10:30:28 - agent_state - INFO - {
+  "ticker": "302132",
+  "start_date": "2024-05-12",
+  "end_date": "2025-05-12",
+  "data_collected": {
+    "price_history": true,
+    "financial_metrics": true,
+    "financial_statements": true,
+    "market_data": true
+  },
+  "summary": "\u4e3a302132\u6536\u96c6\u4e86\u4ece2024-05-12\u52302025-05-12\u7684\u5e02\u573a\u6570\u636e\uff0c\u5305\u62ec\u4ef7\u683c\u5386\u53f2\u3001\u8d22\u52a1\u6307\u6807\u548c\u5e02\u573a\u4fe1\u606f"
+}
+2025-05-13 10:30:28 - agent_state - INFO - 🔄 Technical Analyst is analyzing...
+2025-05-13 10:30:28 - agent_state - INFO - 🔄 Fundamentals Analyst is analyzing...
+2025-05-13 10:30:28 - agent_state - INFO - {
+  "signal": "bearish",
+  "confidence": "75%",
+  "reasoning": {
+    "profitability_signal": {
+      "signal": "bearish",
+      "details": "ROE: N/A, Net Margin: N/A, Op Margin: N/A"
+    },
+    "growth_signal": {
+      "signal": "bearish",
+      "details": "Revenue Growth: N/A, Earnings Growth: N/A"
+    },
+    "financial_health_signal": {
+      "signal": "bearish",
+      "details": "Current Ratio: N/A, D/E: N/A"
+    },
+    "price_ratios_signal": {
+      "signal": "bullish",
+      "details": "P/E: N/A, P/B: N/A, P/S: N/A"
+    }
+  }
+}
+2025-05-13 10:30:28 - agent_state - INFO - ✅ Fundamentals Analyst analysis completed
+2025-05-13 10:30:28 - agent_state - INFO - 🔄 Sentiment Analyst is analyzing...
+2025-05-13 10:30:28 - agent_state - INFO - 🔄 Valuation Agent is analyzing...
+2025-05-13 10:30:28 - agent_state - INFO - {
+  "signal": "neutral",
+  "confidence": "6%",
+  "strategy_signals": {
+    "trend_following": {
+      "signal": "bullish",
+      "confidence": "45%",
+      "metrics": {
+        "adx": 44.612758381521935,
+        "trend_strength": 0.44612758381521933
+      }
+    },
+    "mean_reversion": {
+      "signal": "bearish",
+      "confidence": "100%",
+      "metrics": {
+        "z_score": 4.8654334949885945,
+        "price_vs_bb": 1.2710696378871043,
+        "rsi_14": 84.33111603843308,
+        "rsi_28": 72.36552171095266
+      }
+    },
+    "momentum": {
+      "signal": "bullish",
+      "confidence": "100%",
+      "metrics": {
+        "momentum_1m": 0.6202767744711953,
+        "momentum_3m": 0.392637664254212,
+        "momentum_6m": 0.33810149800155587,
+        "volume_momentum": 4.468064256996484
+      }
+    },
+    "volatility": {
+      "signal": "bearish",
+      "confidence": "88%",
+      "metrics": {
+        "historical_volatility": 1.1543313162034825,
+        "volatility_regime": 2.1889926171382066,
+        "volatility_z_score": 2.630450167661434,
+        "atr_ratio": 0.05245000149026854
+      }
+    },
+    "statistical_arbitrage": {
+      "signal": "bullish",
+      "confidence": "100%",
+      "metrics": {
+        "hurst_exponent": 4.410881380903355e-15,
+        "skewness": 1.7328216529900426,
+        "kurtosis": 5.257722963230126
+      }
+    }
+  }
+}
+2025-05-13 10:30:28 - agent_state - INFO - ✅ Technical Analyst analysis completed
+2025-05-13 10:30:30 - agent_state - INFO - {
+  "signal": "bullish",
+  "confidence": "100%",
+  "reasoning": "Based on 5 recent news articles, sentiment score: 1.00"
+}
+2025-05-13 10:30:30 - agent_state - INFO - ✅ Sentiment Analyst analysis completed
+2025-05-13 16:36:33 - agent_state - INFO - 🔄 Market Data Agent is analyzing...
+2025-05-13 16:40:34 - agent_state - INFO - {
+  "ticker": "302132",
+  "start_date": "2024-05-12",
+  "end_date": "2025-05-12",
+  "data_collected": {
+    "price_history": true,
+    "financial_metrics": true,
+    "financial_statements": true,
+    "market_data": true
+  },
+  "summary": "\u4e3a302132\u6536\u96c6\u4e86\u4ece2024-05-12\u52302025-05-12\u7684\u5e02\u573a\u6570\u636e\uff0c\u5305\u62ec\u4ef7\u683c\u5386\u53f2\u3001\u8d22\u52a1\u6307\u6807\u548c\u5e02\u573a\u4fe1\u606f"
+}
+2025-05-13 16:40:34 - agent_state - INFO - 🔄 Technical Analyst is analyzing...
+2025-05-13 16:40:34 - agent_state - INFO - 🔄 Fundamentals Analyst is analyzing...
+2025-05-13 16:40:34 - agent_state - INFO - {
+  "signal": "bearish",
+  "confidence": "50%",
+  "reasoning": {
+    "profitability_signal": {
+      "signal": "bearish",
+      "details": "ROE: 0.80%, Net Margin: 4.79%, Op Margin: 5.56%"
+    },
+    "growth_signal": {
+      "signal": "bullish",
+      "details": "Revenue Growth: 915.84%, Earnings Growth: 745.50%"
+    },
+    "financial_health_signal": {
+      "signal": "neutral",
+      "details": "Current Ratio: 1.09, D/E: 0.82"
+    },
+    "price_ratios_signal": {
+      "signal": "bearish",
+      "details": "P/E: 379.47, P/B: 12.12, P/S: 71.79"
+    }
+  }
+}
+2025-05-13 16:40:34 - agent_state - INFO - 🔄 Sentiment Analyst is analyzing...
+2025-05-13 16:40:34 - agent_state - INFO - ✅ Fundamentals Analyst analysis completed
+2025-05-13 16:40:34 - agent_state - INFO - 🔄 Valuation Agent is analyzing...
+2025-05-13 16:40:34 - agent_state - INFO - {
+  "signal": "bearish",
+  "confidence": "84%",
+  "reasoning": {
+    "dcf_analysis": {
+      "signal": "bearish",
+      "details": "Intrinsic Value: $73,970,198,578.97, Market Cap: $237,537,668,046.00, Gap: -68.9%"
+    },
+    "owner_earnings_analysis": {
+      "signal": "bearish",
+      "details": "Owner Earnings Value: $1,971,226,298.85, Market Cap: $237,537,668,046.00, Gap: -99.2%"
+    }
+  }
+}
+2025-05-13 16:40:34 - agent_state - INFO - ✅ Valuation Agent analysis completed
+2025-05-13 16:40:34 - agent_state - INFO - {
+  "signal": "bullish",
+  "confidence": "100%",
+  "reasoning": "Based on 5 recent news articles, sentiment score: 1.00"
+}
+2025-05-13 16:40:34 - agent_state - INFO - ✅ Sentiment Analyst analysis completed
+2025-05-13 16:40:34 - agent_state - INFO - {
+  "signal": "neutral",
+  "confidence": "6%",
+  "strategy_signals": {
+    "trend_following": {
+      "signal": "bullish",
+      "confidence": "45%",
+      "metrics": {
+        "adx": 44.612758381521935,
+        "trend_strength": 0.44612758381521933
+      }
+    },
+    "mean_reversion": {
+      "signal": "bearish",
+      "confidence": "100%",
+      "metrics": {
+        "z_score": 4.8654334949885945,
+        "price_vs_bb": 1.2710696378871043,
+        "rsi_14": 84.33111603843308,
+        "rsi_28": 72.36552171095266
+      }
+    },
+    "momentum": {
+      "signal": "bullish",
+      "confidence": "100%",
+      "metrics": {
+        "momentum_1m": 0.6202767744711953,
+        "momentum_3m": 0.392637664254212,
+        "momentum_6m": 0.33810149800155587,
+        "volume_momentum": 4.468064256996484
+      }
+    },
+    "volatility": {
+      "signal": "bearish",
+      "confidence": "88%",
+      "metrics": {
+        "historical_volatility": 1.1543313162034825,
+        "volatility_regime": 2.1889926171382066,
+        "volatility_z_score": 2.630450167661434,
+        "atr_ratio": 0.05245000149026854
+      }
+    },
+    "statistical_arbitrage": {
+      "signal": "bullish",
+      "confidence": "100%",
+      "metrics": {
+        "hurst_exponent": 4.410881380903355e-15,
+        "skewness": 1.7328216529900426,
+        "kurtosis": 5.257722963230126
+      }
+    }
+  }
+}
+2025-05-13 16:40:34 - agent_state - INFO - ✅ Technical Analyst analysis completed
+2025-05-13 16:40:34 - agent_state - INFO - 🔄 Bullish Researcher is analyzing...
+2025-05-13 16:40:34 - agent_state - INFO - 🔄 Bearish Researcher is analyzing...
+2025-05-13 16:40:34 - agent_state - INFO - {
+  "perspective": "bullish",
+  "confidence": 0.475,
+  "thesis_points": [
+    "Technical indicators may be conservative, presenting buying opportunities",
+    "Company fundamentals show potential for improvement",
+    "Positive market sentiment with 100% confidence",
+    "Current valuation may not fully reflect growth potential"
+  ],
+  "reasoning": "Bullish thesis based on comprehensive analysis of technical, fundamental, sentiment, and valuation factors"
+}
+2025-05-13 16:40:34 - agent_state - INFO - ✅ Bullish Researcher analysis completed
+2025-05-13 16:40:34 - agent_state - INFO - {
+  "perspective": "bearish",
+  "confidence": 0.485,
+  "thesis_points": [
+    "Technical rally may be temporary, suggesting potential reversal",
+    "Concerning fundamentals with 50% confidence",
+    "Market sentiment may be overly optimistic, indicating potential risks",
+    "Stock appears overvalued with 84% confidence"
+  ],
+  "reasoning": "Bearish thesis based on comprehensive analysis of technical, fundamental, sentiment, and valuation factors"
+}
+2025-05-13 16:40:34 - agent_state - INFO - ✅ Bearish Researcher analysis completed
+2025-05-13 16:40:34 - agent_state - INFO - 🔄 Debate Room is analyzing...
+2025-05-13 16:40:40 - agent_state - INFO - {
+  "signal": "neutral",
+  "confidence": 0.485,
+  "bull_confidence": 0.475,
+  "bear_confidence": 0.485,
+  "confidence_diff": -0.010000000000000009,
+  "llm_score": -0.2,
+  "llm_analysis": "Both the bearish and bullish viewpoints have merit but also have limitations. On the bearish side, the argument about the stock being overvalued with 84% confidence is compelling because it aligns with the concern that market sentiment might be overly optimistic, which can lead to a correction. However, the claim about 'concerning fundamentals' is vague and lacks specificity, reducing its impact. On the bullish side, while the confidence in positive market sentiment at 100% and the potential for fundamental improvement add weight to the argument, they seem more speculative without hard data to back up the claims or clearly defined metrics for the expected growth potential. Overall, the bearish argument seems slightly more convincing due to its emphasis on valuation concerns, which are more directly measurable compared to speculative future growth potential.",
+  "llm_reasoning": "The score is slightly bearish because the concerns about overvaluation and overly optimistic market sentiment outweigh the more speculative bullish arguments about growth potential. Furthermore, the stronger confidence in the bearish claim regarding potential overvaluation (84%) contrasts with lesser confidence in the bullish claims about fundamentals and buying opportunities.",
+  "mixed_confidence_diff": -0.067,
+  "debate_summary": [
+    "Bullish Arguments:",
+    "+ Technical indicators may be conservative, presenting buying opportunities",
+    "+ Company fundamentals show potential for improvement",
+    "+ Positive market sentiment with 100% confidence",
+    "+ Current valuation may not fully reflect growth potential",
+    "\nBearish Arguments:",
+    "- Technical rally may be temporary, suggesting potential reversal",
+    "- Concerning fundamentals with 50% confidence",
+    "- Market sentiment may be overly optimistic, indicating potential risks",
+    "- Stock appears overvalued with 84% confidence"
+  ],
+  "reasoning": "Balanced debate with strong arguments on both sides"
+}
+2025-05-13 16:40:40 - agent_state - INFO - ✅ Debate Room analysis completed
+2025-05-13 16:40:40 - agent_state - INFO - 🔄 Risk Manager is analyzing...
+2025-05-13 16:40:40 - agent_state - INFO - {
+  "max_position_size": 12500.0,
+  "risk_score": 5,
+  "trading_action": "hold",
+  "risk_metrics": {
+    "volatility": 0.709909376552747,
+    "value_at_risk_95": -0.050772626931567366,
+    "max_drawdown": -0.33472803347280333,
+    "market_risk_score": 5,
+    "stress_test_results": {
+      "market_crash": {
+        "potential_loss": -0.0,
+        "portfolio_impact": -0.0
+      },
+      "moderate_decline": {
+        "potential_loss": -0.0,
+        "portfolio_impact": -0.0
+      },
+      "slight_decline": {
+        "potential_loss": -0.0,
+        "portfolio_impact": -0.0
+      }
+    }
+  },
+  "debate_analysis": {
+    "bull_confidence": 0.475,
+    "bear_confidence": 0.485,
+    "debate_confidence": 0.485,
+    "debate_signal": "neutral"
+  },
+  "reasoning": "Risk Score 5/10: Market Risk=5, Volatility=70.99%, VaR=-5.08%, Max Drawdown=-33.47%, Debate Signal=neutral"
+}
+2025-05-13 16:40:40 - agent_state - INFO - ✅ Risk Manager analysis completed
+2025-05-13 16:40:40 - agent_state - INFO - 🔄 Macro Analyst is analyzing...
+2025-05-13 16:40:57 - agent_state - INFO - {
+  "macro_environment": "neutral",
+  "impact_on_stock": "positive",
+  "key_factors": [
+    "\u5e02\u573a\u60c5\u7eea\u79ef\u6781\u63a8\u52a8\u519b\u5de5\u677f\u5757\u4e0a\u6da8",
+    "\u4ea7\u4e1a\u653f\u7b56\u652f\u6301\u519b\u5de5\u677f\u5757\u4e0e\u56fd\u9632\u5efa\u8bbe",
+    "\u519b\u5de5\u677f\u5757\u8d44\u91d1\u6d41\u5165\u663e\u8457\uff0c\u80a1\u7968\u6210\u4ea4\u91cf\u6fc0\u589e",
+    "\u878d\u8d44\u8d44\u91d1\u5927\u5e45\u52a0\u4ed3\u7279\u70b9\u660e\u786e",
+    "\u56fd\u9645\u5c40\u52bf\u53ef\u80fd\u5bf9\u519b\u5de5\u9700\u6c42\u4ea7\u751f\u8fdb\u4e00\u6b65\u523a\u6fc0"
+  ],
+  "reasoning": "\u6839\u636e\u65b0\u95fb\u5185\u5bb9\u5206\u6790\uff0c\u5f53\u524d\u7684\u5b8f\u89c2\u7ecf\u6d4e\u73af\u5883\u5bf9\u76ee\u6807\u80a1\u7968\u4e2d\u822a\u6210\u98de\uff08302132\uff09\u5177\u6709\u79ef\u6781\u5f71\u54cd\uff0c\u7279\u522b\u4f53\u73b0\u5728\u8d44\u91d1\u6d41\u52a8\u6027\u3001\u5e02\u573a\u60c5\u7eea\u548c\u653f\u7b56\u5bfc\u5411\u5c42\u9762\u3002\u4f46\u4ece\u6574\u4f53\u5b8f\u89c2\u7ecf\u6d4e\u89c6\u89d2\u6765\u770b\uff0c\u5916\u90e8\u56e0\u7d20\uff08\u5982\u5168\u7403\u5730\u7f18\u653f\u6cbb\u3001\u4e2d\u7f8e\u535a\u5f08\u7b49\uff09\u53ef\u80fd\u5f71\u54cd\u672a\u6765\u884c\u4e1a\u7684\u9884\u671f\uff0c\u6545\u603b\u4f53\u5b8f\u89c2\u7ecf\u6d4e\u5e76\u672a\u8fbe\u5230\u5168\u9762\u79ef\u6781\uff0c\u76ee\u524d\u8bc4\u4f30\u4e3a\u4e2d\u6027\u3002\n\n1. **\u5e02\u573a\u60c5\u7eea\u79ef\u6781\u63a8\u52a8\u519b\u5de5\u677f\u5757\u4e0a\u6da8**\uff1a\u53d7\u76ca\u4e8e\u519b\u5de5\u677f\u5757\u8fd1\u671f\u7684\u9700\u6c42\u63d0\u5347\u548c\u6295\u8d44\u8005\u5bf9\u56fd\u9632\u73b0\u4ee3\u5316\u9898\u6750\u7684\u5173\u6ce8\uff0c\u4e2d\u822a\u6210\u98de\u53d7\u5230\u663e\u8457\u8d44\u91d1\u5173\u6ce8\uff0c\u9f99\u5934\u6548\u5e94\u975e\u5e38\u660e\u663e\u3002\u9f99\u864e\u699c\u6570\u636e\u663e\u793a\uff0c\u4ec55\u670812\u65e5\u6df1\u80a1\u901a\u53ca\u5927\u673a\u6784\u8d44\u91d1\u51c0\u6d41\u5165\u91d1\u989d\u5df2\u8fbe8.98\u4ebf\u5143\uff0c\u663e\u793a\u5e02\u573a\u6295\u8d44\u8005\u5bf9\u519b\u5de5\u4e3b\u9898\u4fe1\u5fc3\u9ad8\u6da8\u3002\n\n2. **\u4ea7\u4e1a\u653f\u7b56\u652f\u6301\u519b\u5de5\u677f\u5757\u4e0e\u56fd\u9632\u5efa\u8bbe**\uff1a\u957f\u671f\u6765\u770b\uff0c\u56fd\u5185\u5bf9\u81ea\u4e3b\u56fd\u9632\u4f53\u7cfb\u5f3a\u70c8\u9700\u6c42\u52a0\u901f\u63a8\u8fdb\uff0c\u591a\u4e2a\u4f01\u4e1a\u53d7\u76ca\u4e8e\u56fd\u9632\u548c\u519b\u5de5\u4ea7\u4e1a\u653f\u7b56\u7684\u957f\u671f\u6276\u6301\u3002\u4e2d\u822a\u6210\u98de\u4f5c\u4e3a\u519b\u5de5\u822a\u7a7a\u9886\u57df\u7684\u91cd\u8981\u4f01\u4e1a\uff0c\u5176\u6280\u672f\u50a8\u5907\u548c\u4ea7\u54c1\u5e03\u5c40\u76f4\u63a5\u53d7\u76ca\u4e8e\u4ea7\u4e1a\u653f\u7b56\u7684\u652f\u6301\u3002\n\n3. **\u519b\u5de5\u677f\u5757\u8d44\u91d1\u6d41\u5165\u663e\u8457\uff0c\u80a1\u7968\u6210\u4ea4\u91cf\u6fc0\u589e**\uff1a\u65b0\u95fb\u591a\u6b21\u63d0\u5230\u4e2d\u822a\u6210\u98de\u4ea4\u6613\u65e5\u6210\u4ea4\u989d\u5c61\u5c61\u5c45A\u80a1\u5e02\u573a\u9996\u4f4d\uff0c\u663e\u793a\u5e02\u573a\u8d44\u91d1\u5bc6\u96c6\u9009\u62e9\u519b\u5de5\u677f\u5757\u6838\u5fc3\u6807\u7684\u3002\u76ee\u524d\u5e02\u573a\u6d41\u52a8\u6027\u5145\u88d5\uff0c\u4e14\u9ad8\u6da8\u6362\u624b\u4fc3\u8fdb\u4e2d\u957f\u671f\u80a1\u4ef7\u7a33\u5b9a\u6027\u3002\n\n4. **\u878d\u8d44\u8d44\u91d1\u5927\u5e45\u52a0\u4ed3\u7279\u70b9\u660e\u786e**\uff1a\u65b0\u95fb\u63d0\u5230\u6760\u6746\u8d44\u91d1\uff08\u878d\u8d44\u4ea4\u6613\uff09\u6295\u5165\u5927\u91cf\u589e\u52a0\uff0c\u5305\u62ec\u4e2d\u822a\u6210\u98de\u7b49\u591a\u53ea\u4e2a\u80a1\u878d\u8d44\u4f59\u989d\u663e\u8457\u63d0\u5347\uff0c\u663e\u793a\u5e02\u573a\u6574\u4f53\u5bf9\u519b\u5de5\u677f\u5757\u7684\u540e\u5e02\u770b\u6cd5\u504f\u591a\uff0c\u77ed\u4e2d\u671f\u5185\u6709\u671b\u63a8\u52a8\u5176\u5e02\u573a\u4ef7\u683c\u8868\u73b0\u8fdb\u4e00\u6b65\u4e0a\u5347\u3002\n\n5. **\u56fd\u9645\u5c40\u52bf\u53ef\u80fd\u5bf9\u519b\u5de5\u9700\u6c42\u4ea7\u751f\u8fdb\u4e00\u6b65\u523a\u6fc0**\uff1a\u5f53\u524d\u5168\u7403\u7ecf\u6d4e\u5730\u7f18\u653f\u6cbb\u5c40\u52bf\u590d\u6742\uff0c\u7279\u522b\u662f\u5927\u56fd\u7ade\u4e89\u52a0\u5267\u80cc\u666f\uff0c\u6216\u8fdb\u4e00\u6b65\u50ac\u5316\u519b\u5de5\u9700\u6c42\u3002\u5176\u4e2d\uff0c\u4e2d\u822a\u6210\u98de\u6d89\u8db3\u6c22\u80fd\u6e90\u65e0\u4eba\u673a\u7814\u53d1\u7b49\u6218\u7565\u4ea7\u54c1\uff0c\u6280\u672f\u80fd\u529b\u5177\u5907\u56fd\u9645\u7ade\u4e89\u529b\uff0c\u672a\u6765\u7684\u53d1\u5c55\u5c06\u8fdb\u4e00\u6b65\u53d7\u5230\u56fd\u9645\u548c\u56fd\u5185\u9700\u6c42\u53cc\u8f6e\u9a71\u52a8\u7684\u652f\u6491\u3002\n\n\u7efc\u5408\u6765\u770b\uff0c\u5c3d\u7ba1\u5b8f\u89c2\u7ecf\u6d4e\u73af\u5883\u4e3a\u4e2d\u6027\uff0c\u4f46\u653f\u7b56\u63a8\u52a8\u3001\u8d44\u91d1\u6d41\u5165\u548c\u5feb\u901f\u6280\u672f\u8fed\u4ee3\u7b49\u90fd\u4f7f\u5f97\u76ee\u6807\u80a1\u7968\u53d7\u5230\u5229\u597d\u5f71\u54cd\uff0c\u5bf9\u4e2a\u80a1\u8868\u73b0\u8d77\u5230\u5173\u952e\u63a8\u52a8\u4f5c\u7528\uff0c\u56e0\u6b64\u5bf9\u4e2a\u80a1\u7684\u9884\u671f\u5f71\u54cd\u88ab\u8bc4\u4f30\u4e3a\u79ef\u6781\u3002\u6295\u8d44\u8005\u9700\u7559\u610f\u519b\u5de5\u884c\u4e1a\u6574\u4f53\u4f30\u503c\u53d8\u5316\u548c\u653f\u7b56\u51fa\u53f0\u7684\u540e\u7eed\u5f71\u54cd\u3002"
+}
+2025-05-13 16:40:57 - agent_state - INFO - ✅ Macro Analyst analysis completed
+2025-05-13 16:40:57 - agent_state - INFO - 🔄 Portfolio Manager is analyzing...
+2025-05-13 16:41:01 - agent_state - INFO - {
+  "action": "hold",
+  "quantity": 0,
+  "confidence": 0.48,
+  "agent_signals": [
+    {
+      "agent": "Technical Analysis",
+      "signal": "neutral",
+      "confidence": 0.06
+    },
+    {
+      "agent": "Fundamental Analysis",
+      "signal": "bearish",
+      "confidence": 0.5
+    },
+    {
+      "agent": "Valuation Analysis",
+      "signal": "bearish",
+      "confidence": 0.84
+    },
+    {
+      "agent": "Macro Analysis",
+      "signal": "neutral",
+      "confidence": 0.5
+    },
+    {
+      "agent": "Sentiment Analysis",
+      "signal": "bullish",
+      "confidence": 1.0
+    }
+  ],
+  "reasoning": "Risk management has mandated a 'hold' position, which takes precedence. Valuation and fundamental analyses both indicate significant bearish signals, reflecting overvaluation and weak profitability measures, despite strong revenue and earnings growth. While sentiment is strongly bullish, and macro factors provide a neutral to slightly positive bias, these do not outweigh the bearish valuation and fundamentals. Technical analysis remains neutral with mixed sub-signals. Thus, the mandated 'hold' aligns with the overall mixed and cautious outlook."
+}
+2025-05-13 16:41:01 - agent_state - INFO - ✅ Portfolio Manager analysis completed
+2025-05-13 17:06:20 - agent_state - INFO - 🔄 Market Data Agent is analyzing...
+2025-05-13 17:08:34 - agent_state - INFO - {
+  "ticker": "600316",
+  "start_date": "2024-05-12",
+  "end_date": "2025-05-12",
+  "data_collected": {
+    "price_history": true,
+    "financial_metrics": true,
+    "financial_statements": true,
+    "market_data": false
+  },
+  "summary": "\u4e3a600316\u6536\u96c6\u4e86\u4ece2024-05-12\u52302025-05-12\u7684\u5e02\u573a\u6570\u636e\uff0c\u5305\u62ec\u4ef7\u683c\u5386\u53f2\u3001\u8d22\u52a1\u6307\u6807\u548c\u5e02\u573a\u4fe1\u606f"
+}
+2025-05-13 17:08:34 - agent_state - INFO - 🔄 Technical Analyst is analyzing...
+2025-05-13 17:08:34 - agent_state - INFO - 🔄 Fundamentals Analyst is analyzing...
+2025-05-13 17:08:34 - agent_state - INFO - 🔄 Sentiment Analyst is analyzing...
+2025-05-13 17:08:34 - agent_state - INFO - 🔄 Valuation Agent is analyzing...
+2025-05-13 17:08:34 - agent_state - INFO - {
+  "signal": "bearish",
+  "confidence": "75%",
+  "reasoning": {
+    "profitability_signal": {
+      "signal": "bearish",
+      "details": "ROE: N/A, Net Margin: N/A, Op Margin: N/A"
+    },
+    "growth_signal": {
+      "signal": "bearish",
+      "details": "Revenue Growth: N/A, Earnings Growth: N/A"
+    },
+    "financial_health_signal": {
+      "signal": "bearish",
+      "details": "Current Ratio: N/A, D/E: N/A"
+    },
+    "price_ratios_signal": {
+      "signal": "bullish",
+      "details": "P/E: N/A, P/B: N/A, P/S: N/A"
+    }
+  }
+}
+2025-05-13 17:08:34 - agent_state - INFO - {
+  "signal": "neutral",
+  "confidence": "0%",
+  "reasoning": {
+    "dcf_analysis": {
+      "signal": "neutral",
+      "details": "Intrinsic Value: $233,971,797.51, Market Cap: $0.00, Gap: 0.0%"
+    },
+    "owner_earnings_analysis": {
+      "signal": "neutral",
+      "details": "Owner Earnings Value: $0.00, Market Cap: $0.00, Gap: 0.0%"
+    }
+  }
+}
+2025-05-13 17:08:34 - agent_state - INFO - ✅ Fundamentals Analyst analysis completed
+2025-05-13 17:08:34 - agent_state - INFO - ✅ Valuation Agent analysis completed
+2025-05-13 17:08:34 - agent_state - INFO - {
+  "signal": "neutral",
+  "confidence": "14%",
+  "strategy_signals": {
+    "trend_following": {
+      "signal": "bullish",
+      "confidence": "34%",
+      "metrics": {
+        "adx": 33.94156179847838,
+        "trend_strength": 0.3394156179847838
+      }
+    },
+    "mean_reversion": {
+      "signal": "bearish",
+      "confidence": "52%",
+      "metrics": {
+        "z_score": 2.0781552294594863,
+        "price_vs_bb": 1.068956767530679,
+        "rsi_14": 59.4910591471802,
+        "rsi_28": 58.959757023538344
+      }
+    },
+    "momentum": {
+      "signal": "bullish",
+      "confidence": "69%",
+      "metrics": {
+        "momentum_1m": 0.1822480655491855,
+        "momentum_3m": 0.18319824994803036,
+        "momentum_6m": 0.09379074239216478,
+        "volume_momentum": 2.4455437287323343
+      }
+    },
+    "volatility": {
+      "signal": "bearish",
+      "confidence": "51%",
+      "metrics": {
+        "historical_volatility": 0.5774220682395668,
+        "volatility_regime": 1.2156407535834384,
+        "volatility_z_score": 1.521571865194071,
+        "atr_ratio": 0.04313284480882245
+      }
+    },
+    "statistical_arbitrage": {
+      "signal": "neutral",
+      "confidence": "50%",
+      "metrics": {
+        "hurst_exponent": 4.410881380903355e-15,
+        "skewness": 0.8049361764910705,
+        "kurtosis": 1.0665736106208799
+      }
+    }
+  }
+}
+2025-05-13 17:08:34 - agent_state - INFO - ✅ Technical Analyst analysis completed
+2025-05-13 17:08:35 - agent_state - INFO - {
+  "signal": "bullish",
+  "confidence": "100%",
+  "reasoning": "Based on 5 recent news articles, sentiment score: 1.00"
+}
+2025-05-13 17:08:35 - agent_state - INFO - ✅ Sentiment Analyst analysis completed
+2025-05-13 17:08:35 - agent_state - INFO - 🔄 Bullish Researcher is analyzing...
+2025-05-13 17:08:35 - agent_state - INFO - 🔄 Bearish Researcher is analyzing...
+2025-05-13 17:08:35 - agent_state - INFO - {
+  "perspective": "bullish",
+  "confidence": 0.475,
+  "thesis_points": [
+    "Technical indicators may be conservative, presenting buying opportunities",
+    "Company fundamentals show potential for improvement",
+    "Positive market sentiment with 100% confidence",
+    "Current valuation may not fully reflect growth potential"
+  ],
+  "reasoning": "Bullish thesis based on comprehensive analysis of technical, fundamental, sentiment, and valuation factors"
+}
+2025-05-13 17:08:35 - agent_state - INFO - {
+  "perspective": "bearish",
+  "confidence": 0.4125,
+  "thesis_points": [
+    "Technical rally may be temporary, suggesting potential reversal",
+    "Concerning fundamentals with 75% confidence",
+    "Market sentiment may be overly optimistic, indicating potential risks",
+    "Current valuation may not fully reflect downside risks"
+  ],
+  "reasoning": "Bearish thesis based on comprehensive analysis of technical, fundamental, sentiment, and valuation factors"
+}
+2025-05-13 17:08:35 - agent_state - INFO - ✅ Bullish Researcher analysis completed
+2025-05-13 17:08:35 - agent_state - INFO - ✅ Bearish Researcher analysis completed
+2025-05-13 17:08:36 - agent_state - INFO - 🔄 Debate Room is analyzing...
+2025-05-13 17:08:39 - agent_state - INFO - {
+  "signal": "bullish",
+  "confidence": 0.475,
+  "bull_confidence": 0.475,
+  "bear_confidence": 0.4125,
+  "confidence_diff": 0.0625,
+  "llm_score": 0.25,
+  "llm_analysis": "The bearish viewpoint raises valid concerns regarding a potential technical rally being temporary and market sentiment possibly being overly optimistic. These are important factors to consider, especially if fundamentals are indeed weak as suggested. However, the bearish argument lacks sufficient evidence or a higher confidence level in its assertions. On the other hand, the bullish view leans on strong confidence in positive market sentiment and potential for fundamental improvement, but it may downplay existing risks. The bullish claim that 'technical indicators may be conservative' might reflect optimism rather than solid technical signals, making it less convincing as a standalone argument. Overall, while both sides present reasonable points, the bullish case appears slightly stronger due to its 100% confidence in positive sentiment and potential growth opportunities, though it should also more thoroughly account for the mentioned risks.",
+  "llm_reasoning": "The slight tilt toward a bullish score comes from the strength of the optimism in sentiment and implied growth potential, despite the noted risks. However, caution remains warranted due to the bearish emphasis on temporary technical rallies and possible overvaluation.",
+  "mixed_confidence_diff": 0.11875,
+  "debate_summary": [
+    "Bullish Arguments:",
+    "+ Technical indicators may be conservative, presenting buying opportunities",
+    "+ Company fundamentals show potential for improvement",
+    "+ Positive market sentiment with 100% confidence",
+    "+ Current valuation may not fully reflect growth potential",
+    "\nBearish Arguments:",
+    "- Technical rally may be temporary, suggesting potential reversal",
+    "- Concerning fundamentals with 75% confidence",
+    "- Market sentiment may be overly optimistic, indicating potential risks",
+    "- Current valuation may not fully reflect downside risks"
+  ],
+  "reasoning": "Bullish arguments more convincing"
+}
+2025-05-13 17:08:39 - agent_state - INFO - ✅ Debate Room analysis completed
+2025-05-13 17:08:39 - agent_state - INFO - 🔄 Risk Manager is analyzing...
+2025-05-13 17:08:39 - agent_state - INFO - {
+  "max_position_size": 12500.0,
+  "risk_score": 5,
+  "trading_action": "hold",
+  "risk_metrics": {
+    "volatility": 0.5755744970685335,
+    "value_at_risk_95": -0.052497883149873026,
+    "max_drawdown": -0.31292008961911877,
+    "market_risk_score": 5,
+    "stress_test_results": {
+      "market_crash": {
+        "potential_loss": -0.0,
+        "portfolio_impact": -0.0
+      },
+      "moderate_decline": {
+        "potential_loss": -0.0,
+        "portfolio_impact": -0.0
+      },
+      "slight_decline": {
+        "potential_loss": -0.0,
+        "portfolio_impact": -0.0
+      }
+    }
+  },
+  "debate_analysis": {
+    "bull_confidence": 0.475,
+    "bear_confidence": 0.4125,
+    "debate_confidence": 0.475,
+    "debate_signal": "bullish"
+  },
+  "reasoning": "Risk Score 5/10: Market Risk=5, Volatility=57.56%, VaR=-5.25%, Max Drawdown=-31.29%, Debate Signal=bullish"
+}
+2025-05-13 17:08:39 - agent_state - INFO - ✅ Risk Manager analysis completed
+2025-05-13 17:08:39 - agent_state - INFO - 🔄 Macro Analyst is analyzing...
+2025-05-13 17:08:49 - agent_state - INFO - {
+  "macro_environment": "positive",
+  "impact_on_stock": "positive",
+  "key_factors": [
+    "\u8d27\u5e01\u653f\u7b56\u5bbd\u677e\uff1a\u964d\u51c6\u548c\u964d\u606f\u51fa\u53f0",
+    "\u519b\u5de5\u4ea7\u4e1a\u653f\u7b56\u5229\u597d",
+    "\u5e02\u573a\u60c5\u7eea\u56de\u5347\uff0c\u8d44\u91d1\u6d41\u5165\u519b\u5de5\u677f\u5757",
+    "\u5168\u7403\u5730\u7f18\u653f\u6cbb\u7d27\u5f20\u5c40\u52bf\u63a8\u52a8\u76f8\u5173\u9700\u6c42",
+    "\u519b\u5de5\u677f\u5757\u76c8\u5229\u9884\u671f\u6539\u5584"
+  ],
+  "reasoning": "\u5f53\u524d\u5b8f\u89c2\u73af\u5883\u5448\u73b0\u79ef\u6781\u6001\u52bf\uff0c\u4e3b\u8981\u4f53\u73b0\u5728\u592e\u884c\u53d1\u5e03\u964d\u606f\u548c\u964d\u51c6\u7b49\u5bbd\u677e\u8d27\u5e01\u653f\u7b56\uff0c\u53e0\u52a0\u8d22\u653f\u652f\u6301\u4e0e\u4e13\u9879\u8d44\u91d1\u7684\u6301\u7eed\u6295\u5165\uff0c\u6709\u52a9\u4e8e\u63d0\u632f\u5e02\u573a\u4fe1\u5fc3\uff0c\u63a8\u52a8\u6d41\u52a8\u6027\u6539\u5584\u3002\u7279\u522b\u662f\u5728\u533a\u57df\u5730\u7f18\u653f\u6cbb\u5c40\u52bf\u7d27\u5f20\u7684\u80cc\u666f\u4e0b\uff0c\u4e2d\u56fd\u519b\u5de5\u9700\u6c42\u663e\u8457\u63d0\u5347\uff0c\u519b\u5de5\u76f8\u5173\u4ea7\u4e1a\u653f\u7b56\u3001\u8ba2\u5355\u589e\u957f\u548c\u884c\u4e1a\u666f\u6c14\u5ea6\u7684\u63d0\u5347\u6301\u7eed\u5229\u597d\u519b\u5de5\u677f\u5757\uff0c\u5e26\u52a8\u8d44\u91d1\u5927\u5e45\u6d41\u5165\u56fd\u9632\u519b\u5de5\u9886\u57df\u3002\u6b64\u5916\uff0c\u5e02\u573a\u60c5\u7eea\u663e\u8457\u56de\u6696\uff0c\u901a\u8fc7ETF\u548c\u4e3b\u52a8\u8d44\u91d1\u6d41\u5165\u7684\u79ef\u7d2f\uff0c\u4e00\u4e9b\u5173\u952e\u519b\u5de5\u516c\u53f8\u5982\u4e2d\u822a\u6210\u98de\u3001\u6d2a\u90fd\u822a\u7a7a\u3001\u4e2d\u822a\u6c88\u98de\u7b49\u53d7\u5230\u663e\u8457\u8d44\u91d1\u5173\u6ce8\uff0c\u8fd1\u671f\u51fa\u73b0\u5927\u5e45\u4e0a\u6da8\u3002\u8fd9\u53cd\u6620\u4e86\u6295\u8d44\u8005\u5bf9\u519b\u5de5\u884c\u4e1a\u76c8\u5229\u524d\u666f\u7684\u770b\u597d\uff0c\u7279\u522b\u662f\u822a\u7a7a\u88c5\u5907\u548c\u519b\u8d38\u76f8\u5173\u7684\u4e1a\u52a1\u8ba2\u5355\u6301\u7eed\u589e\u52a0\u7684\u80cc\u540e\u63a8\u529b\u3002\u56e0\u6b64\uff0c\u603b\u4f53\u6765\u770b\uff0c\u5f53\u524d\u5b8f\u89c2\u73af\u5883\u5bf9\u519b\u5de5\u677f\u5757\u4ee5\u53ca\u76f8\u5173A\u80a1\u4e0a\u5e02\u516c\u53f8\uff08\u5982\u6d2a\u90fd\u822a\u7a7a\uff09\u7684\u5f71\u54cd\u4e3a\u79ef\u6781\uff0c\u77ed\u671f\u5185\u7ee7\u7eed\u652f\u6301\u5176\u80a1\u4ef7\u4e0a\u6da8\u7684\u8d8b\u52bf\uff0c\u9884\u8ba1\u5176\u4e2d\u957f\u671f\u8868\u73b0\u4e5f\u5c06\u53d7\u76ca\u4e8e\u7a33\u6b65\u589e\u957f\u7684\u884c\u4e1a\u57fa\u672c\u9762\u3002"
+}
+2025-05-13 17:08:49 - agent_state - INFO - ✅ Macro Analyst analysis completed
+2025-05-13 17:08:49 - agent_state - INFO - 🔄 Portfolio Manager is analyzing...
+2025-05-13 17:08:53 - agent_state - INFO - {
+  "action": "hold",
+  "quantity": 0,
+  "confidence": 0.5,
+  "agent_signals": [
+    {
+      "agent_name": "Technical Analysis",
+      "signal": "neutral",
+      "confidence": 0.14
+    },
+    {
+      "agent_name": "Fundamental Analysis",
+      "signal": "bearish",
+      "confidence": 0.75
+    },
+    {
+      "agent_name": "Sentiment Analysis",
+      "signal": "bullish",
+      "confidence": 1.0
+    },
+    {
+      "agent_name": "Valuation Analysis",
+      "signal": "neutral",
+      "confidence": 0.0
+    },
+    {
+      "agent_name": "Macro Analysis",
+      "signal": "bullish",
+      "confidence": 0.6
+    },
+    {
+      "agent_name": "Risk Management",
+      "signal": "hold",
+      "confidence": 1.0
+    }
+  ],
+  "reasoning": "The risk management signal mandates a hold action, which overrides all other signals. Valuation is neutral, providing no strong entry/exit incentive. Fundamentals are bearish, suggesting a lack of conviction in company financial strength. Sentiment and macro indicators are bullish, indicating short-term potential, but they are outweighed by the constraints and evaluation of other signals. Holding satisfies risk management while avoiding undue exposure."
+}
+2025-05-13 17:08:53 - agent_state - INFO - ✅ Portfolio Manager analysis completed
+2025-05-13 17:30:21 - agent_state - INFO - 🔄 Market Data Agent is analyzing...
+2025-05-13 17:33:06 - agent_state - INFO - {
+  "ticker": "301050",
+  "start_date": "2024-05-12",
+  "end_date": "2025-05-12",
+  "data_collected": {
+    "price_history": true,
+    "financial_metrics": true,
+    "financial_statements": true,
+    "market_data": false
+  },
+  "summary": "\u4e3a301050\u6536\u96c6\u4e86\u4ece2024-05-12\u52302025-05-12\u7684\u5e02\u573a\u6570\u636e\uff0c\u5305\u62ec\u4ef7\u683c\u5386\u53f2\u3001\u8d22\u52a1\u6307\u6807\u548c\u5e02\u573a\u4fe1\u606f"
+}
+2025-05-13 17:33:06 - agent_state - INFO - 🔄 Technical Analyst is analyzing...
+2025-05-13 17:33:06 - agent_state - INFO - 🔄 Fundamentals Analyst is analyzing...
+2025-05-13 17:33:06 - agent_state - INFO - 🔄 Sentiment Analyst is analyzing...
+2025-05-13 17:33:06 - agent_state - INFO - {
+  "signal": "bullish",
+  "confidence": "50%",
+  "reasoning": {
+    "profitability_signal": {
+      "signal": "bullish",
+      "details": "ROE: 2.25%, Net Margin: 29.21%, Op Margin: 34.39%"
+    },
+    "growth_signal": {
+      "signal": "neutral",
+      "details": "Revenue Growth: -34.83%, Earnings Growth: -30.17%"
+    },
+    "financial_health_signal": {
+      "signal": "bullish",
+      "details": "Current Ratio: 4.09, D/E: 0.23"
+    },
+    "price_ratios_signal": {
+      "signal": "bearish",
+      "details": "P/E: 47.62, P/B: 4.29, P/S: 55.65"
+    }
+  }
+}
+2025-05-13 17:33:06 - agent_state - INFO - 🔄 Valuation Agent is analyzing...
+2025-05-13 17:33:06 - agent_state - INFO - ✅ Fundamentals Analyst analysis completed
+2025-05-13 17:33:06 - agent_state - INFO - {
+  "signal": "neutral",
+  "confidence": "0%",
+  "reasoning": {
+    "dcf_analysis": {
+      "signal": "neutral",
+      "details": "Intrinsic Value: $3,541,072,936.60, Market Cap: $0.00, Gap: 0.0%"
+    },
+    "owner_earnings_analysis": {
+      "signal": "neutral",
+      "details": "Owner Earnings Value: $0.00, Market Cap: $0.00, Gap: 0.0%"
+    }
+  }
+}
+2025-05-13 17:33:06 - agent_state - INFO - ✅ Valuation Agent analysis completed
+2025-05-13 17:33:07 - agent_state - INFO - {
+  "signal": "bullish",
+  "confidence": "26%",
+  "strategy_signals": {
+    "trend_following": {
+      "signal": "neutral",
+      "confidence": "50%",
+      "metrics": {
+        "adx": 46.44326864720503,
+        "trend_strength": 0.4644326864720503
+      }
+    },
+    "mean_reversion": {
+      "signal": "neutral",
+      "confidence": "50%",
+      "metrics": {
+        "z_score": 1.3505705559780634,
+        "price_vs_bb": 1.0862128024590076,
+        "rsi_14": 68.6657368665737,
+        "rsi_28": 54.24618320610687
+      }
+    },
+    "momentum": {
+      "signal": "bullish",
+      "confidence": "52%",
+      "metrics": {
+        "momentum_1m": 0.25315094118583836,
+        "momentum_3m": 0.12820300905296733,
+        "momentum_6m": 0.028470583413667483,
+        "volume_momentum": 3.2735441341584752
+      }
+    },
+    "volatility": {
+      "signal": "neutral",
+      "confidence": "50%",
+      "metrics": {
+        "historical_volatility": 0.7061771039691316,
+        "volatility_regime": 1.2538400817142112,
+        "volatility_z_score": 0.7395695830271984,
+        "atr_ratio": 0.049481597336091386
+      }
+    },
+    "statistical_arbitrage": {
+      "signal": "neutral",
+      "confidence": "50%",
+      "metrics": {
+        "hurst_exponent": 4.410881380903355e-15,
+        "skewness": -0.8023653285003218,
+        "kurtosis": 6.852007001607117
+      }
+    }
+  }
+}
+2025-05-13 17:33:07 - agent_state - INFO - ✅ Technical Analyst analysis completed
+2025-05-13 17:33:08 - agent_state - INFO - {
+  "signal": "neutral",
+  "confidence": "90%",
+  "reasoning": "Based on 5 recent news articles, sentiment score: 0.10"
+}
+2025-05-13 17:33:08 - agent_state - INFO - ✅ Sentiment Analyst analysis completed
+2025-05-13 17:33:08 - agent_state - INFO - 🔄 Bullish Researcher is analyzing...
+2025-05-13 17:33:08 - agent_state - INFO - {
+  "perspective": "bullish",
+  "confidence": 0.33999999999999997,
+  "thesis_points": [
+    "Technical indicators show bullish momentum with 26% confidence",
+    "Strong fundamentals with 50% confidence",
+    "Market sentiment may be overly pessimistic, creating value opportunities",
+    "Current valuation may not fully reflect growth potential"
+  ],
+  "reasoning": "Bullish thesis based on comprehensive analysis of technical, fundamental, sentiment, and valuation factors"
+}
+2025-05-13 17:33:08 - agent_state - INFO - ✅ Bullish Researcher analysis completed
+2025-05-13 17:33:08 - agent_state - INFO - 🔄 Bearish Researcher is analyzing...
+2025-05-13 17:33:08 - agent_state - INFO - {
+  "perspective": "bearish",
+  "confidence": 0.3,
+  "thesis_points": [
+    "Technical rally may be temporary, suggesting potential reversal",
+    "Current fundamental strength may not be sustainable",
+    "Market sentiment may be overly optimistic, indicating potential risks",
+    "Current valuation may not fully reflect downside risks"
+  ],
+  "reasoning": "Bearish thesis based on comprehensive analysis of technical, fundamental, sentiment, and valuation factors"
+}
+2025-05-13 17:33:08 - agent_state - INFO - ✅ Bearish Researcher analysis completed
+2025-05-13 17:33:08 - agent_state - INFO - 🔄 Debate Room is analyzing...
+2025-05-13 17:33:14 - agent_state - INFO - {
+  "signal": "neutral",
+  "confidence": 0.33999999999999997,
+  "bull_confidence": 0.33999999999999997,
+  "bear_confidence": 0.3,
+  "confidence_diff": 0.03999999999999998,
+  "llm_score": 0.2,
+  "llm_analysis": "The investor's bearish and bullish perspectives provide contrasting views with similar levels of confidence, albeit both are grounded in a combination of technical, fundamental, sentiment, and valuation factors. The bearish case raises valid concerns about the potentially temporary nature of technical rallies, unsustainable fundamentals, and over-optimistic sentiment, which could indeed lead to downside risks if realized. However, the confidence level (30%) is relatively low, indicating a lack of strong conviction. The bullish outlook, on the other hand, highlights strong fundamentals with a higher confidence level (50%), which makes this point more persuasive. Additionally, the claim that sentiment may be overly pessimistic could provide value opportunities if fear or mispricing exists in the market. Neither case seems overwhelmingly strong, as both analyses hedge their confidence, making it difficult to adopt extreme positions. Overall, the bullish case appears slightly more compelling due to its emphasis on stronger fundamental backing and the potential for undervalued growth opportunities. However, caution is warranted given the acknowledged risks in both directions.",
+  "llm_reasoning": "The moderately positive score reflects the slightly stronger argument from the bullish perspective. The 50% confidence in strong fundamentals suggests there is meaningful support for growth, but the relatively low confidence levels in the technical and sentiment analyses for both sides dampen the ability to fully commit to either outlook. Therefore, a cautious but slightly bullish stance is appropriate.",
+  "mixed_confidence_diff": 0.08799999999999998,
+  "debate_summary": [
+    "Bullish Arguments:",
+    "+ Technical indicators show bullish momentum with 26% confidence",
+    "+ Strong fundamentals with 50% confidence",
+    "+ Market sentiment may be overly pessimistic, creating value opportunities",
+    "+ Current valuation may not fully reflect growth potential",
+    "\nBearish Arguments:",
+    "- Technical rally may be temporary, suggesting potential reversal",
+    "- Current fundamental strength may not be sustainable",
+    "- Market sentiment may be overly optimistic, indicating potential risks",
+    "- Current valuation may not fully reflect downside risks"
+  ],
+  "reasoning": "Balanced debate with strong arguments on both sides"
+}
+2025-05-13 17:33:14 - agent_state - INFO - ✅ Debate Room analysis completed
+2025-05-13 17:33:14 - agent_state - INFO - 🔄 Risk Manager is analyzing...
+2025-05-13 17:33:14 - agent_state - INFO - {
+  "max_position_size": 12500.0,
+  "risk_score": 5,
+  "trading_action": "hold",
+  "risk_metrics": {
+    "volatility": 0.6269663129074085,
+    "value_at_risk_95": -0.04604316546762599,
+    "max_drawdown": -0.25888561229241047,
+    "market_risk_score": 5,
+    "stress_test_results": {
+      "market_crash": {
+        "potential_loss": -0.0,
+        "portfolio_impact": -0.0
+      },
+      "moderate_decline": {
+        "potential_loss": -0.0,
+        "portfolio_impact": -0.0
+      },
+      "slight_decline": {
+        "potential_loss": -0.0,
+        "portfolio_impact": -0.0
+      }
+    }
+  },
+  "debate_analysis": {
+    "bull_confidence": 0.33999999999999997,
+    "bear_confidence": 0.3,
+    "debate_confidence": 0.33999999999999997,
+    "debate_signal": "neutral"
+  },
+  "reasoning": "Risk Score 5/10: Market Risk=5, Volatility=62.70%, VaR=-4.60%, Max Drawdown=-25.89%, Debate Signal=neutral"
+}
+2025-05-13 17:33:14 - agent_state - INFO - ✅ Risk Manager analysis completed
+2025-05-13 17:33:14 - agent_state - INFO - 🔄 Macro Analyst is analyzing...
+2025-05-13 17:33:23 - agent_state - INFO - {
+  "macro_environment": "neutral",
+  "impact_on_stock": "neutral",
+  "key_factors": [
+    "\u5e02\u573a\u60c5\u7eea\u6ce2\u52a8",
+    "\u519b\u5de5\u677f\u5757\u6536\u76ca\u6ce2\u52a8\u52a0\u5267",
+    "\u5b8f\u89c2\u7ecf\u6d4e\u4e0d\u786e\u5b9a\u6027",
+    "\u53ef\u80fd\u7684\u4ea7\u4e1a\u653f\u7b56\u652f\u6301",
+    "\u56fd\u9645\u5730\u7f18\u653f\u6cbb\u5f71\u54cd"
+  ],
+  "reasoning": "\u8fd1\u671f\u5173\u4e8e\u56fd\u9632\u519b\u5de5\u677f\u5757\u7684\u591a\u7bc7\u65b0\u95fb\u663e\u793a\uff0c\u8be5\u677f\u5757\u53d7\u5e02\u573a\u60c5\u7eea\u6ce2\u52a8\u663e\u8457\uff0c\u8d44\u91d1\u6d41\u5165\u548c\u6d41\u51fa\u4ea4\u66ff\u51fa\u73b0\u30025\u67087\u65e5\u81f35\u670813\u65e5\u671f\u95f4\uff0c\u519b\u5de5\u4fe1\u606f\u5316\u548c\u56fd\u9632\u519b\u5de5\u76f8\u5173\u80a1\u7968\u7ecf\u5386\u4e86\u4e00\u7cfb\u5217\u4e0a\u6da8\u548c\u4e0b\u8dcc\uff0c\u663e\u793a\u5e02\u573a\u5bf9\u8be5\u677f\u5757\u7684\u77ed\u671f\u4fe1\u5fc3\u5145\u6ee1\u4e0d\u786e\u5b9a\u6027\u3002\u5177\u4f53\u6765\u770b\uff0c\u5b8f\u89c2\u73af\u5883\u5904\u4e8eneutral\u72b6\u6001\uff0c\u6ca1\u6709\u660e\u786e\u7684\u7ed3\u6784\u6027\u5229\u597d\u6216\u7cfb\u7edf\u6027\u5229\u7a7a\u56e0\u7d20\uff0c\u90e8\u5206\u516c\u53f8\u56e0\u8d44\u91d1\u6d41\u8fdb\u800c\u77ed\u671f\u4e0a\u6da8\uff08\u5982\u96f7\u7535\u5fae\u529b\uff09\uff0c\u4f46\u968f\u540e\u4e3b\u529b\u8d44\u91d1\u6d41\u51fa\u5bfc\u81f4\u5176\u5feb\u901f\u56de\u8c03\uff0c\u663e\u793a\u5e02\u573a\u5bf9\u519b\u5de5\u9886\u57df\u7684\u957f\u671f\u4e1a\u7ee9\u4fe1\u5fc3\u5c1a\u672a\u7a33\u5b9a\u3002\u56fd\u9645\u56e0\u7d20\uff08\u5982\u5730\u7f18\u653f\u6cbb\u7d27\u5f20\u5c40\u52bf\u548c\u53ef\u80fd\u7684\u56fd\u9632\u9700\u6c42\u589e\u957f\uff09\u5bf9\u519b\u5de5\u884c\u4e1a\u4e2d\u957f\u671f\u63d0\u4f9b\u4e86\u6f5c\u5728\u5229\u597d\uff0c\u4f46\u51fa\u73b0\u663e\u6027\u653f\u7b56\u652f\u6301\uff08\u5982\u8d22\u653f\u8865\u8d34\u6216\u653f\u5e9c\u76f4\u63a5\u91c7\u8d2d\uff09\u7684\u4fe1\u53f7\u4ecd\u8f83\u4e3a\u6a21\u7cca\u3002\u603b\u4f53\u6765\u770b\uff0c\u519b\u5de5\u884c\u4e1a\u7531\u4e8e\u6280\u672f\u58c1\u5792\u548c\u53d1\u5c55\u7684\u957f\u671f\u6027\uff0c\u5bf9\u76ee\u6807\u80a1\u7968\u5982\u96f7\u7535\u5fae\u529b\u8868\u73b0\u7684\u76f4\u63a5\u9a71\u52a8\u529b\u4ecd\u503e\u5411\u4e8e\u4e2d\u957f\u671f\u8003\u8651\uff0c\u5373\u4ea7\u4e1a\u653f\u7b56\u7684\u843d\u5730\u548c\u56fd\u9645\u73af\u5883\u7684\u5b9e\u8d28\u6027\u53d8\u5316\u3002\u6b64\u5916\uff0c\u80a1\u7968\u77ed\u671f\u6ce2\u52a8\u53d7\u8d44\u91d1\u5feb\u901f\u8fdb\u51fa\u7684\u5f71\u54cd\u8f83\u5927\uff0c\u4f46\u4e0e\u5b8f\u89c2\u7ecf\u6d4e\u73af\u5883\u7684\u7a33\u5b9a\u5173\u7cfb\u6709\u9650\uff0c\u56e0\u6b64\u603b\u4f53\u8bc4\u7ea7\u4e3aneutral\uff0c\u5e76\u8ba4\u4e3a\u5bf9\u76ee\u6807\u4e2a\u80a1\u7684\u5f71\u54cd\u4e5f\u4e3aneutral\u3002"
+}
+2025-05-13 17:33:23 - agent_state - INFO - ✅ Macro Analyst analysis completed
+2025-05-13 17:33:23 - agent_state - INFO - 🔄 Portfolio Manager is analyzing...
+2025-05-13 17:33:28 - agent_state - INFO - {
+  "action": "hold",
+  "quantity": 0,
+  "confidence": 0.34,
+  "agent_signals": [
+    {
+      "agent": "Technical Analysis",
+      "signal": "bullish",
+      "confidence": 0.26
+    },
+    {
+      "agent": "Fundamental Analysis",
+      "signal": "bullish",
+      "confidence": 0.5
+    },
+    {
+      "agent": "Sentiment Analysis",
+      "signal": "neutral",
+      "confidence": 0.9
+    },
+    {
+      "agent": "Valuation Analysis",
+      "signal": "neutral",
+      "confidence": 0.0
+    },
+    {
+      "agent": "Macro Analysis",
+      "signal": "neutral",
+      "confidence": 0.15
+    },
+    {
+      "agent": "Risk Management",
+      "signal": "hold",
+      "confidence": 1.0
+    }
+  ],
+  "reasoning": "Risk Management recommends a hold action based on a moderate risk score (5/10) and neutral risk metrics, which is a hard constraint. While Fundamental Analysis is bullish with decent confidence (50%), the lack of a valuation edge, neutral macro context, and limited technical cycle confirmation result in a lower overall confidence in initiating a position. Sentiment analysis also remains neutral with no decisive drivers. Therefore, adhering strictly to Risk Management, we hold without initiating any trades."
+}
+2025-05-13 17:33:28 - agent_state - INFO - ✅ Portfolio Manager analysis completed
+2025-05-13 17:38:25 - agent_state - INFO - 🔄 Market Data Agent is analyzing...
+2025-05-13 17:40:22 - agent_state - INFO - {
+  "ticker": "300551",
+  "start_date": "2024-05-12",
+  "end_date": "2025-05-12",
+  "data_collected": {
+    "price_history": true,
+    "financial_metrics": true,
+    "financial_statements": true,
+    "market_data": false
+  },
+  "summary": "\u4e3a300551\u6536\u96c6\u4e86\u4ece2024-05-12\u52302025-05-12\u7684\u5e02\u573a\u6570\u636e\uff0c\u5305\u62ec\u4ef7\u683c\u5386\u53f2\u3001\u8d22\u52a1\u6307\u6807\u548c\u5e02\u573a\u4fe1\u606f"
+}
+2025-05-13 17:40:22 - agent_state - INFO - 🔄 Technical Analyst is analyzing...
+2025-05-13 17:40:22 - agent_state - INFO - 🔄 Sentiment Analyst is analyzing...
+2025-05-13 17:40:22 - agent_state - INFO - 🔄 Fundamentals Analyst is analyzing...
+2025-05-13 17:40:22 - agent_state - INFO - 🔄 Valuation Agent is analyzing...
+2025-05-13 17:40:22 - agent_state - INFO - {
+  "signal": "bearish",
+  "confidence": "75%",
+  "reasoning": {
+    "profitability_signal": {
+      "signal": "bearish",
+      "details": "ROE: N/A, Net Margin: N/A, Op Margin: N/A"
+    },
+    "growth_signal": {
+      "signal": "bearish",
+      "details": "Revenue Growth: N/A, Earnings Growth: N/A"
+    },
+    "financial_health_signal": {
+      "signal": "bearish",
+      "details": "Current Ratio: N/A, D/E: N/A"
+    },
+    "price_ratios_signal": {
+      "signal": "bullish",
+      "details": "P/E: N/A, P/B: N/A, P/S: N/A"
+    }
+  }
+}
+2025-05-13 17:40:22 - agent_state - INFO - {
+  "signal": "neutral",
+  "confidence": "0%",
+  "reasoning": {
+    "dcf_analysis": {
+      "signal": "neutral",
+      "details": "Intrinsic Value: $0.00, Market Cap: $0.00, Gap: 0.0%"
+    },
+    "owner_earnings_analysis": {
+      "signal": "neutral",
+      "details": "Owner Earnings Value: $0.00, Market Cap: $0.00, Gap: 0.0%"
+    }
+  }
+}
+2025-05-13 17:40:22 - agent_state - INFO - ✅ Fundamentals Analyst analysis completed
+2025-05-13 17:40:22 - agent_state - INFO - ✅ Valuation Agent analysis completed
+2025-05-13 17:40:22 - agent_state - INFO - {
+  "signal": "neutral",
+  "confidence": "13%",
+  "strategy_signals": {
+    "trend_following": {
+      "signal": "bearish",
+      "confidence": "29%",
+      "metrics": {
+        "adx": 28.976383151184702,
+        "trend_strength": 0.28976383151184704
+      }
+    },
+    "mean_reversion": {
+      "signal": "neutral",
+      "confidence": "50%",
+      "metrics": {
+        "z_score": -0.5473908291643897,
+        "price_vs_bb": 0.8401049899381826,
+        "rsi_14": 61.73633440514469,
+        "rsi_28": 43.99999999999999
+      }
+    },
+    "momentum": {
+      "signal": "neutral",
+      "confidence": "50%",
+      "metrics": {
+        "momentum_1m": 0.13356615644205205,
+        "momentum_3m": -0.04332610904047296,
+        "momentum_6m": -0.30229603022694573,
+        "volume_momentum": 0.7123157265599858
+      }
+    },
+    "volatility": {
+      "signal": "bullish",
+      "confidence": "52%",
+      "metrics": {
+        "historical_volatility": 0.4574355095892421,
+        "volatility_regime": 0.6669094708578746,
+        "volatility_z_score": -1.5559231215658111,
+        "atr_ratio": 0.04642449910408865
+      }
+    },
+    "statistical_arbitrage": {
+      "signal": "bearish",
+      "confidence": "100%",
+      "metrics": {
+        "hurst_exponent": 4.410881380903355e-15,
+        "skewness": -2.6252436087514086,
+        "kurtosis": 12.63440824152318
+      }
+    }
+  }
+}
+2025-05-13 17:40:22 - agent_state - INFO - ✅ Technical Analyst analysis completed
+2025-05-13 17:40:23 - agent_state - INFO - {
+  "signal": "neutral",
+  "confidence": "90%",
+  "reasoning": "Based on 2 recent news articles, sentiment score: -0.10"
+}
+2025-05-13 17:40:23 - agent_state - INFO - ✅ Sentiment Analyst analysis completed
+2025-05-13 17:40:23 - agent_state - INFO - 🔄 Bullish Researcher is analyzing...
+2025-05-13 17:40:23 - agent_state - INFO - {
+  "perspective": "bullish",
+  "confidence": 0.3,
+  "thesis_points": [
+    "Technical indicators may be conservative, presenting buying opportunities",
+    "Company fundamentals show potential for improvement",
+    "Market sentiment may be overly pessimistic, creating value opportunities",
+    "Current valuation may not fully reflect growth potential"
+  ],
+  "reasoning": "Bullish thesis based on comprehensive analysis of technical, fundamental, sentiment, and valuation factors"
+}
+2025-05-13 17:40:23 - agent_state - INFO - 🔄 Bearish Researcher is analyzing...
+2025-05-13 17:40:23 - agent_state - INFO - ✅ Bullish Researcher analysis completed
+2025-05-13 17:40:23 - agent_state - INFO - {
+  "perspective": "bearish",
+  "confidence": 0.4125,
+  "thesis_points": [
+    "Technical rally may be temporary, suggesting potential reversal",
+    "Concerning fundamentals with 75% confidence",
+    "Market sentiment may be overly optimistic, indicating potential risks",
+    "Current valuation may not fully reflect downside risks"
+  ],
+  "reasoning": "Bearish thesis based on comprehensive analysis of technical, fundamental, sentiment, and valuation factors"
+}
+2025-05-13 17:40:23 - agent_state - INFO - ✅ Bearish Researcher analysis completed
+2025-05-13 17:40:23 - agent_state - INFO - 🔄 Debate Room is analyzing...
+2025-05-13 17:40:31 - agent_state - INFO - {
+  "signal": "bearish",
+  "confidence": 0.4125,
+  "bull_confidence": 0.3,
+  "bear_confidence": 0.4125,
+  "confidence_diff": -0.11249999999999999,
+  "llm_score": -0.3,
+  "llm_analysis": "The bearish viewpoint highlights concerns about potentially temporary technical rallies and downside risks that may not be fully reflected in the current valuation. Additionally, it raises valid concerns about over-optimistic market sentiment and shaky fundamentals, with a relatively high confidence level of 75%. On the other hand, the bullish perspective suggests opportunities for growth based on conservative technical indicators, undervaluation, and possibly unjustified pessimism in market sentiment. While both perspectives present valid arguments, the bearish case appears stronger due to its higher confidence level and its focus on evaluating broader downside risks in the current market environment compared to the more speculative nature of the bullish arguments.",
+  "llm_reasoning": "The score leans slightly bearish primarily because of the higher confidence level in the bearish arguments and the current market conditions that seem to indicate potential risks outweigh the speculated growth opportunities. While the bullish view suggests some upside potential, it lacks sufficient evidence or significant confidence to offset the concerns about fundamentals and over-optimistic sentiment highlighted in the bearish case.",
+  "mixed_confidence_diff": -0.16874999999999998,
+  "debate_summary": [
+    "Bullish Arguments:",
+    "+ Technical indicators may be conservative, presenting buying opportunities",
+    "+ Company fundamentals show potential for improvement",
+    "+ Market sentiment may be overly pessimistic, creating value opportunities",
+    "+ Current valuation may not fully reflect growth potential",
+    "\nBearish Arguments:",
+    "- Technical rally may be temporary, suggesting potential reversal",
+    "- Concerning fundamentals with 75% confidence",
+    "- Market sentiment may be overly optimistic, indicating potential risks",
+    "- Current valuation may not fully reflect downside risks"
+  ],
+  "reasoning": "Bearish arguments more convincing"
+}
+2025-05-13 17:40:31 - agent_state - INFO - ✅ Debate Room analysis completed
+2025-05-13 17:40:31 - agent_state - INFO - 🔄 Risk Manager is analyzing...
+2025-05-13 17:40:31 - agent_state - INFO - {
+  "max_position_size": 12500.0,
+  "risk_score": 4,
+  "trading_action": "hold",
+  "risk_metrics": {
+    "volatility": 0.8353723543084562,
+    "value_at_risk_95": -0.06712062256809337,
+    "max_drawdown": -0.4899483055715106,
+    "market_risk_score": 4,
+    "stress_test_results": {
+      "market_crash": {
+        "potential_loss": -0.0,
+        "portfolio_impact": -0.0
+      },
+      "moderate_decline": {
+        "potential_loss": -0.0,
+        "portfolio_impact": -0.0
+      },
+      "slight_decline": {
+        "potential_loss": -0.0,
+        "portfolio_impact": -0.0
+      }
+    }
+  },
+  "debate_analysis": {
+    "bull_confidence": 0.3,
+    "bear_confidence": 0.4125,
+    "debate_confidence": 0.4125,
+    "debate_signal": "bearish"
+  },
+  "reasoning": "Risk Score 4/10: Market Risk=4, Volatility=83.54%, VaR=-6.71%, Max Drawdown=-48.99%, Debate Signal=bearish"
+}
+2025-05-13 17:40:31 - agent_state - INFO - ✅ Risk Manager analysis completed
+2025-05-13 17:40:31 - agent_state - INFO - 🔄 Macro Analyst is analyzing...
+2025-05-13 17:40:43 - agent_state - INFO - {
+  "macro_environment": "neutral",
+  "impact_on_stock": "neutral",
+  "key_factors": [
+    "\u8d27\u5e01\u653f\u7b56\uff1a\u5e02\u573a\u6d41\u52a8\u6027\u826f\u597d\uff0c\u4f46\u77ed\u671f\u5185\u5e76\u65e0\u660e\u663e\u5bbd\u677e\u4fe1\u53f7\u3002",
+    "\u4ea7\u4e1a\u653f\u7b56\uff1a\u6d88\u8d39\u7535\u5b50\u3001AI\u3001\u6c7d\u8f66\u7535\u5b50\u7b49\u6210\u4e3a\u5e02\u573a\u5173\u6ce8\u8d5b\u9053\uff0c\u653f\u7b56\u652f\u6301\u529b\u5ea6\u8f83\u5f3a\u4f46\u5c40\u90e8\u9886\u57df\u4ecd\u5177\u6709\u7ade\u4e89\u538b\u529b\u3002",
+    "\u5168\u7403\u7ecf\u6d4e\u73af\u5883\uff1a\u90e8\u5206\u6e2f\u80a1\u82f9\u679c\u4ea7\u4e1a\u94fe\u8868\u73b0\u4e0d\u4f73\uff0c\u4f20\u5bfc\u51fa\u6d77\u5916\u6d88\u8d39\u7535\u5b50\u9700\u6c42\u6ce2\u52a8\u7684\u4fe1\u606f\u3002",
+    "\u5e02\u573a\u60c5\u7eea\uff1a\u7535\u5b50\u677f\u5757\u4e2a\u80a1\u63a5\u8fde\u83b7\u5f97\u673a\u6784\u8c03\u7814\uff0c\u884c\u4e1a\u9f99\u5934\u4f01\u4e1a\u6709\u56de\u8d2d\u548c\u7814\u53d1\u6269\u5c55\u8ba1\u5212\uff0c\u663e\u793a\u4e2d\u957f\u671f\u4fe1\u5fc3\u5c1a\u53ef\u3002",
+    "\u6295\u8d44\u9700\u6c42\uff1aETF\u8d44\u91d1\u6d41\u5411\u7535\u5b50\u677f\u5757\uff0c\u663e\u793a\u5e02\u573a\u5bf9\u8be5\u9886\u57df\u4e3a\u4ee3\u8868\u7684\u6210\u957f\u6027\u884c\u4e1a\u5b58\u5728\u4e00\u5b9a\u5174\u8da3\u3002"
+  ],
+  "reasoning": "\u5f53\u524d\u5b8f\u89c2\u73af\u5883\u88ab\u8bc4\u4f30\u4e3a\u4e2d\u6027\u3002\u5c3d\u7ba1\u6d88\u8d39\u7535\u5b50\u9886\u57df\u5728\u56fd\u5185\u4fdd\u6301\u6d3b\u8dc3\uff0c\u591a\u53ea\u6982\u5ff5\u80a1\u5f55\u5f97\u6da8\u505c\uff0c\u540c\u65f6\u5c31\u7535\u5b50\u884c\u4e1a\u7684\u6570\u636e\u663e\u793a\u51fa\u90e8\u5206\u4e2a\u80a1\u7684\u957f\u671f\u7ade\u4e89\u529b\uff08\u5982\u516c\u53f8\u6269\u4ea7\u3001\u53ef\u8f6c\u503a\u878d\u8d44\u53ca\u4ea7\u54c1\u7814\u53d1\u7b49\uff09\uff0c\u4f46\u6d77\u5916\u76f8\u5173\u9886\u57df\u7684\u9700\u6c42\u4ecd\u6709\u8f83\u5927\u4e0d\u786e\u5b9a\u6027\uff0c\u7279\u522b\u662f\u4e0e\u82f9\u679c\u4ea7\u4e1a\u94fe\u76f8\u5173\u7684\u6e2f\u80a1\u666e\u904d\u56de\u843d\uff0c\u6697\u793a\u5168\u7403\u9700\u6c42\u7aef\u7684\u6ce2\u52a8\u3002\u6b64\u5916\uff0c\u7535\u5b50\u8d5b\u9053\u79ef\u6781\u53d7\u5230\u56fd\u5185\u4ea7\u4e1a\u653f\u7b56\u548c\u8d44\u91d1\u7684\u652f\u6301\uff0c\u4f46\u9ad8\u4f30\u503c\u5e26\u6765\u7684\u98ce\u9669\u5c1a\u4e0d\u53ef\u5ffd\u89c6\u3002\u5bf9\u4e8eA\u80a1\u4e2d\u7684\u7535\u5b50\u677f\u5757\u80a1\u7968\u800c\u8a00\uff0c\u867d\u7136\u5438\u5f15\u4e86\u8d44\u91d1\u6d41\u5165\u548c\u6295\u8d44\u8005\u5173\u6ce8\uff0c\u4f46\u5168\u7403\u7ecf\u6d4e\u5f62\u52bf\u4e0e\u56fd\u5185\u653f\u7b56\u9a71\u52a8\u4e4b\u95f4\u7684\u4ea4\u53c9\u4f5c\u7528\uff0c\u4e5f\u4f7f\u5f97\u5b83\u4eec\u5bf9\u516c\u53f8\u76c8\u5229\u8868\u73b0\u7684\u5b9e\u9645\u63d0\u5347\u5c1a\u9700\u8981\u89c2\u5bdf\u3002\u77ed\u671f\u800c\u8a00\uff0c\u653f\u7b56\u5229\u597d\u548c\u79d1\u6280\u70ed\u6f6e\u652f\u6301\u677f\u5757\u8868\u73b0\uff0c\u4f46\u8d38\u6613\u5f62\u52bf\u548c\u6d88\u8d39\u75b2\u8f6f\u53ef\u80fd\u5bf9\u4e2d\u957f\u671f\u5e26\u6765\u538b\u529b\u3002"
+}
+2025-05-13 17:40:43 - agent_state - INFO - ✅ Macro Analyst analysis completed
+2025-05-13 17:40:43 - agent_state - INFO - 🔄 Portfolio Manager is analyzing...
+2025-05-13 17:40:46 - agent_state - INFO - {
+  "action": "hold",
+  "quantity": 0,
+  "confidence": 0.4125,
+  "agent_signals": [
+    {
+      "agent_name": "Technical Analysis",
+      "signal": "neutral",
+      "confidence": 0.13
+    },
+    {
+      "agent_name": "Fundamental Analysis",
+      "signal": "bearish",
+      "confidence": 0.75
+    },
+    {
+      "agent_name": "Sentiment Analysis",
+      "signal": "neutral",
+      "confidence": 0.9
+    },
+    {
+      "agent_name": "Valuation Analysis",
+      "signal": "neutral",
+      "confidence": 0.0
+    },
+    {
+      "agent_name": "Risk Management",
+      "signal": "hold",
+      "confidence": 0.4125
+    },
+    {
+      "agent_name": "Macro Analysis",
+      "signal": "neutral",
+      "confidence": 0.5
+    }
+  ],
+  "reasoning": "Risk management constraints prescribe a 'hold' action, which must override other signals. Valuation and macro analyses are neutral, offering no clear entry point. Fundamental analysis is bearish with high confidence, indicating weak business metrics. Technical analysis is neutral, providing limited confirmation for timing. Sentiment analysis is also neutral with high confidence, confirming hesitation in market outlook. These factors collectively affirm the hold recommendation with moderate confidence."
+}
+2025-05-13 17:40:46 - agent_state - INFO - ✅ Portfolio Manager analysis completed
+2025-05-13 17:49:42 - agent_state - INFO - 🔄 Market Data Agent is analyzing...
+2025-05-13 17:53:07 - agent_state - INFO - {
+  "ticker": "000519",
+  "start_date": "2024-05-12",
+  "end_date": "2025-05-12",
+  "data_collected": {
+    "price_history": true,
+    "financial_metrics": true,
+    "financial_statements": true,
+    "market_data": true
+  },
+  "summary": "\u4e3a000519\u6536\u96c6\u4e86\u4ece2024-05-12\u52302025-05-12\u7684\u5e02\u573a\u6570\u636e\uff0c\u5305\u62ec\u4ef7\u683c\u5386\u53f2\u3001\u8d22\u52a1\u6307\u6807\u548c\u5e02\u573a\u4fe1\u606f"
+}
+2025-05-13 17:53:07 - agent_state - INFO - 🔄 Technical Analyst is analyzing...
+2025-05-13 17:53:07 - agent_state - INFO - 🔄 Fundamentals Analyst is analyzing...
+2025-05-13 17:53:07 - agent_state - INFO - 🔄 Sentiment Analyst is analyzing...
+2025-05-13 17:53:07 - agent_state - INFO - {
+  "signal": "neutral",
+  "confidence": "50%",
+  "reasoning": {
+    "profitability_signal": {
+      "signal": "bearish",
+      "details": "ROE: -1.27%, Net Margin: -22.48%, Op Margin: -21.34%"
+    },
+    "growth_signal": {
+      "signal": "bearish",
+      "details": "Revenue Growth: -30.06%, Earnings Growth: nan%"
+    },
+    "financial_health_signal": {
+      "signal": "bullish",
+      "details": "Current Ratio: 2.04, D/E: 0.37"
+    },
+    "price_ratios_signal": {
+      "signal": "bullish",
+      "details": "P/E: -47.86, P/B: 2.44, P/S: 39.85"
+    }
+  }
+}
+2025-05-13 17:53:07 - agent_state - INFO - ✅ Fundamentals Analyst analysis completed
+2025-05-13 17:53:07 - agent_state - INFO - 🔄 Valuation Agent is analyzing...
+2025-05-13 17:53:07 - agent_state - INFO - {
+  "signal": "neutral",
+  "confidence": "nan%",
+  "reasoning": {
+    "dcf_analysis": {
+      "signal": "neutral",
+      "details": "Intrinsic Value: $nan, Market Cap: $24,690,070,751.00, Gap: nan%"
+    },
+    "owner_earnings_analysis": {
+      "signal": "neutral",
+      "details": "Owner Earnings Value: $nan, Market Cap: $24,690,070,751.00, Gap: nan%"
+    }
+  }
+}
+2025-05-13 17:53:07 - agent_state - INFO - ✅ Valuation Agent analysis completed
+2025-05-13 17:53:07 - agent_state - INFO - {
+  "signal": "bullish",
+  "confidence": "30%",
+  "strategy_signals": {
+    "trend_following": {
+      "signal": "bullish",
+      "confidence": "26%",
+      "metrics": {
+        "adx": 25.794086719704104,
+        "trend_strength": 0.25794086719704107
+      }
+    },
+    "mean_reversion": {
+      "signal": "bearish",
+      "confidence": "61%",
+      "metrics": {
+        "z_score": 2.4579900709189517,
+        "price_vs_bb": 1.121234229622377,
+        "rsi_14": 71.3450292397661,
+        "rsi_28": 56.96428571428571
+      }
+    },
+    "momentum": {
+      "signal": "bullish",
+      "confidence": "100%",
+      "metrics": {
+        "momentum_1m": 0.19751186722369785,
+        "momentum_3m": 0.295629427106357,
+        "momentum_6m": 0.14438462185396062,
+        "volume_momentum": 2.8840608188243246
+      }
+    },
+    "volatility": {
+      "signal": "neutral",
+      "confidence": "50%",
+      "metrics": {
+        "historical_volatility": 0.5362868216550694,
+        "volatility_regime": 1.1429042423418068,
+        "volatility_z_score": 0.9882328454412408,
+        "atr_ratio": 0.03851130223000227
+      }
+    },
+    "statistical_arbitrage": {
+      "signal": "neutral",
+      "confidence": "50%",
+      "metrics": {
+        "hurst_exponent": 4.410881380903355e-15,
+        "skewness": 0.844465799635989,
+        "kurtosis": 2.4642494747683426
+      }
+    }
+  }
+}
+2025-05-13 17:53:07 - agent_state - INFO - ✅ Technical Analyst analysis completed
+2025-05-13 17:53:09 - agent_state - INFO - {
+  "signal": "neutral",
+  "confidence": "70%",
+  "reasoning": "Based on 4 recent news articles, sentiment score: -0.30"
+}
+2025-05-13 17:53:09 - agent_state - INFO - ✅ Sentiment Analyst analysis completed
+2025-05-13 17:53:09 - agent_state - INFO - 🔄 Bullish Researcher is analyzing...
+2025-05-13 17:53:09 - agent_state - INFO - 🔄 Bearish Researcher is analyzing...
+2025-05-13 17:53:09 - agent_state - INFO - {
+  "perspective": "bullish",
+  "confidence": 0.3,
+  "thesis_points": [
+    "Technical indicators show bullish momentum with 30% confidence",
+    "Company fundamentals show potential for improvement",
+    "Market sentiment may be overly pessimistic, creating value opportunities",
+    "Current valuation may not fully reflect growth potential"
+  ],
+  "reasoning": "Bullish thesis based on comprehensive analysis of technical, fundamental, sentiment, and valuation factors"
+}
+2025-05-13 17:53:09 - agent_state - INFO - {
+  "perspective": "bearish",
+  "confidence": 0.3,
+  "thesis_points": [
+    "Technical rally may be temporary, suggesting potential reversal",
+    "Current fundamental strength may not be sustainable",
+    "Market sentiment may be overly optimistic, indicating potential risks",
+    "Current valuation may not fully reflect downside risks"
+  ],
+  "reasoning": "Bearish thesis based on comprehensive analysis of technical, fundamental, sentiment, and valuation factors"
+}
+2025-05-13 17:53:09 - agent_state - INFO - ✅ Bullish Researcher analysis completed
+2025-05-13 17:53:09 - agent_state - INFO - ✅ Bearish Researcher analysis completed
+2025-05-13 17:53:09 - agent_state - INFO - 🔄 Debate Room is analyzing...
+2025-05-13 17:53:14 - agent_state - INFO - {
+  "signal": "neutral",
+  "confidence": 0.3,
+  "bull_confidence": 0.3,
+  "bear_confidence": 0.3,
+  "confidence_diff": 0.0,
+  "llm_score": 0.2,
+  "llm_analysis": "The presented bearish and bullish perspectives both hold valuable insights, but they also suffer from a lack of concrete evidence or highly confident arguments (confidence levels are both at 0.3). The bearish view correctly highlights potential concerns regarding unsustainable fundamentals, temporary technical rallies, and over-optimistic sentiment, which are valid risks in many speculative or overheated markets. However, it remains unclear which specific data points or market conditions support these claims. On the bullish side, the argument about undervaluation and improvement potential in company fundamentals could be compelling if substantiated by more robust evidence or specific examples. While the bullish sentiment argues that pessimism might present value opportunities, it does not convincingly refute the downside risks cited in the bearish stance. Therefore, neither argument overwhelmingly outweighs the other in its persuasiveness, and the situation appears mixed, warranting a neutral to cautious stance.",
+  "llm_reasoning": "The score leans cautiously positive due to a slight preference for the argument that overly pessimistic sentiment in the bullish perspective may offer potential opportunities. However, the low confidence levels in both viewpoints and the lack of substantial evidence supporting either position suggest that the risks and opportunities are balanced, leading to a predominantly neutral outlook with mild bullish leanings.",
+  "mixed_confidence_diff": 0.06,
+  "debate_summary": [
+    "Bullish Arguments:",
+    "+ Technical indicators show bullish momentum with 30% confidence",
+    "+ Company fundamentals show potential for improvement",
+    "+ Market sentiment may be overly pessimistic, creating value opportunities",
+    "+ Current valuation may not fully reflect growth potential",
+    "\nBearish Arguments:",
+    "- Technical rally may be temporary, suggesting potential reversal",
+    "- Current fundamental strength may not be sustainable",
+    "- Market sentiment may be overly optimistic, indicating potential risks",
+    "- Current valuation may not fully reflect downside risks"
+  ],
+  "reasoning": "Balanced debate with strong arguments on both sides"
+}
+2025-05-13 17:53:14 - agent_state - INFO - ✅ Debate Room analysis completed
+2025-05-13 17:53:14 - agent_state - INFO - 🔄 Risk Manager is analyzing...
+2025-05-13 17:53:14 - agent_state - INFO - {
+  "max_position_size": 12500.0,
+  "risk_score": 5,
+  "trading_action": "hold",
+  "risk_metrics": {
+    "volatility": 0.46272628549352346,
+    "value_at_risk_95": -0.03751914241960186,
+    "max_drawdown": -0.2815099168266155,
+    "market_risk_score": 5,
+    "stress_test_results": {
+      "market_crash": {
+        "potential_loss": -0.0,
+        "portfolio_impact": -0.0
+      },
+      "moderate_decline": {
+        "potential_loss": -0.0,
+        "portfolio_impact": -0.0
+      },
+      "slight_decline": {
+        "potential_loss": -0.0,
+        "portfolio_impact": -0.0
+      }
+    }
+  },
+  "debate_analysis": {
+    "bull_confidence": 0.3,
+    "bear_confidence": 0.3,
+    "debate_confidence": 0.3,
+    "debate_signal": "neutral"
+  },
+  "reasoning": "Risk Score 5/10: Market Risk=5, Volatility=46.27%, VaR=-3.75%, Max Drawdown=-28.15%, Debate Signal=neutral"
+}
+2025-05-13 17:53:14 - agent_state - INFO - ✅ Risk Manager analysis completed
+2025-05-13 17:53:14 - agent_state - INFO - 🔄 Macro Analyst is analyzing...
+2025-05-13 17:53:22 - agent_state - INFO - {
+  "macro_environment": "neutral",
+  "impact_on_stock": "neutral",
+  "key_factors": [
+    "\u8d27\u5e01\u653f\u7b56\u73af\u5883\u5bbd\u677e\uff1a\u4f4e\u7968\u9762\u5229\u7387\u503a\u5238\u53d1\u884c\uff0c\u8d27\u5e01\u653f\u7b56\u7ef4\u6301\u5bbd\u677e\uff0c\u4ee5\u652f\u6301\u7ecf\u6d4e\u589e\u957f\u3002",
+    "\u6c7d\u8f66\u4ea7\u4e1a\u653f\u7b56\u63a8\u52a8\uff1a\u65b0\u80fd\u6e90\u6c7d\u8f66\u9500\u91cf\u76ee\u6807\u660e\u786e\uff0c\u884c\u4e1a\u53d1\u5c55\u79ef\u6781\uff0c\u7279\u522b\u662f\u5409\u5229\u94f6\u6cb3\u7684\u8ba1\u5212\u5b9e\u73b0\u3002",
+    "\u519b\u5de5\u677f\u5757\u5206\u5316\u8d8b\u52bf\uff1a\u90e8\u5206\u519b\u5de5\u80a1\u8d44\u91d1\u6d41\u5165\u51cf\u5c11\uff0c\u4f46\u4e2a\u522b\u5982\u5929\u7bad\u79d1\u6280\u8868\u73b0\u5f3a\u52b2\u3002",
+    "\u56fd\u9645\u7ecf\u6d4e\u7a33\u5b9a\uff1a\u4e2d\u7f8e\u7ecf\u8d38\u8c08\u5224\u53d6\u5f97\u8fdb\u5c55\uff0c\u5168\u7403\u8d38\u6613\u5173\u7a0e\u98ce\u9669\u7f13\u548c\uff0c\u6574\u4f53\u5916\u90e8\u73af\u5883\u7565\u6709\u6539\u5584\u3002",
+    "\u6295\u8d44\u8005\u60c5\u7eea\uff1a\u5e02\u573a\u5bf9\u65b0\u80fd\u6e90\u8f66\u3001AI\u7b49\u9886\u57df\u4fdd\u6301\u79ef\u6781\u4fe1\u5fc3\uff0c\u4f46\u90e8\u5206\u677f\u5757\u8d44\u91d1\u6d41\u51fa\u5f71\u54cd\u6574\u4f53\u8868\u73b0\u3002"
+  ],
+  "reasoning": "\u4ece\u5b8f\u89c2\u73af\u5883\u6765\u770b\uff0c\u5f53\u524d\u6211\u56fd\u7ef4\u6301\u8d27\u5e01\u653f\u7b56\u5bbd\u677e\uff0c\u4ee5\u652f\u6301\u7ecf\u6d4e\u589e\u957f\uff0c\u5982\u4e2d\u56fd\u94f6\u6cb3\u53d1\u884c\u79d1\u6280\u503a\u3001\u7968\u9762\u5229\u7387\u4ec5\u4e3a1.75%\uff0c\u663e\u793a\u5e02\u573a\u8d44\u91d1\u6d41\u52a8\u6027\u5145\u8db3\u3002\u4f46\u503a\u5e02\u6536\u76ca\u7387\u4e0b\u964d\u4e5f\u610f\u5473\u7740\u8d44\u672c\u56de\u62a5\u7387\u964d\u4f4e\uff0c\u6216\u5bf9\u8d44\u91d1\u654f\u611f\u7684\u884c\u4e1a\u5982\u79d1\u6280\u3001\u519b\u5de5\u5f62\u6210\u538b\u529b\u3002\u540c\u65f6\uff0c\u8d22\u653f\u653f\u7b56\u65b9\u9762\u672a\u89c1\u663e\u8457\u63a8\u529b\u3002\u4ea7\u4e1a\u653f\u7b56\u5c42\u9762\uff0c\u65b0\u80fd\u6e90\u6c7d\u8f66\u4ea7\u4e1a\u83b7\u5f97\u660e\u786e\u652f\u6301\uff0c\u5409\u5229\u94f6\u6cb3\u660e\u786e\u9500\u91cf\u76ee\u6807\u5bf9\u76f8\u5173\u4f9b\u5e94\u94fe\u4f01\u4e1a\uff08\u5982\u4e9a\u592a\u80a1\u4efd\uff09\u6784\u6210\u5229\u597d\u3002\u53e6\u5916\uff0c\u5728\u56fd\u9632\u519b\u5de5\u9886\u57df\uff0c\u5c3d\u7ba1\u90e8\u5206\u8d44\u91d1\u5916\u6d41\uff0c\u4f46\u4e2a\u522b\u80a1\u7968\u5982\u5929\u7bad\u79d1\u6280\u8868\u73b0\u62a2\u773c\uff0c\u663e\u793a\u5e02\u573a\u5728\u63a2\u7d22\u5c40\u90e8\u673a\u4f1a\u3002\u56fd\u9645\u73af\u5883\u7684\u7a33\u5b9a\u6027\u7565\u6709\u63d0\u5347\uff0c\u4f46\u7f8e\u8054\u50a8\u9e70\u6d3e\u8868\u6001\u4e5f\u53ef\u80fd\u9650\u5236\u90e8\u5206\u8de8\u56fd\u8d44\u91d1\u6d41\u52a8\u6027\u3002\u7efc\u5408\u5224\u65ad\uff0c\u5b8f\u89c2\u73af\u5883\u603b\u4f53\u4e2d\u6027\uff0c\u5bf9\u76f8\u5173\u4e2a\u80a1\u5982\u5409\u5229\u94f6\u6cb3\u4f9b\u5e94\u94fe\uff08\u4e9a\u592a\u80a1\u4efd\uff09\u6216\u5448\u73b0\u4e2d\u6027\u5230\u5229\u597d\u5f71\u54cd\uff0c\u4f46\u5bf9\u519b\u5de5\u677f\u5757\u5206\u5316\u98ce\u9669\u503c\u5f97\u5173\u6ce8\uff0c\u5e02\u573a\u60c5\u7eea\u5c1a\u672a\u5b8c\u5168\u5f62\u6210\u5171\u632f\u3002"
+}
+2025-05-13 17:53:22 - agent_state - INFO - ✅ Macro Analyst analysis completed
+2025-05-13 17:53:22 - agent_state - INFO - 🔄 Portfolio Manager is analyzing...
+2025-05-13 17:53:26 - agent_state - INFO - {
+  "action": "hold",
+  "quantity": 0,
+  "confidence": 0.5,
+  "agent_signals": [
+    {
+      "agent": "Technical Analysis",
+      "signal": "bullish",
+      "confidence": 0.3
+    },
+    {
+      "agent": "Fundamental Analysis",
+      "signal": "neutral",
+      "confidence": 0.5
+    },
+    {
+      "agent": "Sentiment Analysis",
+      "signal": "neutral",
+      "confidence": 0.7
+    },
+    {
+      "agent": "Valuation Analysis",
+      "signal": "neutral",
+      "confidence": null
+    },
+    {
+      "agent": "Macro Analysis",
+      "signal": "neutral",
+      "confidence": 0.7
+    },
+    {
+      "agent": "Risk Management",
+      "signal": "hold",
+      "confidence": 1.0
+    }
+  ],
+  "reasoning": "Risk management dictates a 'hold' action due to a neutral trading directive and maximum position constraints. The overall valuation, fundamental, macro, and sentiment signals are neutral, providing insufficient conviction to override the risk management directive. Although technical analysis shows a slightly bullish signal, its weight is not enough to justify a buy. Confidence remains moderate given the mixed and neutral signals."
+}
+2025-05-13 17:53:26 - agent_state - INFO - ✅ Portfolio Manager analysis completed
+2025-05-13 18:27:02 - agent_state - INFO - 🔄 Market Data Agent is analyzing...
+2025-05-13 18:30:16 - agent_state - INFO - {
+  "ticker": "300581",
+  "start_date": "2024-05-12",
+  "end_date": "2025-05-12",
+  "data_collected": {
+    "price_history": true,
+    "financial_metrics": true,
+    "financial_statements": true,
+    "market_data": true
+  },
+  "summary": "\u4e3a300581\u6536\u96c6\u4e86\u4ece2024-05-12\u52302025-05-12\u7684\u5e02\u573a\u6570\u636e\uff0c\u5305\u62ec\u4ef7\u683c\u5386\u53f2\u3001\u8d22\u52a1\u6307\u6807\u548c\u5e02\u573a\u4fe1\u606f"
+}
+2025-05-13 18:30:17 - agent_state - INFO - 🔄 Fundamentals Analyst is analyzing...
+2025-05-13 18:30:17 - agent_state - INFO - 🔄 Technical Analyst is analyzing...
+2025-05-13 18:30:17 - agent_state - INFO - {
+  "\u6295\u8d44\u4fe1\u53f7": "\u770b\u7a7a",
+  "\u7f6e\u4fe1\u5ea6": "75%",
+  "\u5206\u6790\u8bf4\u660e": {
+    "\u76c8\u5229\u80fd\u529b\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "ROE\uff08\u51c0\u8d44\u4ea7\u6536\u76ca\u7387\uff09\u4e3a0.00%\uff0c\u51c0\u5229\u7387\u4e3a0.00%\uff0c\u8425\u4e1a\u5229\u6da6\u7387\u4e3a0.00%\u3002\u6570\u503c\u8d8a\u9ad8\u4ee3\u8868\u516c\u53f8\u76c8\u5229\u80fd\u529b\u8d8a\u5f3a\u3002"
+    },
+    "\u589e\u957f\u80fd\u529b\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "\u8425\u6536\u589e\u957f\u7387\u4e3a0.00%\uff0c\u51c0\u5229\u6da6\u589e\u957f\u7387\u4e3a0.00%\u3002\u6b63\u503c\u4e14\u8f83\u9ad8\u4ee3\u8868\u516c\u53f8\u6210\u957f\u6027\u8f83\u597d\u3002"
+    },
+    "\u8d22\u52a1\u5065\u5eb7\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "\u6d41\u52a8\u6bd4\u7387\u4e3a0.00\uff0c\u8d44\u4ea7\u8d1f\u503a\u7387\uff08D/E\uff09\u4e3a0.00\u3002\u6d41\u52a8\u6bd4\u7387\u9ad8\u4e14\u8d1f\u503a\u7387\u4f4e\u8bf4\u660e\u516c\u53f8\u8d22\u52a1\u7a33\u5065\u3002"
+    },
+    "\u4f30\u503c\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u591a",
+      "\u8be6\u60c5": "\u5e02\u76c8\u7387\uff08P/E\uff09\u4e3a0.00\uff0c\u5e02\u51c0\u7387\uff08P/B\uff09\u4e3a0.00\uff0c\u5e02\u9500\u7387\uff08P/S\uff09\u4e3a0.00\u3002\u6570\u503c\u8d8a\u4f4e\u4ee3\u8868\u4f30\u503c\u8d8a\u5408\u7406\u3002"
+    }
+  }
+}
+2025-05-13 18:30:17 - agent_state - INFO - ✅ Fundamentals Analyst analysis completed
+2025-05-13 18:30:17 - agent_state - INFO - 🔄 Sentiment Analyst is analyzing...
+2025-05-13 18:30:17 - agent_state - INFO - 🔄 Valuation Agent is analyzing...
+2025-05-13 18:30:17 - agent_state - INFO - {
+  "\u4f30\u503c\u4fe1\u53f7": "\u770b\u7a7a",
+  "\u7f6e\u4fe1\u5ea6": "100%",
+  "\u5206\u6790\u8bf4\u660e": {
+    "DCF\u4f30\u503c\u6cd5": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "\u5185\u5728\u4ef7\u503c\u4e3a$0.00\uff0c\u5e02\u503c\u4e3a$9,060,304,223.00\uff0c\u4f30\u503c\u5dee\u8ddd\u4e3a-100.0%\u3002\u5185\u5728\u4ef7\u503c\u9ad8\u4e8e\u5e02\u503c\u8f83\u591a\u65f6\u4e3a\u770b\u591a\uff0c\u4f4e\u4e8e\u5e02\u503c\u8f83\u591a\u65f6\u4e3a\u770b\u7a7a\u3002"
+    },
+    "\u6240\u6709\u8005\u6536\u76ca\u6cd5": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "\u6240\u6709\u8005\u6536\u76ca\u4f30\u503c\u4e3a$3,653,902.35\uff0c\u5e02\u503c\u4e3a$9,060,304,223.00\uff0c\u4f30\u503c\u5dee\u8ddd\u4e3a-100.0%\u3002"
+    }
+  }
+}
+2025-05-13 18:30:17 - agent_state - INFO - ✅ Valuation Agent analysis completed
+2025-05-13 18:32:48 - agent_state - INFO - 🔄 Market Data Agent is analyzing...
+2025-05-13 18:35:58 - agent_state - INFO - {
+  "ticker": "300581",
+  "start_date": "2024-05-12",
+  "end_date": "2025-05-12",
+  "data_collected": {
+    "price_history": true,
+    "financial_metrics": true,
+    "financial_statements": true,
+    "market_data": true
+  },
+  "summary": "\u4e3a300581\u6536\u96c6\u4e86\u4ece2024-05-12\u52302025-05-12\u7684\u5e02\u573a\u6570\u636e\uff0c\u5305\u62ec\u4ef7\u683c\u5386\u53f2\u3001\u8d22\u52a1\u6307\u6807\u548c\u5e02\u573a\u4fe1\u606f"
+}
+2025-05-13 18:35:58 - agent_state - INFO - 🔄 Technical Analyst is analyzing...
+2025-05-13 18:35:58 - agent_state - INFO - 🔄 Fundamentals Analyst is analyzing...
+2025-05-13 18:35:58 - agent_state - INFO - {
+  "\u6295\u8d44\u4fe1\u53f7": "\u770b\u7a7a",
+  "\u7f6e\u4fe1\u5ea6": "75%",
+  "\u5206\u6790\u8bf4\u660e": {
+    "\u76c8\u5229\u80fd\u529b\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "ROE\uff08\u51c0\u8d44\u4ea7\u6536\u76ca\u7387\uff09\u4e3a0.00%\uff0c\u51c0\u5229\u7387\u4e3a0.00%\uff0c\u8425\u4e1a\u5229\u6da6\u7387\u4e3a0.00%\u3002\u6570\u503c\u8d8a\u9ad8\u4ee3\u8868\u516c\u53f8\u76c8\u5229\u80fd\u529b\u8d8a\u5f3a\u3002"
+    },
+    "\u589e\u957f\u80fd\u529b\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "\u8425\u6536\u589e\u957f\u7387\u4e3a0.00%\uff0c\u51c0\u5229\u6da6\u589e\u957f\u7387\u4e3a0.00%\u3002\u6b63\u503c\u4e14\u8f83\u9ad8\u4ee3\u8868\u516c\u53f8\u6210\u957f\u6027\u8f83\u597d\u3002"
+    },
+    "\u8d22\u52a1\u5065\u5eb7\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "\u6d41\u52a8\u6bd4\u7387\u4e3a0.00\uff0c\u8d44\u4ea7\u8d1f\u503a\u7387\uff08D/E\uff09\u4e3a0.00\u3002\u6d41\u52a8\u6bd4\u7387\u9ad8\u4e14\u8d1f\u503a\u7387\u4f4e\u8bf4\u660e\u516c\u53f8\u8d22\u52a1\u7a33\u5065\u3002"
+    },
+    "\u4f30\u503c\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u591a",
+      "\u8be6\u60c5": "\u5e02\u76c8\u7387\uff08P/E\uff09\u4e3a0.00\uff0c\u5e02\u51c0\u7387\uff08P/B\uff09\u4e3a0.00\uff0c\u5e02\u9500\u7387\uff08P/S\uff09\u4e3a0.00\u3002\u6570\u503c\u8d8a\u4f4e\u4ee3\u8868\u4f30\u503c\u8d8a\u5408\u7406\u3002"
+    }
+  }
+}
+2025-05-13 18:35:58 - agent_state - INFO - 🔄 Sentiment Analyst is analyzing...
+2025-05-13 18:35:58 - agent_state - INFO - ✅ Fundamentals Analyst analysis completed
+2025-05-13 18:35:58 - agent_state - INFO - 🔄 Valuation Agent is analyzing...
+2025-05-13 18:35:58 - agent_state - INFO - {
+  "\u4f30\u503c\u4fe1\u53f7": "\u770b\u7a7a",
+  "\u7f6e\u4fe1\u5ea6": "100%",
+  "\u5206\u6790\u8bf4\u660e": {
+    "DCF\u4f30\u503c\u6cd5": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "\u5185\u5728\u4ef7\u503c\u4e3a$0.00\uff0c\u5e02\u503c\u4e3a$9,060,304,223.00\uff0c\u4f30\u503c\u5dee\u8ddd\u4e3a-100.0%\u3002\u5185\u5728\u4ef7\u503c\u9ad8\u4e8e\u5e02\u503c\u8f83\u591a\u65f6\u4e3a\u770b\u591a\uff0c\u4f4e\u4e8e\u5e02\u503c\u8f83\u591a\u65f6\u4e3a\u770b\u7a7a\u3002"
+    },
+    "\u6240\u6709\u8005\u6536\u76ca\u6cd5": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "\u6240\u6709\u8005\u6536\u76ca\u4f30\u503c\u4e3a$3,653,902.35\uff0c\u5e02\u503c\u4e3a$9,060,304,223.00\uff0c\u4f30\u503c\u5dee\u8ddd\u4e3a-100.0%\u3002"
+    }
+  }
+}
+2025-05-13 18:35:58 - agent_state - INFO - ✅ Valuation Agent analysis completed
+2025-05-13 18:35:58 - agent_state - INFO - {
+  "signal": "neutral",
+  "confidence": "14%",
+  "strategy_signals": {
+    "trend_following": {
+      "signal": "bullish",
+      "confidence": "46%",
+      "metrics": {
+        "adx": 45.59447586125805,
+        "trend_strength": 0.4559447586125805
+      }
+    },
+    "mean_reversion": {
+      "signal": "bearish",
+      "confidence": "100%",
+      "metrics": {
+        "z_score": 4.713477523165122,
+        "price_vs_bb": 1.291289849871203,
+        "rsi_14": 88.78143133462282,
+        "rsi_28": 74.44444444444444
+      }
+    },
+    "momentum": {
+      "signal": "bullish",
+      "confidence": "100%",
+      "metrics": {
+        "momentum_1m": 0.8313287177016532,
+        "momentum_3m": 0.664269050568596,
+        "momentum_6m": 0.6887055027800498,
+        "volume_momentum": 3.641029832186308
+      }
+    },
+    "volatility": {
+      "signal": "bearish",
+      "confidence": "54%",
+      "metrics": {
+        "historical_volatility": 1.323105082305827,
+        "volatility_regime": 1.7416729755517273,
+        "volatility_z_score": 1.607623811678044,
+        "atr_ratio": 0.057229868691662716
+      }
+    },
+    "statistical_arbitrage": {
+      "signal": "bullish",
+      "confidence": "100%",
+      "metrics": {
+        "hurst_exponent": 4.410881380903355e-15,
+        "skewness": 1.187028501124142,
+        "kurtosis": 3.4099329805152454
+      }
+    }
+  }
+}
+2025-05-13 18:35:58 - agent_state - INFO - ✅ Technical Analyst analysis completed
+2025-05-13 18:36:00 - agent_state - INFO - {
+  "\u60c5\u611f\u4fe1\u53f7": "\u770b\u591a",
+  "\u7f6e\u4fe1\u5ea6": "50%",
+  "\u5206\u6790\u8bf4\u660e": "\u57fa\u4e8e\u6700\u8fd15\u6761\u65b0\u95fb\uff0c\u60c5\u611f\u5f97\u5206\u4e3a0.50\u3002\u60c5\u611f\u5206\u9ad8\u4e8e0.5\u4e3a\u770b\u591a\uff0c\u4f4e\u4e8e-0.5\u4e3a\u770b\u7a7a\uff0c\u4ecb\u4e8e\u4e24\u8005\u4e4b\u95f4\u4e3a\u4e2d\u6027\u3002"
+}
+2025-05-13 18:36:00 - agent_state - INFO - ✅ Sentiment Analyst analysis completed
+2025-05-13 18:36:00 - agent_state - INFO - 🔄 Bearish Researcher is analyzing...
+2025-05-13 18:36:00 - agent_state - INFO - 🔄 Bullish Researcher is analyzing...
+2025-05-13 18:57:13 - agent_state - INFO - 🔄 Market Data Agent is analyzing...
+2025-05-13 19:00:31 - agent_state - INFO - {
+  "ticker": "300581",
+  "start_date": "2024-05-12",
+  "end_date": "2025-05-12",
+  "data_collected": {
+    "price_history": true,
+    "financial_metrics": true,
+    "financial_statements": true,
+    "market_data": true
+  },
+  "summary": "\u4e3a300581\u6536\u96c6\u4e86\u4ece2024-05-12\u52302025-05-12\u7684\u5e02\u573a\u6570\u636e\uff0c\u5305\u62ec\u4ef7\u683c\u5386\u53f2\u3001\u8d22\u52a1\u6307\u6807\u548c\u5e02\u573a\u4fe1\u606f"
+}
+2025-05-13 19:00:31 - agent_state - INFO - 🔄 Technical Analyst is analyzing...
+2025-05-13 19:00:31 - agent_state - INFO - 🔄 Fundamentals Analyst is analyzing...
+2025-05-13 19:00:31 - agent_state - INFO - 🔄 Sentiment Analyst is analyzing...
+2025-05-13 19:00:31 - agent_state - INFO - {
+  "\u6295\u8d44\u4fe1\u53f7": "\u770b\u7a7a",
+  "\u7f6e\u4fe1\u5ea6": "75%",
+  "\u5206\u6790\u8bf4\u660e": {
+    "\u76c8\u5229\u80fd\u529b\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "ROE\uff08\u51c0\u8d44\u4ea7\u6536\u76ca\u7387\uff09\u4e3a0.00%\uff0c\u51c0\u5229\u7387\u4e3a0.00%\uff0c\u8425\u4e1a\u5229\u6da6\u7387\u4e3a0.00%\u3002\u6570\u503c\u8d8a\u9ad8\u4ee3\u8868\u516c\u53f8\u76c8\u5229\u80fd\u529b\u8d8a\u5f3a\u3002"
+    },
+    "\u589e\u957f\u80fd\u529b\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "\u8425\u6536\u589e\u957f\u7387\u4e3a0.00%\uff0c\u51c0\u5229\u6da6\u589e\u957f\u7387\u4e3a0.00%\u3002\u6b63\u503c\u4e14\u8f83\u9ad8\u4ee3\u8868\u516c\u53f8\u6210\u957f\u6027\u8f83\u597d\u3002"
+    },
+    "\u8d22\u52a1\u5065\u5eb7\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "\u6d41\u52a8\u6bd4\u7387\u4e3a0.00\uff0c\u8d44\u4ea7\u8d1f\u503a\u7387\uff08D/E\uff09\u4e3a0.00\u3002\u6d41\u52a8\u6bd4\u7387\u9ad8\u4e14\u8d1f\u503a\u7387\u4f4e\u8bf4\u660e\u516c\u53f8\u8d22\u52a1\u7a33\u5065\u3002"
+    },
+    "\u4f30\u503c\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u591a",
+      "\u8be6\u60c5": "\u5e02\u76c8\u7387\uff08P/E\uff09\u4e3a0.00\uff0c\u5e02\u51c0\u7387\uff08P/B\uff09\u4e3a0.00\uff0c\u5e02\u9500\u7387\uff08P/S\uff09\u4e3a0.00\u3002\u6570\u503c\u8d8a\u4f4e\u4ee3\u8868\u4f30\u503c\u8d8a\u5408\u7406\u3002"
+    }
+  }
+}
+2025-05-13 19:00:31 - agent_state - INFO - 🔄 Valuation Agent is analyzing...
+2025-05-13 19:00:31 - agent_state - INFO - ✅ Fundamentals Analyst analysis completed
+2025-05-13 19:00:31 - agent_state - INFO - {
+  "\u4f30\u503c\u4fe1\u53f7": "\u770b\u7a7a",
+  "\u7f6e\u4fe1\u5ea6": "100%",
+  "\u5206\u6790\u8bf4\u660e": {
+    "DCF\u4f30\u503c\u6cd5": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "\u5185\u5728\u4ef7\u503c\u4e3a$0.00\uff0c\u5e02\u503c\u4e3a$9,060,304,223.00\uff0c\u4f30\u503c\u5dee\u8ddd\u4e3a-100.0%\u3002\u5185\u5728\u4ef7\u503c\u9ad8\u4e8e\u5e02\u503c\u8f83\u591a\u65f6\u4e3a\u770b\u591a\uff0c\u4f4e\u4e8e\u5e02\u503c\u8f83\u591a\u65f6\u4e3a\u770b\u7a7a\u3002"
+    },
+    "\u6240\u6709\u8005\u6536\u76ca\u6cd5": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "\u6240\u6709\u8005\u6536\u76ca\u4f30\u503c\u4e3a$3,653,902.35\uff0c\u5e02\u503c\u4e3a$9,060,304,223.00\uff0c\u4f30\u503c\u5dee\u8ddd\u4e3a-100.0%\u3002"
+    }
+  }
+}
+2025-05-13 19:00:31 - agent_state - INFO - ✅ Valuation Agent analysis completed
+2025-05-13 19:00:31 - agent_state - INFO - {
+  "\u60c5\u611f\u4fe1\u53f7": "\u770b\u591a",
+  "\u7f6e\u4fe1\u5ea6": "50%",
+  "\u5206\u6790\u8bf4\u660e": "\u57fa\u4e8e\u6700\u8fd15\u6761\u65b0\u95fb\uff0c\u60c5\u611f\u5f97\u5206\u4e3a0.50\u3002\u60c5\u611f\u5206\u9ad8\u4e8e0.5\u4e3a\u770b\u591a\uff0c\u4f4e\u4e8e-0.5\u4e3a\u770b\u7a7a\uff0c\u4ecb\u4e8e\u4e24\u8005\u4e4b\u95f4\u4e3a\u4e2d\u6027\u3002"
+}
+2025-05-13 19:00:31 - agent_state - INFO - ✅ Sentiment Analyst analysis completed
+2025-05-13 19:00:31 - agent_state - INFO - {
+  "signal": "neutral",
+  "confidence": "14%",
+  "strategy_signals": {
+    "trend_following": {
+      "signal": "bullish",
+      "confidence": "46%",
+      "metrics": {
+        "adx": 45.59447586125805,
+        "trend_strength": 0.4559447586125805
+      }
+    },
+    "mean_reversion": {
+      "signal": "bearish",
+      "confidence": "100%",
+      "metrics": {
+        "z_score": 4.713477523165122,
+        "price_vs_bb": 1.291289849871203,
+        "rsi_14": 88.78143133462282,
+        "rsi_28": 74.44444444444444
+      }
+    },
+    "momentum": {
+      "signal": "bullish",
+      "confidence": "100%",
+      "metrics": {
+        "momentum_1m": 0.8313287177016532,
+        "momentum_3m": 0.664269050568596,
+        "momentum_6m": 0.6887055027800498,
+        "volume_momentum": 3.641029832186308
+      }
+    },
+    "volatility": {
+      "signal": "bearish",
+      "confidence": "54%",
+      "metrics": {
+        "historical_volatility": 1.323105082305827,
+        "volatility_regime": 1.7416729755517273,
+        "volatility_z_score": 1.607623811678044,
+        "atr_ratio": 0.057229868691662716
+      }
+    },
+    "statistical_arbitrage": {
+      "signal": "bullish",
+      "confidence": "100%",
+      "metrics": {
+        "hurst_exponent": 4.410881380903355e-15,
+        "skewness": 1.187028501124142,
+        "kurtosis": 3.4099329805152454
+      }
+    }
+  }
+}
+2025-05-13 19:00:31 - agent_state - INFO - ✅ Technical Analyst analysis completed
+2025-05-13 19:00:31 - agent_state - INFO - 🔄 Bearish Researcher is analyzing...
+2025-05-13 19:00:31 - agent_state - INFO - 🔄 Bullish Researcher is analyzing...
+2025-05-13 19:00:31 - agent_state - INFO - {
+  "\u7814\u7a76\u89c6\u89d2": "\u7a7a\u65b9",
+  "\u7f6e\u4fe1\u5ea6": "30%",
+  "\u7a7a\u65b9\u8bba\u70b9": [
+    "\u6280\u672f\u53cd\u5f39\u6216\u4e3a\u6682\u65f6\uff0c\u5b58\u5728\u56de\u8c03\u98ce\u9669",
+    "\u5f53\u524d\u57fa\u672c\u9762\u5f3a\u52b2\u6216\u96be\u4ee5\u6301\u7eed",
+    "\u5e02\u573a\u60c5\u7eea\u8fc7\u4e8e\u4e50\u89c2\uff0c\u5b58\u5728\u98ce\u9669",
+    "\u5f53\u524d\u4f30\u503c\u672a\u5145\u5206\u53cd\u6620\u4e0b\u884c\u98ce\u9669"
+  ],
+  "\u5206\u6790\u8bf4\u660e": "\u57fa\u4e8e\u6280\u672f\u9762\u3001\u57fa\u672c\u9762\u3001\u60c5\u611f\u9762\u548c\u4f30\u503c\u7b49\u591a\u7ef4\u5ea6\u7efc\u5408\u5206\u6790\uff0c\u63d0\u51fa\u7a7a\u65b9\u98ce\u9669\u8b66\u793a\u3002"
+}
+2025-05-13 19:00:31 - agent_state - INFO - ✅ Bearish Researcher analysis completed
+2025-05-13 19:00:31 - agent_state - INFO - {
+  "\u7814\u7a76\u89c6\u89d2": "\u591a\u65b9",
+  "\u7f6e\u4fe1\u5ea6": "30%",
+  "\u591a\u65b9\u8bba\u70b9": [
+    "\u6280\u672f\u6307\u6807\u504f\u4fdd\u5b88\uff0c\u6216\u5b58\u5728\u4e70\u5165\u673a\u4f1a",
+    "\u516c\u53f8\u57fa\u672c\u9762\u6709\u6539\u5584\u6f5c\u529b",
+    "\u5e02\u573a\u60c5\u7eea\u504f\u60b2\u89c2\uff0c\u6216\u5b58\u5728\u4ef7\u503c\u673a\u4f1a",
+    "\u5f53\u524d\u4f30\u503c\u672a\u5145\u5206\u53cd\u6620\u6210\u957f\u6f5c\u529b"
+  ],
+  "\u5206\u6790\u8bf4\u660e": "\u57fa\u4e8e\u6280\u672f\u9762\u3001\u57fa\u672c\u9762\u3001\u60c5\u611f\u9762\u548c\u4f30\u503c\u7b49\u591a\u7ef4\u5ea6\u7efc\u5408\u5206\u6790\uff0c\u63d0\u51fa\u591a\u65b9\u6295\u8d44\u7406\u7531\u3002"
+}
+2025-05-13 19:00:31 - agent_state - INFO - ✅ Bullish Researcher analysis completed
+2025-05-13 19:00:31 - agent_state - INFO - 🔄 Debate Room is analyzing...
+2025-05-13 19:00:35 - agent_state - INFO - {
+  "\u8fa9\u8bba\u7ed3\u8bba\u4fe1\u53f7": "\u4e2d\u6027",
+  "\u7f6e\u4fe1\u5ea6": "0%",
+  "\u591a\u65b9\u7f6e\u4fe1\u5ea6": "0%",
+  "\u7a7a\u65b9\u7f6e\u4fe1\u5ea6": "0%",
+  "\u6df7\u5408\u7f6e\u4fe1\u5ea6\u5dee": "0.00",
+  "LLM\u5206\u6790": "With both the BEAR and BULL viewpoints lacking confidence scores or additional supporting data, it is difficult to fully assess the merits of each argument. Neither side provides concrete evidence, reasoning, or specific details to support their stance, which undermines the robustness of their perspectives. Without any clear rationale or quantitative backing\u2014such as earnings forecasts, market trends, or qualitative factors like competitive positioning\u2014choosing between the two perspectives is speculative at best. A more balanced approach would involve sourcing additional data or insights to arrive at a definitive conclusion.",
+  "LLM\u7406\u7531": "Given the complete lack of details and confidence levels from both BULL and BEAR perspectives, I cannot justify a positive or negative bias. A neutral position is warranted until further information is provided.",
+  "\u5206\u6790\u8bf4\u660e": "\u7efc\u5408\u591a\u65b9\u4e0e\u7a7a\u65b9\u7814\u7a76\u5458\u89c2\u70b9\uff0c\u5e76\u7ed3\u5408\u5927\u6a21\u578b\u7b2c\u4e09\u65b9\u5206\u6790\uff0c\u5f97\u51fa\u5e73\u8861\u6295\u8d44\u5efa\u8bae\u3002"
+}
+2025-05-13 19:00:35 - agent_state - INFO - ✅ Debate Room analysis completed
+2025-05-13 19:00:35 - agent_state - INFO - 🔄 Risk Manager is analyzing...
+2025-05-13 19:10:03 - agent_state - INFO - 🔄 Market Data Agent is analyzing...
+2025-05-13 19:11:23 - agent_state - INFO - {
+  "ticker": "300581",
+  "start_date": "2024-05-12",
+  "end_date": "2025-05-12",
+  "data_collected": {
+    "price_history": true,
+    "financial_metrics": true,
+    "financial_statements": true,
+    "market_data": false
+  },
+  "summary": "\u4e3a300581\u6536\u96c6\u4e86\u4ece2024-05-12\u52302025-05-12\u7684\u5e02\u573a\u6570\u636e\uff0c\u5305\u62ec\u4ef7\u683c\u5386\u53f2\u3001\u8d22\u52a1\u6307\u6807\u548c\u5e02\u573a\u4fe1\u606f"
+}
+2025-05-13 19:11:23 - agent_state - INFO - 🔄 Technical Analyst is analyzing...
+2025-05-13 19:11:23 - agent_state - INFO - 🔄 Fundamentals Analyst is analyzing...
+2025-05-13 19:11:23 - agent_state - INFO - 🔄 Sentiment Analyst is analyzing...
+2025-05-13 19:11:23 - agent_state - INFO - {
+  "\u6295\u8d44\u4fe1\u53f7": "\u770b\u7a7a",
+  "\u7f6e\u4fe1\u5ea6": "75%",
+  "\u5206\u6790\u8bf4\u660e": {
+    "\u76c8\u5229\u80fd\u529b\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "ROE\uff08\u51c0\u8d44\u4ea7\u6536\u76ca\u7387\uff09\u4e3a0.00%\uff0c\u51c0\u5229\u7387\u4e3a0.00%\uff0c\u8425\u4e1a\u5229\u6da6\u7387\u4e3a0.00%\u3002\u6570\u503c\u8d8a\u9ad8\u4ee3\u8868\u516c\u53f8\u76c8\u5229\u80fd\u529b\u8d8a\u5f3a\u3002"
+    },
+    "\u589e\u957f\u80fd\u529b\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "\u8425\u6536\u589e\u957f\u7387\u4e3a0.00%\uff0c\u51c0\u5229\u6da6\u589e\u957f\u7387\u4e3a0.00%\u3002\u6b63\u503c\u4e14\u8f83\u9ad8\u4ee3\u8868\u516c\u53f8\u6210\u957f\u6027\u8f83\u597d\u3002"
+    },
+    "\u8d22\u52a1\u5065\u5eb7\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "\u6d41\u52a8\u6bd4\u7387\u4e3a0.00\uff0c\u8d44\u4ea7\u8d1f\u503a\u7387\uff08D/E\uff09\u4e3a0.00\u3002\u6d41\u52a8\u6bd4\u7387\u9ad8\u4e14\u8d1f\u503a\u7387\u4f4e\u8bf4\u660e\u516c\u53f8\u8d22\u52a1\u7a33\u5065\u3002"
+    },
+    "\u4f30\u503c\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u591a",
+      "\u8be6\u60c5": "\u5e02\u76c8\u7387\uff08P/E\uff09\u4e3a0.00\uff0c\u5e02\u51c0\u7387\uff08P/B\uff09\u4e3a0.00\uff0c\u5e02\u9500\u7387\uff08P/S\uff09\u4e3a0.00\u3002\u6570\u503c\u8d8a\u4f4e\u4ee3\u8868\u4f30\u503c\u8d8a\u5408\u7406\u3002"
+    }
+  }
+}
+2025-05-13 19:11:23 - agent_state - INFO - 🔄 Valuation Agent is analyzing...
+2025-05-13 19:11:23 - agent_state - INFO - ✅ Fundamentals Analyst analysis completed
+2025-05-13 19:11:23 - agent_state - INFO - {
+  "\u60c5\u611f\u4fe1\u53f7": "\u770b\u591a",
+  "\u7f6e\u4fe1\u5ea6": "50%",
+  "\u5206\u6790\u8bf4\u660e": "\u57fa\u4e8e\u6700\u8fd15\u6761\u65b0\u95fb\uff0c\u60c5\u611f\u5f97\u5206\u4e3a0.50\u3002\u60c5\u611f\u5206\u9ad8\u4e8e0.5\u4e3a\u770b\u591a\uff0c\u4f4e\u4e8e-0.5\u4e3a\u770b\u7a7a\uff0c\u4ecb\u4e8e\u4e24\u8005\u4e4b\u95f4\u4e3a\u4e2d\u6027\u3002"
+}
+2025-05-13 19:11:23 - agent_state - INFO - {
+  "\u4f30\u503c\u4fe1\u53f7": "\u4e2d\u6027",
+  "\u7f6e\u4fe1\u5ea6": "0%",
+  "\u5206\u6790\u8bf4\u660e": {
+    "DCF\u4f30\u503c\u6cd5": {
+      "\u4fe1\u53f7": "\u4e2d\u6027",
+      "\u8be6\u60c5": "\u5185\u5728\u4ef7\u503c\u4e3a$0.00\uff0c\u5e02\u503c\u4e3a$0.00\uff0c\u4f30\u503c\u5dee\u8ddd\u4e3a0.0%\u3002\u5185\u5728\u4ef7\u503c\u9ad8\u4e8e\u5e02\u503c\u8f83\u591a\u65f6\u4e3a\u770b\u591a\uff0c\u4f4e\u4e8e\u5e02\u503c\u8f83\u591a\u65f6\u4e3a\u770b\u7a7a\u3002"
+    },
+    "\u6240\u6709\u8005\u6536\u76ca\u6cd5": {
+      "\u4fe1\u53f7": "\u4e2d\u6027",
+      "\u8be6\u60c5": "\u6240\u6709\u8005\u6536\u76ca\u4f30\u503c\u4e3a$3,653,902.35\uff0c\u5e02\u503c\u4e3a$0.00\uff0c\u4f30\u503c\u5dee\u8ddd\u4e3a0.0%\u3002"
+    }
+  }
+}
+2025-05-13 19:11:23 - agent_state - INFO - ✅ Sentiment Analyst analysis completed
+2025-05-13 19:11:23 - agent_state - INFO - ✅ Valuation Agent analysis completed
+2025-05-13 19:11:23 - agent_state - INFO - {
+  "signal": "neutral",
+  "confidence": "14%",
+  "strategy_signals": {
+    "trend_following": {
+      "signal": "bullish",
+      "confidence": "46%",
+      "metrics": {
+        "adx": 45.59447586125805,
+        "trend_strength": 0.4559447586125805
+      }
+    },
+    "mean_reversion": {
+      "signal": "bearish",
+      "confidence": "100%",
+      "metrics": {
+        "z_score": 4.713477523165122,
+        "price_vs_bb": 1.291289849871203,
+        "rsi_14": 88.78143133462282,
+        "rsi_28": 74.44444444444444
+      }
+    },
+    "momentum": {
+      "signal": "bullish",
+      "confidence": "100%",
+      "metrics": {
+        "momentum_1m": 0.8313287177016532,
+        "momentum_3m": 0.664269050568596,
+        "momentum_6m": 0.6887055027800498,
+        "volume_momentum": 3.641029832186308
+      }
+    },
+    "volatility": {
+      "signal": "bearish",
+      "confidence": "54%",
+      "metrics": {
+        "historical_volatility": 1.323105082305827,
+        "volatility_regime": 1.7416729755517273,
+        "volatility_z_score": 1.607623811678044,
+        "atr_ratio": 0.057229868691662716
+      }
+    },
+    "statistical_arbitrage": {
+      "signal": "bullish",
+      "confidence": "100%",
+      "metrics": {
+        "hurst_exponent": 4.410881380903355e-15,
+        "skewness": 1.187028501124142,
+        "kurtosis": 3.4099329805152454
+      }
+    }
+  }
+}
+2025-05-13 19:11:23 - agent_state - INFO - ✅ Technical Analyst analysis completed
+2025-05-13 19:11:23 - agent_state - INFO - 🔄 Bearish Researcher is analyzing...
+2025-05-13 19:11:23 - agent_state - INFO - 🔄 Bullish Researcher is analyzing...
+2025-05-13 19:11:23 - agent_state - INFO - {
+  "\u7814\u7a76\u89c6\u89d2": "\u7a7a\u65b9",
+  "\u7f6e\u4fe1\u5ea6": "30%",
+  "\u7a7a\u65b9\u8bba\u70b9": [
+    "\u6280\u672f\u53cd\u5f39\u6216\u4e3a\u6682\u65f6\uff0c\u5b58\u5728\u56de\u8c03\u98ce\u9669",
+    "\u5f53\u524d\u57fa\u672c\u9762\u5f3a\u52b2\u6216\u96be\u4ee5\u6301\u7eed",
+    "\u5e02\u573a\u60c5\u7eea\u8fc7\u4e8e\u4e50\u89c2\uff0c\u5b58\u5728\u98ce\u9669",
+    "\u5f53\u524d\u4f30\u503c\u672a\u5145\u5206\u53cd\u6620\u4e0b\u884c\u98ce\u9669"
+  ],
+  "\u5206\u6790\u8bf4\u660e": "\u57fa\u4e8e\u6280\u672f\u9762\u3001\u57fa\u672c\u9762\u3001\u60c5\u611f\u9762\u548c\u4f30\u503c\u7b49\u591a\u7ef4\u5ea6\u7efc\u5408\u5206\u6790\uff0c\u63d0\u51fa\u7a7a\u65b9\u98ce\u9669\u8b66\u793a\u3002"
+}
+2025-05-13 19:11:23 - agent_state - INFO - {
+  "\u7814\u7a76\u89c6\u89d2": "\u591a\u65b9",
+  "\u7f6e\u4fe1\u5ea6": "30%",
+  "\u591a\u65b9\u8bba\u70b9": [
+    "\u6280\u672f\u6307\u6807\u504f\u4fdd\u5b88\uff0c\u6216\u5b58\u5728\u4e70\u5165\u673a\u4f1a",
+    "\u516c\u53f8\u57fa\u672c\u9762\u6709\u6539\u5584\u6f5c\u529b",
+    "\u5e02\u573a\u60c5\u7eea\u504f\u60b2\u89c2\uff0c\u6216\u5b58\u5728\u4ef7\u503c\u673a\u4f1a",
+    "\u5f53\u524d\u4f30\u503c\u672a\u5145\u5206\u53cd\u6620\u6210\u957f\u6f5c\u529b"
+  ],
+  "\u5206\u6790\u8bf4\u660e": "\u57fa\u4e8e\u6280\u672f\u9762\u3001\u57fa\u672c\u9762\u3001\u60c5\u611f\u9762\u548c\u4f30\u503c\u7b49\u591a\u7ef4\u5ea6\u7efc\u5408\u5206\u6790\uff0c\u63d0\u51fa\u591a\u65b9\u6295\u8d44\u7406\u7531\u3002"
+}
+2025-05-13 19:11:23 - agent_state - INFO - ✅ Bearish Researcher analysis completed
+2025-05-13 19:11:23 - agent_state - INFO - ✅ Bullish Researcher analysis completed
+2025-05-13 19:11:23 - agent_state - INFO - 🔄 Debate Room is analyzing...
+2025-05-13 19:11:27 - agent_state - INFO - {
+  "\u8fa9\u8bba\u7ed3\u8bba\u4fe1\u53f7": "\u4e2d\u6027",
+  "\u7f6e\u4fe1\u5ea6": "0%",
+  "\u591a\u65b9\u7f6e\u4fe1\u5ea6": "0%",
+  "\u7a7a\u65b9\u7f6e\u4fe1\u5ea6": "0%",
+  "\u6df7\u5408\u7f6e\u4fe1\u5ea6\u5dee": "0.00",
+  "LLM\u5206\u6790": "Without specific details regarding the BEAR and BULL viewpoints, it is not possible to assess which argument is more compelling. As both perspectives have a confidence level of 0, it suggests a lack of substantial reasoning or evidence to support either position. Given this ambiguity and absence of data, the analysis defaults to a neutral stance.",
+  "LLM\u7406\u7531": "The absence of any substantiated arguments or data for either side makes it impossible to lean either bullish or bearish. Therefore, the rating defaults to a neutral score of 0.0.",
+  "\u5206\u6790\u8bf4\u660e": "\u7efc\u5408\u591a\u65b9\u4e0e\u7a7a\u65b9\u7814\u7a76\u5458\u89c2\u70b9\uff0c\u5e76\u7ed3\u5408\u5927\u6a21\u578b\u7b2c\u4e09\u65b9\u5206\u6790\uff0c\u5f97\u51fa\u5e73\u8861\u6295\u8d44\u5efa\u8bae\u3002"
+}
+2025-05-13 19:11:27 - agent_state - INFO - ✅ Debate Room analysis completed
+2025-05-13 19:11:27 - agent_state - INFO - 🔄 Risk Manager is analyzing...
+2025-05-13 19:11:27 - agent_state - INFO - {
+  "\u6700\u5927\u6301\u4ed3\u89c4\u6a21": NaN,
+  "\u98ce\u9669\u8bc4\u5206": "\u6682\u65e0\u5206\u6790",
+  "\u4ea4\u6613\u5efa\u8bae": "\u6682\u65e0\u5206\u6790",
+  "\u98ce\u9669\u6307\u6807": "\u6682\u65e0\u5206\u6790",
+  "\u8fa9\u8bba\u5206\u6790": "\u6682\u65e0\u5206\u6790",
+  "\u5206\u6790\u8bf4\u660e": "\u672a\u80fd\u83b7\u53d6\u5230\u5b8c\u6574\u7684\u8fa9\u8bba\u5206\u6790\u6570\u636e\uff0c\u65e0\u6cd5\u8fdb\u884c\u98ce\u9669\u8bc4\u4f30\u3002"
+}
+2025-05-13 19:11:27 - agent_state - INFO - ✅ Risk Manager analysis completed
+2025-05-13 19:11:27 - agent_state - INFO - 🔄 Macro Analyst is analyzing...
+2025-05-13 19:11:38 - agent_state - INFO - {
+  "\u5b8f\u89c2\u73af\u5883": "\u4e2d\u6027",
+  "\u5bf9\u80a1\u7968\u5f71\u54cd": "\u4e2d\u6027",
+  "\u5173\u952e\u56e0\u7d20": [
+    "\u5e02\u573a\u60c5\u7eea\u6ce2\u52a8",
+    "\u8d22\u653f\u653f\u7b56\u53ca\u56fd\u9632\u519b\u5de5\u652f\u51fa",
+    "\u884c\u4e1a\u666f\u6c14\u5ea6\u4e0e\u57fa\u672c\u9762\u62d0\u70b9",
+    "\u519b\u6c11\u878d\u5408\u653f\u7b56\u63a8\u52a8",
+    "\u6295\u8d44\u8005\u77ed\u671f\u4ea4\u6613\u884c\u4e3a"
+  ],
+  "\u5206\u6790\u8bf4\u660e": {
+    "\u5b8f\u89c2\u73af\u5883\u8bc4\u4f30": "\u8fd1\u671f\u5bf9\u56fd\u9632\u519b\u5de5\u677f\u5757\u7684\u5e02\u573a\u60c5\u7eea\u51fa\u73b0\u660e\u663e\u6ce2\u52a8\u3002\u4ece\u65b0\u95fb\u4e2d\u53ef\u4ee5\u770b\u51fa\u519b\u5de5\u70ed\u95e8\u516c\u53f8\uff08\u5982\u6668\u66e6\u822a\u7a7a\uff09\u77ed\u671f\u5185\u7ecf\u5386\u4e86\u5927\u6da8\u548c\u5927\u8dcc\u4ea4\u66ff\u7684\u6ce2\u52a8\uff0c\u4e3b\u8981\u662f\u57fa\u4e8e\u8d44\u91d1\u535a\u5f08\u548c\u5e02\u573a\u60c5\u7eea\u5f71\u54cd\u3002\u5c3d\u7ba1\u6211\u56fd\u56fd\u9632\u652f\u51fa\u53ca\u519b\u6c11\u878d\u5408\u653f\u7b56\u6301\u7eed\u652f\u6301\u884c\u4e1a\u53d1\u5c55\uff0c\u4f46\u77ed\u671f\u5e02\u573a\u6ce2\u52a8\u63a9\u76d6\u4e86\u4e2d\u957f\u671f\u8d8b\u52bf\u3002",
+    "\u5bf9\u80a1\u7968\u5f71\u54cd": "\u6668\u66e6\u822a\u7a7a\u7b49\u519b\u5de5\u80a1\u5728\u524d\u51e0\u4e2a\u4ea4\u6613\u65e5\u7ecf\u5386\u4e86\u663e\u8457\u4e0a\u6da8\u548c\u4e3b\u529b\u8d44\u91d1\u4ecb\u5165\uff0c\u4f46\u63a5\u4e0b\u6765\u7684\u8d44\u91d1\u6d41\u51fa\u548c\u5206\u5316\u4e0b\u8dcc\u8868\u660e\u5e02\u573a\u8d44\u91d1\u6b63\u5728\u79bb\u573a\u3002\u6838\u5fc3\u56e0\u7d20\u5305\u62ec\u9ad8\u6362\u624b\u7387\u548c\u6295\u8d44\u8005\u5bf9\u884c\u4e1a\u57fa\u672c\u9762\u6539\u5584\u7684\u5206\u6b67\uff0c\u56e0\u6b64\u77ed\u671f\u5185\u80a1\u4ef7\u53ef\u80fd\u627f\u538b\uff0c\u4f46\u4e2d\u957f\u671f\u5229\u597d\u5f71\u54cd\u6709\u5f85\u884c\u4e1a\u9700\u6c42\u5151\u73b0\u548c\u653f\u7b56\u652f\u6301\u843d\u5730\u3002\u7efc\u5408\u6765\u770b\uff0c\u5f53\u524d\u5bf9\u6668\u66e6\u822a\u7a7a\u7684\u5f71\u54cd\u4e3a\u4e2d\u6027\u3002",
+    "\u5206\u6790\u903b\u8f91": [
+      "\u5e02\u573a\u60c5\u7eea\u6ce2\u52a8\u5bf9\u56fd\u9632\u519b\u5de5\u80a1\u5f71\u54cd\u663e\u8457\uff0c\u663e\u793a\u77ed\u671f\u6295\u8d44\u8005\u98ce\u9669\u504f\u597d\u4e0b\u964d\u3002\u4ece\u8d44\u91d1\u6d41\u52a8\u6765\u770b\uff0c5\u670812\u65e5\u8d44\u91d1\u663e\u8457\u6d41\u5165\u540e\uff0c5\u670813\u65e5\u6d41\u51fa86.44\u4ebf\u5143\uff0c\u8868\u660e\u884c\u4e1a\u8d5a\u94b1\u6548\u5e94\u51cf\u5f31\uff0c\u540c\u65f6\u6362\u624b\u7387\u9ad8\u4f01\u53cd\u6620\u51fa\u4ea4\u6613\u6027\u8d44\u91d1\u4e3b\u5bfc\u5e02\u573a\u60c5\u7eea\u3002",
+      "\u8d22\u653f\u653f\u7b56\u652f\u6301\u529b\u5ea6\u4e0d\u51cf\uff0c\u4f46\u5b9e\u9645\u6548\u679c\u4ecd\u53d6\u51b3\u4e8e\u9700\u6c42\u843d\u5730\u60c5\u51b5\u3002\u5c3d\u7ba1\u519b\u6c11\u878d\u5408\u653f\u7b56\u6301\u7eed\u63a8\u52a8\u884c\u4e1a\u53d1\u5c55\uff0c\u4f46\u65b0\u95fb\u4e2d\u672a\u663e\u793a\u56fd\u9632\u519b\u5de5\u884c\u4e1a\u7684\u8425\u6536\u548c\u5229\u6da6\u6539\u5584\u6709\u5927\u89c4\u6a21\u5151\u73b0\uff0c\u4ec5\u4e2a\u522b\u516c\u53f8\u83b7\u6295\u8d44\u8005\u9752\u7750\uff0c\u8fdb\u4e00\u6b65\u52a0\u5927\u5e02\u573a\u8868\u73b0\u7684\u5206\u5316\u3002",
+      "\u6295\u8d44\u8005\u4e3b\u8981\u57fa\u4e8e\u677f\u5757\u8f6e\u52a8\u548c\u77ed\u671f\u4ea4\u6613\u53cd\u5e94\u6295\u8d44\u51b3\u7b56\uff0c\u672a\u5fc5\u4ee5\u957f\u671f\u6210\u957f\u903b\u8f91\u4e3a\u4e3b\u5bfc\uff0c\u5373\u8d44\u91d1\u7684\u5927\u8fdb\u5927\u51fa\u5e26\u6765\u4e86\u80a1\u7968\u4ef7\u683c\u7684\u5267\u70c8\u6ce2\u52a8\u3002\u6668\u66e6\u822a\u7a7a\u9ad8\u6362\u624b\u7387\u548c\u9f99\u864e\u699c\u4e0a\u7684\u6570\u636e\uff0c\u8bf4\u660e\u8d44\u91d1\u4e3b\u8981\u805a\u7126\u77ed\u671f\u6ce2\u52a8\u6536\u76ca\uff0c\u800c\u975e\u957f\u671f\u57fa\u672c\u9762\u903b\u8f91\u3002",
+      "\u5168\u7403\u5730\u7f18\u653f\u6cbb\u7684\u4e0d\u786e\u5b9a\u56e0\u7d20\u4f9d\u7136\u53ef\u80fd\u5728\u672a\u6765\u652f\u6491\u56fd\u9632\u9700\u6c42\uff0c\u4f46\u77ed\u671f\u5e76\u672a\u663e\u73b0\u7a81\u7834\u6027\u50ac\u5316\u5242\u3002\u519b\u5de5\u80a1\u7684\u589e\u957f\u903b\u8f91\u9700\u8981\u8fdb\u4e00\u6b65\u4f9d\u8d56\u56fd\u5185\u5916\u9700\u6c42\u843d\u5730\u4ee5\u53ca\u56fd\u5bb6\u652f\u51fa\u6269\u5927\u3002"
+    ]
+  }
+}
+2025-05-13 19:11:38 - agent_state - INFO - ✅ Macro Analyst analysis completed
+2025-05-13 19:11:38 - agent_state - INFO - 🔄 Portfolio Manager is analyzing...
+2025-05-13 19:11:43 - agent_state - INFO - {
+  "action": "hold",
+  "quantity": 0,
+  "confidence": 0.3,
+  "agent_signals": [
+    {
+      "agent_name": "Technical Analysis",
+      "signal": "neutral",
+      "confidence": 0.14
+    },
+    {
+      "agent_name": "Fundamental Analysis",
+      "signal": "bearish",
+      "confidence": 0.75
+    },
+    {
+      "agent_name": "Valuation Analysis",
+      "signal": "neutral",
+      "confidence": 0
+    },
+    {
+      "agent_name": "Macro Analysis",
+      "signal": "neutral",
+      "confidence": 0.5
+    },
+    {
+      "agent_name": "Sentiment Analysis",
+      "signal": "bullish",
+      "confidence": 0.5
+    }
+  ],
+  "reasoning": "The decision to hold is driven by the bearish signal from Fundamental Analysis, which has high confidence and outweighs the minor bullish influence of Sentiment Analysis. Valuation Analysis also signals a neutral stance, providing no compelling reason to take action. Macro Analysis suggests caution with a neutral impact on the stock, and while Technical Analysis provides some mixed bullish and bearish signals, overall confidence is low. Risk management data is incomplete, so no action is taken until clearer signals or risk guidelines are provided."
+}
+2025-05-13 19:11:43 - agent_state - INFO - ✅ Portfolio Manager analysis completed
+2025-05-13 19:18:23 - agent_state - INFO - 🔄 Market Data Agent is analyzing...
+2025-05-13 19:21:49 - agent_state - INFO - {
+  "ticker": "302312",
+  "start_date": "2024-05-12",
+  "end_date": "2025-05-12",
+  "data_collected": {
+    "price_history": false,
+    "financial_metrics": true,
+    "financial_statements": true,
+    "market_data": false
+  },
+  "summary": "\u4e3a302312\u6536\u96c6\u4e86\u4ece2024-05-12\u52302025-05-12\u7684\u5e02\u573a\u6570\u636e\uff0c\u5305\u62ec\u4ef7\u683c\u5386\u53f2\u3001\u8d22\u52a1\u6307\u6807\u548c\u5e02\u573a\u4fe1\u606f"
+}
+2025-05-13 19:21:49 - agent_state - INFO - 🔄 Technical Analyst is analyzing...
+2025-05-13 19:21:49 - agent_state - INFO - 🔄 Fundamentals Analyst is analyzing...
+2025-05-13 19:21:49 - agent_state - INFO - {
+  "\u6295\u8d44\u4fe1\u53f7": "\u770b\u7a7a",
+  "\u7f6e\u4fe1\u5ea6": "75%",
+  "\u5206\u6790\u8bf4\u660e": {
+    "\u76c8\u5229\u80fd\u529b\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "ROE\uff08\u51c0\u8d44\u4ea7\u6536\u76ca\u7387\uff09\u4e3a0.00%\uff0c\u51c0\u5229\u7387\u4e3a0.00%\uff0c\u8425\u4e1a\u5229\u6da6\u7387\u4e3a0.00%\u3002\u6570\u503c\u8d8a\u9ad8\u4ee3\u8868\u516c\u53f8\u76c8\u5229\u80fd\u529b\u8d8a\u5f3a\u3002"
+    },
+    "\u589e\u957f\u80fd\u529b\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "\u8425\u6536\u589e\u957f\u7387\u4e3a0.00%\uff0c\u51c0\u5229\u6da6\u589e\u957f\u7387\u4e3a0.00%\u3002\u6b63\u503c\u4e14\u8f83\u9ad8\u4ee3\u8868\u516c\u53f8\u6210\u957f\u6027\u8f83\u597d\u3002"
+    },
+    "\u8d22\u52a1\u5065\u5eb7\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "\u6d41\u52a8\u6bd4\u7387\u4e3a0.00\uff0c\u8d44\u4ea7\u8d1f\u503a\u7387\uff08D/E\uff09\u4e3a0.00\u3002\u6d41\u52a8\u6bd4\u7387\u9ad8\u4e14\u8d1f\u503a\u7387\u4f4e\u8bf4\u660e\u516c\u53f8\u8d22\u52a1\u7a33\u5065\u3002"
+    },
+    "\u4f30\u503c\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u591a",
+      "\u8be6\u60c5": "\u5e02\u76c8\u7387\uff08P/E\uff09\u4e3a0.00\uff0c\u5e02\u51c0\u7387\uff08P/B\uff09\u4e3a0.00\uff0c\u5e02\u9500\u7387\uff08P/S\uff09\u4e3a0.00\u3002\u6570\u503c\u8d8a\u4f4e\u4ee3\u8868\u4f30\u503c\u8d8a\u5408\u7406\u3002"
+    }
+  }
+}
+2025-05-13 19:21:49 - agent_state - INFO - ✅ Fundamentals Analyst analysis completed
+2025-05-13 19:21:49 - agent_state - INFO - 🔄 Sentiment Analyst is analyzing...
+2025-05-13 19:21:49 - agent_state - INFO - 🔄 Valuation Agent is analyzing...
+2025-05-13 19:21:49 - agent_state - INFO - {
+  "\u4f30\u503c\u4fe1\u53f7": "\u4e2d\u6027",
+  "\u7f6e\u4fe1\u5ea6": "0%",
+  "\u5206\u6790\u8bf4\u660e": {
+    "DCF\u4f30\u503c\u6cd5": {
+      "\u4fe1\u53f7": "\u4e2d\u6027",
+      "\u8be6\u60c5": "\u5185\u5728\u4ef7\u503c\u4e3a$0.00\uff0c\u5e02\u503c\u4e3a$0.00\uff0c\u4f30\u503c\u5dee\u8ddd\u4e3a0.0%\u3002\u5185\u5728\u4ef7\u503c\u9ad8\u4e8e\u5e02\u503c\u8f83\u591a\u65f6\u4e3a\u770b\u591a\uff0c\u4f4e\u4e8e\u5e02\u503c\u8f83\u591a\u65f6\u4e3a\u770b\u7a7a\u3002"
+    },
+    "\u6240\u6709\u8005\u6536\u76ca\u6cd5": {
+      "\u4fe1\u53f7": "\u4e2d\u6027",
+      "\u8be6\u60c5": "\u6240\u6709\u8005\u6536\u76ca\u4f30\u503c\u4e3a$0.00\uff0c\u5e02\u503c\u4e3a$0.00\uff0c\u4f30\u503c\u5dee\u8ddd\u4e3a0.0%\u3002"
+    }
+  }
+}
+2025-05-13 19:21:49 - agent_state - INFO - ✅ Valuation Agent analysis completed
+2025-05-13 19:21:50 - agent_state - INFO - {
+  "\u60c5\u611f\u4fe1\u53f7": "\u4e2d\u6027",
+  "\u7f6e\u4fe1\u5ea6": "100%",
+  "\u5206\u6790\u8bf4\u660e": "\u57fa\u4e8e\u6700\u8fd10\u6761\u65b0\u95fb\uff0c\u60c5\u611f\u5f97\u5206\u4e3a0.00\u3002\u60c5\u611f\u5206\u9ad8\u4e8e0.5\u4e3a\u770b\u591a\uff0c\u4f4e\u4e8e-0.5\u4e3a\u770b\u7a7a\uff0c\u4ecb\u4e8e\u4e24\u8005\u4e4b\u95f4\u4e3a\u4e2d\u6027\u3002"
+}
+2025-05-13 19:21:50 - agent_state - INFO - ✅ Sentiment Analyst analysis completed
+2025-05-13 19:25:27 - agent_state - INFO - 🔄 Market Data Agent is analyzing...
+2025-05-13 19:29:38 - agent_state - INFO - {
+  "\u80a1\u7968\u4ee3\u7801": "302312",
+  "\u8d77\u59cb\u65e5\u671f": "2024-05-12",
+  "\u7ed3\u675f\u65e5\u671f": "2025-05-12",
+  "\u6536\u96c6\u60c5\u51b5": {
+    "\u4ef7\u683c\u5386\u53f2": false,
+    "\u8d22\u52a1\u6307\u6807": true,
+    "\u8d22\u52a1\u62a5\u8868": true,
+    "\u5e02\u573a\u4fe1\u606f": false
+  },
+  "\u6458\u8981": "\u4e3a302312\u6536\u96c6\u4e86\u4ece2024-05-12\u52302025-05-12\u7684\u5e02\u573a\u6570\u636e\uff0c\u5305\u62ec\u4ef7\u683c\u5386\u53f2\u3001\u8d22\u52a1\u6307\u6807\u548c\u5e02\u573a\u4fe1\u606f"
+}
+2025-05-13 19:29:38 - agent_state - INFO - 🔄 Technical Analyst is analyzing...
+2025-05-13 19:29:38 - agent_state - INFO - 🔄 Fundamentals Analyst is analyzing...
+2025-05-13 19:29:38 - agent_state - INFO - 🔄 Sentiment Analyst is analyzing...
+2025-05-13 19:29:38 - agent_state - INFO - 🔄 Valuation Agent is analyzing...
+2025-05-13 19:29:38 - agent_state - INFO - {
+  "\u4f30\u503c\u4fe1\u53f7": "\u4e2d\u6027",
+  "\u7f6e\u4fe1\u5ea6": "0%",
+  "\u5206\u6790\u8bf4\u660e": {
+    "\u9519\u8bef": "\u4f30\u503c\u5206\u6790\u51fa\u9519: financial_metrics \u7f3a\u5931\u6216\u4e3a\u7a7a"
+  }
+}
+2025-05-13 19:29:38 - agent_state - INFO - ✅ Valuation Agent analysis completed
+2025-05-13 19:29:38 - agent_state - INFO - {
+  "\u60c5\u611f\u4fe1\u53f7": "\u4e2d\u6027",
+  "\u7f6e\u4fe1\u5ea6": "100%",
+  "\u5206\u6790\u8bf4\u660e": "\u57fa\u4e8e\u6700\u8fd10\u6761\u65b0\u95fb\uff0c\u60c5\u611f\u5f97\u5206\u4e3a0.00\u3002\u60c5\u611f\u5206\u9ad8\u4e8e0.5\u4e3a\u770b\u591a\uff0c\u4f4e\u4e8e-0.5\u4e3a\u770b\u7a7a\uff0c\u4ecb\u4e8e\u4e24\u8005\u4e4b\u95f4\u4e3a\u4e2d\u6027\u3002"
+}
+2025-05-13 19:29:38 - agent_state - INFO - ✅ Sentiment Analyst analysis completed
+2025-05-13 20:25:02 - agent_state - INFO - 🔄 Market Data Agent is analyzing...
+2025-05-13 20:28:21 - agent_state - INFO - {
+  "\u80a1\u7968\u4ee3\u7801": "302312",
+  "\u8d77\u59cb\u65e5\u671f": "2024-05-12",
+  "\u7ed3\u675f\u65e5\u671f": "2025-05-12",
+  "\u6536\u96c6\u60c5\u51b5": {
+    "\u4ef7\u683c\u5386\u53f2": false,
+    "\u8d22\u52a1\u6307\u6807": true,
+    "\u8d22\u52a1\u62a5\u8868": true,
+    "\u5e02\u573a\u4fe1\u606f": false
+  },
+  "\u6458\u8981": "\u4e3a302312\u6536\u96c6\u4e86\u4ece2024-05-12\u52302025-05-12\u7684\u5e02\u573a\u6570\u636e\uff0c\u5305\u62ec\u4ef7\u683c\u5386\u53f2\u3001\u8d22\u52a1\u6307\u6807\u548c\u5e02\u573a\u4fe1\u606f"
+}
+2025-05-13 20:28:21 - agent_state - INFO - 🔄 Technical Analyst is analyzing...
+2025-05-13 20:28:21 - agent_state - INFO - 🔄 Fundamentals Analyst is analyzing...
+2025-05-13 20:28:21 - agent_state - INFO - 🔄 Valuation Agent is analyzing...
+2025-05-13 20:28:21 - agent_state - INFO - 🔄 Sentiment Analyst is analyzing...
+2025-05-13 20:28:21 - agent_state - INFO - {
+  "\u4f30\u503c\u4fe1\u53f7": "\u4e2d\u6027",
+  "\u7f6e\u4fe1\u5ea6": "0%",
+  "\u5206\u6790\u8bf4\u660e": {
+    "\u9519\u8bef": "\u4f30\u503c\u5206\u6790\u51fa\u9519: financial_metrics \u7f3a\u5931\u6216\u4e3a\u7a7a"
+  }
+}
+2025-05-13 20:28:21 - agent_state - INFO - ✅ Valuation Agent analysis completed
+2025-05-13 20:28:22 - agent_state - INFO - {
+  "\u60c5\u611f\u4fe1\u53f7": "\u4e2d\u6027",
+  "\u7f6e\u4fe1\u5ea6": "100%",
+  "\u5206\u6790\u8bf4\u660e": "\u57fa\u4e8e\u6700\u8fd10\u6761\u65b0\u95fb\uff0c\u60c5\u611f\u5f97\u5206\u4e3a0.00\u3002\u60c5\u611f\u5206\u9ad8\u4e8e0.5\u4e3a\u770b\u591a\uff0c\u4f4e\u4e8e-0.5\u4e3a\u770b\u7a7a\uff0c\u4ecb\u4e8e\u4e24\u8005\u4e4b\u95f4\u4e3a\u4e2d\u6027\u3002"
+}
+2025-05-13 20:28:22 - agent_state - INFO - ✅ Sentiment Analyst analysis completed
+2025-05-13 20:34:01 - agent_state - INFO - 🔄 Market Data Agent is analyzing...
+2025-05-13 20:35:45 - agent_state - INFO - {
+  "\u80a1\u7968\u4ee3\u7801": "302312",
+  "\u8d77\u59cb\u65e5\u671f": "2024-05-12",
+  "\u7ed3\u675f\u65e5\u671f": "2025-05-12",
+  "\u6536\u96c6\u60c5\u51b5": {
+    "\u4ef7\u683c\u5386\u53f2": false,
+    "\u8d22\u52a1\u6307\u6807": true,
+    "\u8d22\u52a1\u62a5\u8868": true,
+    "\u5e02\u573a\u4fe1\u606f": false
+  },
+  "\u6458\u8981": "\u4e3a302312\u6536\u96c6\u4e86\u4ece2024-05-12\u52302025-05-12\u7684\u5e02\u573a\u6570\u636e\uff0c\u5305\u62ec\u4ef7\u683c\u5386\u53f2\u3001\u8d22\u52a1\u6307\u6807\u548c\u5e02\u573a\u4fe1\u606f"
+}
+2025-05-13 20:35:45 - agent_state - INFO - 🔄 Technical Analyst is analyzing...
+2025-05-13 20:35:45 - agent_state - INFO - 🔄 Fundamentals Analyst is analyzing...
+2025-05-13 20:35:45 - agent_state - INFO - 🔄 Sentiment Analyst is analyzing...
+2025-05-13 20:35:45 - agent_state - INFO - 🔄 Valuation Agent is analyzing...
+2025-05-13 20:35:45 - agent_state - INFO - {
+  "\u4f30\u503c\u4fe1\u53f7": "\u4e2d\u6027",
+  "\u7f6e\u4fe1\u5ea6": "0%",
+  "\u5206\u6790\u8bf4\u660e": {
+    "\u9519\u8bef": "\u4f30\u503c\u5206\u6790\u51fa\u9519: financial_metrics \u7f3a\u5931\u6216\u4e3a\u7a7a"
+  }
+}
+2025-05-13 20:35:45 - agent_state - INFO - ✅ Valuation Agent analysis completed
+2025-05-13 20:35:45 - agent_state - INFO - {
+  "\u60c5\u611f\u4fe1\u53f7": "\u4e2d\u6027",
+  "\u7f6e\u4fe1\u5ea6": "100%",
+  "\u5206\u6790\u8bf4\u660e": "\u57fa\u4e8e\u6700\u8fd10\u6761\u65b0\u95fb\uff0c\u60c5\u611f\u5f97\u5206\u4e3a0.00\u3002\u60c5\u611f\u5206\u9ad8\u4e8e0.5\u4e3a\u770b\u591a\uff0c\u4f4e\u4e8e-0.5\u4e3a\u770b\u7a7a\uff0c\u4ecb\u4e8e\u4e24\u8005\u4e4b\u95f4\u4e3a\u4e2d\u6027\u3002"
+}
+2025-05-13 20:35:45 - agent_state - INFO - ✅ Sentiment Analyst analysis completed
+2025-05-13 21:11:27 - agent_state - INFO - 🔄 Market Data Agent is analyzing...
+2025-05-13 21:15:30 - agent_state - INFO - {
+  "\u80a1\u7968\u4ee3\u7801": "000519",
+  "\u8d77\u59cb\u65e5\u671f": "2024-05-12",
+  "\u7ed3\u675f\u65e5\u671f": "2025-05-12",
+  "\u6536\u96c6\u60c5\u51b5": {
+    "\u4ef7\u683c\u5386\u53f2": true,
+    "\u8d22\u52a1\u6307\u6807": true,
+    "\u8d22\u52a1\u62a5\u8868": true,
+    "\u5e02\u573a\u4fe1\u606f": true
+  },
+  "\u6458\u8981": "\u4e3a000519\u6536\u96c6\u4e86\u4ece2024-05-12\u52302025-05-12\u7684\u5e02\u573a\u6570\u636e\uff0c\u5305\u62ec\u4ef7\u683c\u5386\u53f2\u3001\u8d22\u52a1\u6307\u6807\u548c\u5e02\u573a\u4fe1\u606f"
+}
+2025-05-13 21:15:30 - agent_state - INFO - 🔄 Technical Analyst is analyzing...
+2025-05-13 21:15:30 - agent_state - INFO - 🔄 Fundamentals Analyst is analyzing...
+2025-05-13 21:15:30 - agent_state - INFO - 🔄 Valuation Agent is analyzing...
+2025-05-13 21:15:30 - agent_state - INFO - 🔄 Sentiment Analyst is analyzing...
+2025-05-13 21:15:30 - agent_state - INFO - {
+  "\u4f30\u503c\u4fe1\u53f7": "\u4e2d\u6027",
+  "\u7f6e\u4fe1\u5ea6": "0%",
+  "\u5206\u6790\u8bf4\u660e": {
+    "\u9519\u8bef": "\u4f30\u503c\u5206\u6790\u51fa\u9519: financial_metrics \u7f3a\u5931\u6216\u4e3a\u7a7a"
+  }
+}
+2025-05-13 21:15:30 - agent_state - INFO - ✅ Valuation Agent analysis completed
+2025-05-13 21:15:31 - agent_state - INFO - {
+  "\u60c5\u611f\u4fe1\u53f7": "\u4e2d\u6027",
+  "\u7f6e\u4fe1\u5ea6": "100%",
+  "\u5206\u6790\u8bf4\u660e": "\u57fa\u4e8e\u6700\u8fd15\u6761\u65b0\u95fb\uff0c\u60c5\u611f\u5f97\u5206\u4e3a0.00\u3002\u60c5\u611f\u5206\u9ad8\u4e8e0.5\u4e3a\u770b\u591a\uff0c\u4f4e\u4e8e-0.5\u4e3a\u770b\u7a7a\uff0c\u4ecb\u4e8e\u4e24\u8005\u4e4b\u95f4\u4e3a\u4e2d\u6027\u3002"
+}
+2025-05-13 21:15:31 - agent_state - INFO - ✅ Sentiment Analyst analysis completed
+2025-05-13 21:26:34 - agent_state - INFO - 🔄 Market Data Agent is analyzing...
+2025-05-13 21:28:58 - agent_state - INFO - {
+  "ticker": "000519",
+  "start_date": "2024-05-12",
+  "end_date": "2025-05-12",
+  "data_collected": {
+    "price_history": true,
+    "financial_metrics": true,
+    "financial_statements": true,
+    "market_data": true
+  },
+  "summary": "\u4e3a000519\u6536\u96c6\u4e86\u4ece2024-05-12\u52302025-05-12\u7684\u5e02\u573a\u6570\u636e\uff0c\u5305\u62ec\u4ef7\u683c\u5386\u53f2\u3001\u8d22\u52a1\u6307\u6807\u548c\u5e02\u573a\u4fe1\u606f"
+}
+2025-05-13 21:28:58 - agent_state - INFO - 🔄 Technical Analyst is analyzing...
+2025-05-13 21:28:58 - agent_state - INFO - 🔄 Fundamentals Analyst is analyzing...
+2025-05-13 21:28:58 - agent_state - INFO - {
+  "\u6295\u8d44\u4fe1\u53f7": "\u770b\u7a7a",
+  "\u7f6e\u4fe1\u5ea6": "75%",
+  "\u5206\u6790\u8bf4\u660e": {
+    "\u76c8\u5229\u80fd\u529b\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "ROE\uff08\u51c0\u8d44\u4ea7\u6536\u76ca\u7387\uff09\u4e3a0.00%\uff0c\u51c0\u5229\u7387\u4e3a0.00%\uff0c\u8425\u4e1a\u5229\u6da6\u7387\u4e3a0.00%\u3002\u6570\u503c\u8d8a\u9ad8\u4ee3\u8868\u516c\u53f8\u76c8\u5229\u80fd\u529b\u8d8a\u5f3a\u3002"
+    },
+    "\u589e\u957f\u80fd\u529b\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "\u8425\u6536\u589e\u957f\u7387\u4e3a0.00%\uff0c\u51c0\u5229\u6da6\u589e\u957f\u7387\u4e3a0.00%\u3002\u6b63\u503c\u4e14\u8f83\u9ad8\u4ee3\u8868\u516c\u53f8\u6210\u957f\u6027\u8f83\u597d\u3002"
+    },
+    "\u8d22\u52a1\u5065\u5eb7\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "\u6d41\u52a8\u6bd4\u7387\u4e3a0.00\uff0c\u8d44\u4ea7\u8d1f\u503a\u7387\uff08D/E\uff09\u4e3a0.00\u3002\u6d41\u52a8\u6bd4\u7387\u9ad8\u4e14\u8d1f\u503a\u7387\u4f4e\u8bf4\u660e\u516c\u53f8\u8d22\u52a1\u7a33\u5065\u3002"
+    },
+    "\u4f30\u503c\u5206\u6790": {
+      "\u4fe1\u53f7": "\u770b\u591a",
+      "\u8be6\u60c5": "\u5e02\u76c8\u7387\uff08P/E\uff09\u4e3a0.00\uff0c\u5e02\u51c0\u7387\uff08P/B\uff09\u4e3a0.00\uff0c\u5e02\u9500\u7387\uff08P/S\uff09\u4e3a0.00\u3002\u6570\u503c\u8d8a\u4f4e\u4ee3\u8868\u4f30\u503c\u8d8a\u5408\u7406\u3002"
+    }
+  }
+}
+2025-05-13 21:28:58 - agent_state - INFO - ✅ Fundamentals Analyst analysis completed
+2025-05-13 21:28:58 - agent_state - INFO - 🔄 Sentiment Analyst is analyzing...
+2025-05-13 21:28:58 - agent_state - INFO - 🔄 Valuation Agent is analyzing...
+2025-05-13 21:28:58 - agent_state - INFO - {
+  "\u4f30\u503c\u4fe1\u53f7": "\u770b\u7a7a",
+  "\u7f6e\u4fe1\u5ea6": "99%",
+  "\u5206\u6790\u8bf4\u660e": {
+    "DCF\u4f30\u503c\u6cd5": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "\u5185\u5728\u4ef7\u503c\u4e3a$16,314,924.87\uff0c\u5e02\u503c\u4e3a$24,690,070,751.00\uff0c\u4f30\u503c\u5dee\u8ddd\u4e3a-99.9%\u3002\u5185\u5728\u4ef7\u503c\u9ad8\u4e8e\u5e02\u503c\u8f83\u591a\u65f6\u4e3a\u770b\u591a\uff0c\u4f4e\u4e8e\u5e02\u503c\u8f83\u591a\u65f6\u4e3a\u770b\u7a7a\u3002"
+    },
+    "\u6240\u6709\u8005\u6536\u76ca\u6cd5": {
+      "\u4fe1\u53f7": "\u770b\u7a7a",
+      "\u8be6\u60c5": "\u6240\u6709\u8005\u6536\u76ca\u4f30\u503c\u4e3a$565,130,073.87\uff0c\u5e02\u503c\u4e3a$24,690,070,751.00\uff0c\u4f30\u503c\u5dee\u8ddd\u4e3a-97.7%\u3002"
+    }
+  }
+}
+2025-05-13 21:28:58 - agent_state - INFO - ✅ Valuation Agent analysis completed
+2025-05-13 21:28:58 - agent_state - INFO - {
+  "\u60c5\u611f\u4fe1\u53f7": "\u4e2d\u6027",
+  "\u7f6e\u4fe1\u5ea6": "100%",
+  "\u5206\u6790\u8bf4\u660e": "\u57fa\u4e8e\u6700\u8fd15\u6761\u65b0\u95fb\uff0c\u60c5\u611f\u5f97\u5206\u4e3a0.00\u3002\u60c5\u611f\u5206\u9ad8\u4e8e0.5\u4e3a\u770b\u591a\uff0c\u4f4e\u4e8e-0.5\u4e3a\u770b\u7a7a\uff0c\u4ecb\u4e8e\u4e24\u8005\u4e4b\u95f4\u4e3a\u4e2d\u6027\u3002"
+}
+2025-05-13 21:28:58 - agent_state - INFO - ✅ Sentiment Analyst analysis completed
+2025-05-13 21:28:58 - agent_state - INFO - {
+  "signal": "bullish",
+  "confidence": "30%",
+  "strategy_signals": {
+    "trend_following": {
+      "signal": "bullish",
+      "confidence": "26%",
+      "metrics": {
+        "adx": 25.794086719704104,
+        "trend_strength": 0.25794086719704107
+      }
+    },
+    "mean_reversion": {
+      "signal": "bearish",
+      "confidence": "61%",
+      "metrics": {
+        "z_score": 2.4579900709189517,
+        "price_vs_bb": 1.121234229622377,
+        "rsi_14": 71.3450292397661,
+        "rsi_28": 56.96428571428571
+      }
+    },
+    "momentum": {
+      "signal": "bullish",
+      "confidence": "100%",
+      "metrics": {
+        "momentum_1m": 0.19751186722369785,
+        "momentum_3m": 0.295629427106357,
+        "momentum_6m": 0.14438462185396062,
+        "volume_momentum": 2.8840608188243246
+      }
+    },
+    "volatility": {
+      "signal": "neutral",
+      "confidence": "50%",
+      "metrics": {
+        "historical_volatility": 0.5362868216550694,
+        "volatility_regime": 1.1429042423418068,
+        "volatility_z_score": 0.9882328454412408,
+        "atr_ratio": 0.03851130223000227
+      }
+    },
+    "statistical_arbitrage": {
+      "signal": "neutral",
+      "confidence": "50%",
+      "metrics": {
+        "hurst_exponent": 4.410881380903355e-15,
+        "skewness": 0.844465799635989,
+        "kurtosis": 2.4642494747683426
+      }
+    }
+  }
+}
+2025-05-13 21:28:58 - agent_state - INFO - ✅ Technical Analyst analysis completed
+2025-05-13 21:28:58 - agent_state - INFO - 🔄 Bearish Researcher is analyzing...
+2025-05-13 21:28:58 - agent_state - INFO - {
+  "\u7814\u7a76\u89c6\u89d2": "\u7a7a\u65b9",
+  "\u7f6e\u4fe1\u5ea6": "30%",
+  "\u7a7a\u65b9\u8bba\u70b9": [
+    "\u6280\u672f\u53cd\u5f39\u6216\u4e3a\u6682\u65f6\uff0c\u5b58\u5728\u56de\u8c03\u98ce\u9669",
+    "\u5f53\u524d\u57fa\u672c\u9762\u5f3a\u52b2\u6216\u96be\u4ee5\u6301\u7eed",
+    "\u5e02\u573a\u60c5\u7eea\u8fc7\u4e8e\u4e50\u89c2\uff0c\u5b58\u5728\u98ce\u9669",
+    "\u5f53\u524d\u4f30\u503c\u672a\u5145\u5206\u53cd\u6620\u4e0b\u884c\u98ce\u9669"
+  ],
+  "\u5206\u6790\u8bf4\u660e": "\u57fa\u4e8e\u6280\u672f\u9762\u3001\u57fa\u672c\u9762\u3001\u60c5\u611f\u9762\u548c\u4f30\u503c\u7b49\u591a\u7ef4\u5ea6\u7efc\u5408\u5206\u6790\uff0c\u63d0\u51fa\u7a7a\u65b9\u98ce\u9669\u8b66\u793a\u3002"
+}
+2025-05-13 21:28:58 - agent_state - INFO - 🔄 Bullish Researcher is analyzing...
+2025-05-13 21:28:58 - agent_state - INFO - ✅ Bearish Researcher analysis completed
+2025-05-13 21:28:58 - agent_state - INFO - {
+  "\u7814\u7a76\u89c6\u89d2": "\u591a\u65b9",
+  "\u7f6e\u4fe1\u5ea6": "30%",
+  "\u591a\u65b9\u8bba\u70b9": [
+    "\u6280\u672f\u6307\u6807\u663e\u793a\u770b\u591a\u52a8\u80fd\uff0c\u7f6e\u4fe1\u5ea630%",
+    "\u516c\u53f8\u57fa\u672c\u9762\u6709\u6539\u5584\u6f5c\u529b",
+    "\u5e02\u573a\u60c5\u7eea\u504f\u60b2\u89c2\uff0c\u6216\u5b58\u5728\u4ef7\u503c\u673a\u4f1a",
+    "\u5f53\u524d\u4f30\u503c\u672a\u5145\u5206\u53cd\u6620\u6210\u957f\u6f5c\u529b"
+  ],
+  "\u5206\u6790\u8bf4\u660e": "\u57fa\u4e8e\u6280\u672f\u9762\u3001\u57fa\u672c\u9762\u3001\u60c5\u611f\u9762\u548c\u4f30\u503c\u7b49\u591a\u7ef4\u5ea6\u7efc\u5408\u5206\u6790\uff0c\u63d0\u51fa\u591a\u65b9\u6295\u8d44\u7406\u7531\u3002"
+}
+2025-05-13 21:28:58 - agent_state - INFO - ✅ Bullish Researcher analysis completed
+2025-05-13 21:28:58 - agent_state - INFO - 🔄 Debate Room is analyzing...
+2025-05-13 21:29:02 - agent_state - INFO - {
+  "\u8fa9\u8bba\u7ed3\u8bba\u4fe1\u53f7": "\u4e2d\u6027",
+  "\u7f6e\u4fe1\u5ea6": "0%",
+  "\u591a\u65b9\u7f6e\u4fe1\u5ea6": "0%",
+  "\u7a7a\u65b9\u7f6e\u4fe1\u5ea6": "0%",
+  "\u6df7\u5408\u7f6e\u4fe1\u5ea6\u5dee": "0.00",
+  "LLM\u5206\u6790": "The provided viewpoints indicate a lack of clarity as there are no detailed arguments or supporting evidence for either the BEAR or BULL positions (both confidence levels are at 0). Without specific points to analyze, it becomes challenging to evaluate the merits of either perspective. A balanced approach or a neutral stance is warranted until additional data or reasoning is provided.",
+  "LLM\u7406\u7531": "The absence of any substantive arguments or evidence results in a neutral position, as there is no basis to confidently support either a bearish or bullish perspective.",
+  "\u5206\u6790\u8bf4\u660e": "\u7efc\u5408\u591a\u65b9\u4e0e\u7a7a\u65b9\u7814\u7a76\u5458\u89c2\u70b9\uff0c\u5e76\u7ed3\u5408\u5927\u6a21\u578b\u7b2c\u4e09\u65b9\u5206\u6790\uff0c\u5f97\u51fa\u5e73\u8861\u6295\u8d44\u5efa\u8bae\u3002"
+}
+2025-05-13 21:29:02 - agent_state - INFO - ✅ Debate Room analysis completed
+2025-05-13 21:29:02 - agent_state - INFO - 🔄 Risk Manager is analyzing...
+2025-05-13 21:29:02 - agent_state - INFO - {
+  "\u6700\u5927\u6301\u4ed3\u89c4\u6a21": NaN,
+  "\u98ce\u9669\u8bc4\u5206": "\u6682\u65e0\u5206\u6790",
+  "\u4ea4\u6613\u5efa\u8bae": "\u6682\u65e0\u5206\u6790",
+  "\u98ce\u9669\u6307\u6807": "\u6682\u65e0\u5206\u6790",
+  "\u8fa9\u8bba\u5206\u6790": "\u6682\u65e0\u5206\u6790",
+  "\u5206\u6790\u8bf4\u660e": "\u672a\u80fd\u83b7\u53d6\u5230\u5b8c\u6574\u7684\u8fa9\u8bba\u5206\u6790\u6570\u636e\uff0c\u65e0\u6cd5\u8fdb\u884c\u98ce\u9669\u8bc4\u4f30\u3002"
+}
+2025-05-13 21:29:02 - agent_state - INFO - ✅ Risk Manager analysis completed
+2025-05-13 21:29:02 - agent_state - INFO - 🔄 Macro Analyst is analyzing...
+2025-05-13 21:29:02 - agent_state - INFO - {
+  "\u5b8f\u89c2\u73af\u5883": "\u4e2d\u6027",
+  "\u5bf9\u80a1\u7968\u5f71\u54cd": "\u4e2d\u6027",
+  "\u5173\u952e\u56e0\u7d20": [
+    "\u8d27\u5e01\u653f\u7b56\u73af\u5883\u5bbd\u677e\uff1a\u4f4e\u7968\u9762\u5229\u7387\u503a\u5238\u53d1\u884c\uff0c\u8d27\u5e01\u653f\u7b56\u7ef4\u6301\u5bbd\u677e\uff0c\u4ee5\u652f\u6301\u7ecf\u6d4e\u589e\u957f\u3002",
+    "\u6c7d\u8f66\u4ea7\u4e1a\u653f\u7b56\u63a8\u52a8\uff1a\u65b0\u80fd\u6e90\u6c7d\u8f66\u9500\u91cf\u76ee\u6807\u660e\u786e\uff0c\u884c\u4e1a\u53d1\u5c55\u79ef\u6781\uff0c\u7279\u522b\u662f\u5409\u5229\u94f6\u6cb3\u7684\u8ba1\u5212\u5b9e\u73b0\u3002",
+    "\u519b\u5de5\u677f\u5757\u5206\u5316\u8d8b\u52bf\uff1a\u90e8\u5206\u519b\u5de5\u80a1\u8d44\u91d1\u6d41\u5165\u51cf\u5c11\uff0c\u4f46\u4e2a\u522b\u5982\u5929\u7bad\u79d1\u6280\u8868\u73b0\u5f3a\u52b2\u3002",
+    "\u56fd\u9645\u7ecf\u6d4e\u7a33\u5b9a\uff1a\u4e2d\u7f8e\u7ecf\u8d38\u8c08\u5224\u53d6\u5f97\u8fdb\u5c55\uff0c\u5168\u7403\u8d38\u6613\u5173\u7a0e\u98ce\u9669\u7f13\u548c\uff0c\u6574\u4f53\u5916\u90e8\u73af\u5883\u7565\u6709\u6539\u5584\u3002",
+    "\u6295\u8d44\u8005\u60c5\u7eea\uff1a\u5e02\u573a\u5bf9\u65b0\u80fd\u6e90\u8f66\u3001AI\u7b49\u9886\u57df\u4fdd\u6301\u79ef\u6781\u4fe1\u5fc3\uff0c\u4f46\u90e8\u5206\u677f\u5757\u8d44\u91d1\u6d41\u51fa\u5f71\u54cd\u6574\u4f53\u8868\u73b0\u3002"
+  ],
+  "\u5206\u6790\u8bf4\u660e": "\u4ece\u5b8f\u89c2\u73af\u5883\u6765\u770b\uff0c\u5f53\u524d\u6211\u56fd\u7ef4\u6301\u8d27\u5e01\u653f\u7b56\u5bbd\u677e\uff0c\u4ee5\u652f\u6301\u7ecf\u6d4e\u589e\u957f\uff0c\u5982\u4e2d\u56fd\u94f6\u6cb3\u53d1\u884c\u79d1\u6280\u503a\u3001\u7968\u9762\u5229\u7387\u4ec5\u4e3a1.75%\uff0c\u663e\u793a\u5e02\u573a\u8d44\u91d1\u6d41\u52a8\u6027\u5145\u8db3\u3002\u4f46\u503a\u5e02\u6536\u76ca\u7387\u4e0b\u964d\u4e5f\u610f\u5473\u7740\u8d44\u672c\u56de\u62a5\u7387\u964d\u4f4e\uff0c\u6216\u5bf9\u8d44\u91d1\u654f\u611f\u7684\u884c\u4e1a\u5982\u79d1\u6280\u3001\u519b\u5de5\u5f62\u6210\u538b\u529b\u3002\u540c\u65f6\uff0c\u8d22\u653f\u653f\u7b56\u65b9\u9762\u672a\u89c1\u663e\u8457\u63a8\u529b\u3002\u4ea7\u4e1a\u653f\u7b56\u5c42\u9762\uff0c\u65b0\u80fd\u6e90\u6c7d\u8f66\u4ea7\u4e1a\u83b7\u5f97\u660e\u786e\u652f\u6301\uff0c\u5409\u5229\u94f6\u6cb3\u660e\u786e\u9500\u91cf\u76ee\u6807\u5bf9\u76f8\u5173\u4f9b\u5e94\u94fe\u4f01\u4e1a\uff08\u5982\u4e9a\u592a\u80a1\u4efd\uff09\u6784\u6210\u5229\u597d\u3002\u53e6\u5916\uff0c\u5728\u56fd\u9632\u519b\u5de5\u9886\u57df\uff0c\u5c3d\u7ba1\u90e8\u5206\u8d44\u91d1\u5916\u6d41\uff0c\u4f46\u4e2a\u522b\u80a1\u7968\u5982\u5929\u7bad\u79d1\u6280\u8868\u73b0\u62a2\u773c\uff0c\u663e\u793a\u5e02\u573a\u5728\u63a2\u7d22\u5c40\u90e8\u673a\u4f1a\u3002\u56fd\u9645\u73af\u5883\u7684\u7a33\u5b9a\u6027\u7565\u6709\u63d0\u5347\uff0c\u4f46\u7f8e\u8054\u50a8\u9e70\u6d3e\u8868\u6001\u4e5f\u53ef\u80fd\u9650\u5236\u90e8\u5206\u8de8\u56fd\u8d44\u91d1\u6d41\u52a8\u6027\u3002\u7efc\u5408\u5224\u65ad\uff0c\u5b8f\u89c2\u73af\u5883\u603b\u4f53\u4e2d\u6027\uff0c\u5bf9\u76f8\u5173\u4e2a\u80a1\u5982\u5409\u5229\u94f6\u6cb3\u4f9b\u5e94\u94fe\uff08\u4e9a\u592a\u80a1\u4efd\uff09\u6216\u5448\u73b0\u4e2d\u6027\u5230\u5229\u597d\u5f71\u54cd\uff0c\u4f46\u5bf9\u519b\u5de5\u677f\u5757\u5206\u5316\u98ce\u9669\u503c\u5f97\u5173\u6ce8\uff0c\u5e02\u573a\u60c5\u7eea\u5c1a\u672a\u5b8c\u5168\u5f62\u6210\u5171\u632f\u3002"
+}
+2025-05-13 21:29:02 - agent_state - INFO - ✅ Macro Analyst analysis completed
+2025-05-13 21:29:02 - agent_state - INFO - 🔄 Portfolio Manager is analyzing...
+2025-05-13 21:29:05 - agent_state - INFO - {
+  "action": "hold",
+  "quantity": 0,
+  "confidence": 0.6,
+  "agent_signals": [
+    {
+      "agent_name": "Valuation Analysis",
+      "signal": "bearish",
+      "confidence": 0.99
+    },
+    {
+      "agent_name": "Fundamental Analysis",
+      "signal": "bearish",
+      "confidence": 0.75
+    },
+    {
+      "agent_name": "Technical Analysis",
+      "signal": "bullish",
+      "confidence": 0.3
+    },
+    {
+      "agent_name": "Macro Analysis",
+      "signal": "neutral",
+      "confidence": 0.5
+    },
+    {
+      "agent_name": "Sentiment Analysis",
+      "signal": "neutral",
+      "confidence": 1.0
+    }
+  ],
+  "reasoning": "Risk management provides no clear directive, but the valuation analysis is strongly bearish with high confidence. Fundamentals are also bearish, including profitability and growth metrics. Although technicals show some bullish momentum, its lower weight and mixed signals across strategies do not offset the negative valuation and fundamentals. Sentiment and macro indicators are neutral, resulting in insufficient justification to buy or sell. Holding is the prudent action given the lack of supportive signals to act decisively."
+}
+2025-05-13 21:29:05 - agent_state - INFO - ✅ Portfolio Manager analysis completed

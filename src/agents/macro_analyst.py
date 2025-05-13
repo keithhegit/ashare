@@ -30,19 +30,28 @@ def macro_analyst_agent(state: AgentState):
     
     logger.info(f"获取到 {len(recent_news)} 条七天内的新闻")
     
-    # 如果没有获取到新闻，返回默认结果
+    # 中文结构化输出
     if not recent_news:
-        logger.warning(f"未获取到 {symbol} 的最近新闻，无法进行宏观分析")
         message_content = {
-            "macro_environment": "neutral",
-            "impact_on_stock": "neutral",
-            "key_factors": [],
-            "reasoning": "未获取到最近新闻，无法进行宏观分析"
+            "宏观环境": "中性",
+            "对股票影响": "中性",
+            "关键因素": [],
+            "分析说明": "未获取到最近新闻，无法进行宏观分析。"
         }
     else:
-        # 获取宏观分析结果
         macro_analysis = get_macro_news_analysis(recent_news)
-        message_content = macro_analysis
+        message_content = {
+            "宏观环境": (
+                "积极" if macro_analysis.get("macro_environment") == "positive" else
+                "消极" if macro_analysis.get("macro_environment") == "negative" else "中性"
+            ),
+            "对股票影响": (
+                "利好" if macro_analysis.get("impact_on_stock") == "positive" else
+                "利空" if macro_analysis.get("impact_on_stock") == "negative" else "中性"
+            ),
+            "关键因素": macro_analysis.get("key_factors", []),
+            "分析说明": macro_analysis.get("reasoning", "")
+        }
     
     # 如果需要显示推理过程
     if show_reasoning:

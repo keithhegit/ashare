@@ -8,67 +8,102 @@ import json
 def valuation_agent(state: AgentState):
     """Responsible for valuation analysis"""
     show_workflow_status("Valuation Agent")
-    show_reasoning = state["metadata"]["show_reasoning"]
-    data = state["data"]
-    metrics = data["financial_metrics"][0]
-    current_financial_line_item = data["financial_line_items"][0]
-    previous_financial_line_item = data["financial_line_items"][1]
-    market_cap = data["market_cap"]
-
+    show_reasoning = state["metadata"].get("show_reasoning", False)
+    data = state.get("data", {})
     reasoning = {}
+    try:
+        # 检查关键数据结构
+        if not data or not isinstance(data, dict):
+            raise ValueError("state['data'] 缺失或格式错误")
+        if not data.get("financial_metrics") or not isinstance(data["financial_metrics"], list) or not data["financial_metrics"]:
+            raise ValueError("financial_metrics 缺失或为空")
+        if not data.get("financial_line_items") or not isinstance(data["financial_line_items"], list) or len(data["financial_line_items"]) < 2:
+            raise ValueError("financial_line_items 缺失或不足两期")
+        if "market_cap" not in data or data["market_cap"] is None:
+            raise ValueError("market_cap 缺失")
 
-    # Calculate working capital change
-    working_capital_change = (current_financial_line_item.get(
-        'working_capital') or 0) - (previous_financial_line_item.get('working_capital') or 0)
+        metrics = data["financial_metrics"][0]
+        current_financial_line_item = data["financial_line_items"][0]
+        previous_financial_line_item = data["financial_line_items"][1]
+        market_cap = data["market_cap"]
 
-    # Owner Earnings Valuation (Buffett Method)
-    owner_earnings_value = calculate_owner_earnings_value(
-        net_income=current_financial_line_item.get('net_income'),
-        depreciation=current_financial_line_item.get(
-            'depreciation_and_amortization'),
-        capex=current_financial_line_item.get('capital_expenditure'),
-        working_capital_change=working_capital_change,
-        growth_rate=metrics["earnings_growth"],
-        required_return=0.15,
-        margin_of_safety=0.25
-    )
+        # Calculate working capital change
+        working_capital_change = (current_financial_line_item.get('working_capital') or 0) - (previous_financial_line_item.get('working_capital') or 0)
 
-    # DCF Valuation
-    dcf_value = calculate_intrinsic_value(
-        free_cash_flow=current_financial_line_item.get('free_cash_flow'),
-        growth_rate=metrics["earnings_growth"],
-        discount_rate=0.10,
-        terminal_growth_rate=0.03,
-        num_years=5,
-    )
+        # Owner Earnings Valuation (Buffett Method)
+        owner_earnings_value = calculate_owner_earnings_value(
+            net_income=current_financial_line_item.get('net_income'),
+            depreciation=current_financial_line_item.get('depreciation_and_amortization'),
+            capex=current_financial_line_item.get('capital_expenditure'),
+            working_capital_change=working_capital_change,
+            growth_rate=metrics.get("earnings_growth", 0.05),
+            required_return=0.15,
+            margin_of_safety=0.25
+        )
 
-    # Calculate combined valuation gap (average of both methods)
-    dcf_gap = (dcf_value - market_cap) / market_cap
-    owner_earnings_gap = (owner_earnings_value - market_cap) / market_cap
-    valuation_gap = (dcf_gap + owner_earnings_gap) / 2
+        # DCF Valuation
+        dcf_value = calculate_intrinsic_value(
+            free_cash_flow=current_financial_line_item.get('free_cash_flow'),
+            growth_rate=metrics.get("earnings_growth", 0.05),
+            discount_rate=0.10,
+            terminal_growth_rate=0.03,
+            num_years=5,
+        )
 
-    if valuation_gap > 0.10:  # Changed from 0.15 to 0.10 (10% undervalued)
-        signal = 'bullish'
-    elif valuation_gap < -0.20:  # Changed from -0.15 to -0.20 (20% overvalued)
-        signal = 'bearish'
-    else:
-        signal = 'neutral'
+        # Calculate combined valuation gap (average of both methods)
+        dcf_gap = (dcf_value - market_cap) / market_cap if market_cap else 0
+        owner_earnings_gap = (owner_earnings_value - market_cap) / market_cap if market_cap else 0
+        valuation_gap = (dcf_gap + owner_earnings_gap) / 2
 
-    reasoning["dcf_analysis"] = {
-        "signal": "bullish" if dcf_gap > 0.10 else "bearish" if dcf_gap < -0.20 else "neutral",
-        "details": f"Intrinsic Value: ${dcf_value:,.2f}, Market Cap: ${market_cap:,.2f}, Gap: {dcf_gap:.1%}"
-    }
+        if valuation_gap > 0.10:
+            signal = 'bullish'
+        elif valuation_gap < -0.20:
+            signal = 'bearish'
+        else:
+            signal = 'neutral'
 
-    reasoning["owner_earnings_analysis"] = {
-        "signal": "bullish" if owner_earnings_gap > 0.10 else "bearish" if owner_earnings_gap < -0.20 else "neutral",
-        "details": f"Owner Earnings Value: ${owner_earnings_value:,.2f}, Market Cap: ${market_cap:,.2f}, Gap: {owner_earnings_gap:.1%}"
-    }
-
-    message_content = {
-        "signal": signal,
-        "confidence": f"{abs(valuation_gap):.0%}",
-        "reasoning": reasoning
-    }
+        reasoning["dcf_analysis"] = {
+            "signal": "bullish" if dcf_gap > 0.10 else "bearish" if dcf_gap < -0.20 else "neutral",
+            "details": f"Intrinsic Value: ${dcf_value:,.2f}, Market Cap: ${market_cap:,.2f}, Gap: {dcf_gap:.1%}"
+        }
+        reasoning["owner_earnings_analysis"] = {
+            "signal": "bullish" if owner_earnings_gap > 0.10 else "bearish" if owner_earnings_gap < -0.20 else "neutral",
+            "details": f"Owner Earnings Value: ${owner_earnings_value:,.2f}, Market Cap: ${market_cap:,.2f}, Gap: {owner_earnings_gap:.1%}"
+        }
+        # 中文结构化输出
+        message_content = {
+            "估值信号": "看多" if signal == 'bullish' else "看空" if signal == 'bearish' else "中性",
+            "置信度": f"{abs(valuation_gap):.0%}",
+            "分析说明": {
+                "DCF估值法": {
+                    "信号": "看多" if reasoning["dcf_analysis"]["signal"] == 'bullish' else "看空" if reasoning["dcf_analysis"]["signal"] == 'bearish' else "中性",
+                    "详情": f"内在价值为${dcf_value:,.2f}，市值为${market_cap:,.2f}，估值差距为{dcf_gap:.1%}。内在价值高于市值较多时为看多，低于市值较多时为看空。"
+                },
+                "所有者收益法": {
+                    "信号": "看多" if reasoning["owner_earnings_analysis"]["signal"] == 'bullish' else "看空" if reasoning["owner_earnings_analysis"]["signal"] == 'bearish' else "中性",
+                    "详情": f"所有者收益估值为${owner_earnings_value:,.2f}，市值为${market_cap:,.2f}，估值差距为{owner_earnings_gap:.1%}。"
+                }
+            }
+        }
+    except Exception as e:
+        # 捕获所有异常，返回neutral并写入reasoning
+        message_content = {
+            "估值信号": "中性",
+            "置信度": "0%",
+            "分析说明": {
+                "错误": f"估值分析出错: {str(e)}"
+            }
+        }
+        if show_reasoning:
+            show_agent_reasoning(message_content, "Valuation Analysis Agent (Error)")
+        show_workflow_status("Valuation Agent", "failed")
+        # 保存推理信息到metadata供API使用
+        state["metadata"]["agent_reasoning"] = message_content
+        return {
+            "messages": [],
+            "data": {**data, "valuation_analysis": message_content},
+            "metadata": state["metadata"],
+        }
 
     message = HumanMessage(
         content=json.dumps(message_content),

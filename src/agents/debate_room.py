@@ -187,19 +187,16 @@ def debate_room_agent(state: AgentState):
 
     logger.info(f"最终投资信号: {final_signal}, 置信度: {confidence}")
 
-    # 构建返回消息，包含 LLM 分析
+    # 中文结构化输出
     message_content = {
-        "signal": final_signal,
-        "confidence": confidence,
-        "bull_confidence": bull_confidence,
-        "bear_confidence": bear_confidence,
-        "confidence_diff": confidence_diff,
-        "llm_score": llm_score if llm_analysis else None,
-        "llm_analysis": llm_analysis["analysis"] if llm_analysis and "analysis" in llm_analysis else None,
-        "llm_reasoning": llm_analysis["reasoning"] if llm_analysis and "reasoning" in llm_analysis else None,
-        "mixed_confidence_diff": mixed_confidence_diff,
-        "debate_summary": debate_summary,
-        "reasoning": reasoning
+        "辩论结论信号": "看多" if final_signal == 'bullish' else "看空" if final_signal == 'bearish' else "中性",
+        "置信度": f"{confidence:.0%}",
+        "多方置信度": f"{bull_confidence:.0%}",
+        "空方置信度": f"{bear_confidence:.0%}",
+        "混合置信度差": f"{mixed_confidence_diff:.2f}",
+        "LLM分析": llm_analysis["analysis"] if llm_analysis and "analysis" in llm_analysis else None,
+        "LLM理由": llm_analysis["reasoning"] if llm_analysis and "reasoning" in llm_analysis else None,
+        "分析说明": "综合多方与空方研究员观点，并结合大模型第三方分析，得出平衡投资建议。"
     }
 
     message = HumanMessage(

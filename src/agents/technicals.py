@@ -130,15 +130,27 @@ def technical_analyst_agent(state: AgentState):
     total_signals = len(signals)
     confidence = max(bullish_signals, bearish_signals) / total_signals
 
-    # Generate the message content
+    # 中文结构化输出
     message_content = {
-        "signal": overall_signal,
-        "confidence": f"{round(confidence * 100)}%",
-        "reasoning": {
-            "MACD": reasoning["MACD"],
-            "RSI": reasoning["RSI"],
-            "Bollinger": reasoning["Bollinger"],
-            "OBV": reasoning["OBV"]
+        "技术信号": "看多" if overall_signal == 'bullish' else "看空" if overall_signal == 'bearish' else "中性",
+        "置信度": f"{round(confidence * 100)}%",
+        "分析说明": {
+            "MACD指标": {
+                "信号": "看多" if signals[0] == 'bullish' else "看空" if signals[0] == 'bearish' else "中性",
+                "详情": f"MACD线{'上穿' if signals[0] == 'bullish' else '下穿' if signals[0] == 'bearish' else '未明显穿越'}信号线，反映趋势变化。"
+            },
+            "RSI指标": {
+                "信号": "看多" if signals[1] == 'bullish' else "看空" if signals[1] == 'bearish' else "中性",
+                "详情": f"RSI为{rsi.iloc[-1]:.2f}，{('超卖区间，存在反弹机会' if signals[1] == 'bullish' else '超买区间，存在回调风险' if signals[1] == 'bearish' else '处于中性区间')}。"
+            },
+            "布林带": {
+                "信号": "看多" if signals[2] == 'bullish' else "看空" if signals[2] == 'bearish' else "中性",
+                "详情": f"当前价格{('低于下轨，超跌' if signals[2] == 'bullish' else '高于上轨，超涨' if signals[2] == 'bearish' else '位于区间内，波动正常')}。"
+            },
+            "OBV能量潮": {
+                "信号": "看多" if signals[3] == 'bullish' else "看空" if signals[3] == 'bearish' else "中性",
+                "详情": f"OBV斜率为{obv_slope:.2f}，{('资金流入，动能增强' if signals[3] == 'bullish' else '资金流出，动能减弱' if signals[3] == 'bearish' else '资金流动平稳')}。"
+            }
         }
     }
 

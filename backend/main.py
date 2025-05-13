@@ -14,16 +14,17 @@ app = FastAPI(
 )
 
 # Configure CORS (Cross-Origin Resource Sharing)
-# Allows requests from any origin in this example.
-# Adjust origins as needed for production environments.
-origins = ["*"]  # Allow all origins
+# 只允许前端正式域名跨域访问，提升安全性
+origins = [
+    "https://ashareweb.pages.dev"
+]
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["*"],  # Allow all methods (GET, POST, etc.)
-    allow_headers=["*"],  # Allow all headers
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # 包含现有路由器

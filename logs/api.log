@@ -1,0 +1,779 @@
+2025-05-12 21:34:21 - api - INFO - 
+Getting price history for 301312...
+2025-05-12 21:34:21 - api - INFO - Start date: 2024-05-11
+2025-05-12 21:34:21 - api - INFO - End date: 2025-05-11
+2025-05-12 21:34:24 - api - INFO - Successfully fetched price history data (241 records)
+2025-05-12 21:34:24 - api - WARNING - 
+Warning: The following indicators contain NaN values:
+2025-05-12 21:34:24 - api - WARNING - - momentum_1m: 20 records
+2025-05-12 21:34:24 - api - WARNING - - momentum_3m: 60 records
+2025-05-12 21:34:24 - api - WARNING - - momentum_6m: 120 records
+2025-05-12 21:34:24 - api - WARNING - - volume_ma20: 19 records
+2025-05-12 21:34:24 - api - WARNING - - volume_momentum: 19 records
+2025-05-12 21:34:24 - api - WARNING - - historical_volatility: 20 records
+2025-05-12 21:34:24 - api - WARNING - - volatility_z_score: 139 records
+2025-05-12 21:34:24 - api - WARNING - - atr: 13 records
+2025-05-12 21:34:24 - api - WARNING - - atr_ratio: 13 records
+2025-05-12 21:34:24 - api - WARNING - - hurst_exponent: 67 records
+2025-05-12 21:34:24 - api - WARNING - - skewness: 20 records
+2025-05-12 21:34:24 - api - WARNING - - kurtosis: 20 records
+2025-05-12 21:34:24 - api - INFO - Getting financial indicators for 301312...
+2025-05-12 21:34:24 - api - INFO - Fetching real-time quotes...
+2025-05-12 21:36:07 - api - INFO - ✓ Real-time quotes fetched
+2025-05-12 21:36:07 - api - INFO - Fetching Sina financial indicators...
+2025-05-12 21:36:10 - api - INFO - ✓ Financial indicators fetched (5 records)
+2025-05-12 21:36:10 - api - INFO - Latest data date: 2025-03-31 00:00:00
+2025-05-12 21:36:10 - api - INFO - Fetching income statement...
+2025-05-12 21:36:11 - api - INFO - ✓ Income statement fetched
+2025-05-12 21:36:11 - api - INFO - Building indicators...
+2025-05-12 21:36:11 - api - INFO - ✓ Indicators built successfully
+2025-05-12 21:36:11 - api - DEBUG - 
+获取到的完整指标数据：
+2025-05-12 21:36:11 - api - DEBUG - market_cap: 3990065622.0
+2025-05-12 21:36:11 - api - DEBUG - float_market_cap: 1181402668.0
+2025-05-12 21:36:11 - api - DEBUG - revenue: 160525036.73
+2025-05-12 21:36:11 - api - DEBUG - net_income: 24074302.75
+2025-05-12 21:36:11 - api - DEBUG - return_on_equity: 0.0204
+2025-05-12 21:36:11 - api - DEBUG - net_margin: 0.149972
+2025-05-12 21:36:11 - api - DEBUG - operating_margin: 0.15905
+2025-05-12 21:36:11 - api - DEBUG - revenue_growth: 0.987774
+2025-05-12 21:36:11 - api - DEBUG - earnings_growth: nan
+2025-05-12 21:36:11 - api - DEBUG - book_value_growth: 0.049626
+2025-05-12 21:36:11 - api - DEBUG - current_ratio: 6.6376
+2025-05-12 21:36:11 - api - DEBUG - debt_to_equity: 0.141079
+2025-05-12 21:36:11 - api - DEBUG - free_cash_flow_per_share: -0.369
+2025-05-12 21:36:11 - api - DEBUG - earnings_per_share: 0.28
+2025-05-12 21:36:11 - api - DEBUG - pe_ratio: 40.05
+2025-05-12 21:36:11 - api - DEBUG - price_to_book: 3.28
+2025-05-12 21:36:11 - api - DEBUG - price_to_sales: 24.8563445508579
+2025-05-12 21:36:11 - api - DEBUG - 
+传递给 agent 的指标数据：
+2025-05-12 21:36:11 - api - DEBUG - return_on_equity: 0.0204
+2025-05-12 21:36:11 - api - DEBUG - net_margin: 0.149972
+2025-05-12 21:36:11 - api - DEBUG - operating_margin: 0.15905
+2025-05-12 21:36:11 - api - DEBUG - revenue_growth: 0.987774
+2025-05-12 21:36:11 - api - DEBUG - earnings_growth: nan
+2025-05-12 21:36:11 - api - DEBUG - book_value_growth: 0.049626
+2025-05-12 21:36:11 - api - DEBUG - current_ratio: 6.6376
+2025-05-12 21:36:11 - api - DEBUG - debt_to_equity: 0.141079
+2025-05-12 21:36:11 - api - DEBUG - free_cash_flow_per_share: -0.369
+2025-05-12 21:36:11 - api - DEBUG - earnings_per_share: 0.28
+2025-05-12 21:36:11 - api - DEBUG - pe_ratio: 40.05
+2025-05-12 21:36:11 - api - DEBUG - price_to_book: 3.28
+2025-05-12 21:36:11 - api - DEBUG - price_to_sales: 24.8563445508579
+2025-05-12 21:36:11 - api - INFO - Getting financial statements for 301312...
+2025-05-12 21:36:11 - api - INFO - Fetching balance sheet...
+2025-05-12 21:36:13 - api - INFO - ✓ Balance sheet fetched
+2025-05-12 21:36:13 - api - INFO - Fetching income statement...
+2025-05-12 21:36:14 - api - INFO - ✓ Income statement fetched
+2025-05-12 21:36:14 - api - INFO - Fetching cash flow statement...
+2025-05-12 21:36:15 - api - INFO - ✓ Cash flow statement fetched
+2025-05-12 21:36:15 - api - INFO - ✓ Latest period data processed successfully
+2025-05-12 21:36:15 - api - INFO - ✓ Previous period data processed successfully
+2025-05-12 21:59:06 - api - INFO - 
+Getting price history for 302312...
+2025-05-12 21:59:06 - api - INFO - Start date: 2024-05-11
+2025-05-12 21:59:06 - api - INFO - End date: 2025-05-11
+2025-05-12 21:59:08 - api - WARNING - Warning: No price history data found for 302312
+2025-05-12 21:59:08 - api - INFO - Getting financial indicators for 302312...
+2025-05-12 21:59:08 - api - INFO - Fetching real-time quotes...
+2025-05-12 21:59:28 - api - ERROR - Error getting financial indicators: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=3&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e853e9d0890>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-05-12 21:59:28 - api - INFO - Getting financial statements for 302312...
+2025-05-12 21:59:28 - api - INFO - Fetching balance sheet...
+2025-05-12 21:59:29 - api - WARNING - Failed to get balance sheet
+2025-05-12 21:59:29 - api - ERROR - Error getting balance sheet: 'NoneType' object is not subscriptable
+2025-05-12 21:59:29 - api - INFO - Fetching income statement...
+2025-05-12 21:59:30 - api - WARNING - Failed to get income statement
+2025-05-12 21:59:30 - api - ERROR - Error getting income statement: 'NoneType' object is not subscriptable
+2025-05-12 21:59:30 - api - INFO - Fetching cash flow statement...
+2025-05-12 21:59:31 - api - WARNING - Failed to get cash flow statement
+2025-05-12 21:59:31 - api - ERROR - Error getting cash flow statement: 'NoneType' object is not subscriptable
+2025-05-12 21:59:31 - api - INFO - ✓ Latest period data processed successfully
+2025-05-12 21:59:31 - api - INFO - ✓ Previous period data processed successfully
+2025-05-12 22:00:56 - api - ERROR - Error getting market data: single positional indexer is out-of-bounds
+2025-05-12 22:05:23 - api - INFO - 
+Getting price history for 600519...
+2025-05-12 22:05:23 - api - INFO - Start date: 2024-05-11
+2025-05-12 22:05:23 - api - INFO - End date: 2025-05-11
+2025-05-12 22:05:26 - api - INFO - Successfully fetched price history data (241 records)
+2025-05-12 22:05:26 - api - WARNING - 
+Warning: The following indicators contain NaN values:
+2025-05-12 22:05:26 - api - WARNING - - momentum_1m: 20 records
+2025-05-12 22:05:26 - api - WARNING - - momentum_3m: 60 records
+2025-05-12 22:05:26 - api - WARNING - - momentum_6m: 120 records
+2025-05-12 22:05:26 - api - WARNING - - volume_ma20: 19 records
+2025-05-12 22:05:26 - api - WARNING - - volume_momentum: 19 records
+2025-05-12 22:05:26 - api - WARNING - - historical_volatility: 20 records
+2025-05-12 22:05:26 - api - WARNING - - volatility_z_score: 139 records
+2025-05-12 22:05:26 - api - WARNING - - atr: 13 records
+2025-05-12 22:05:26 - api - WARNING - - atr_ratio: 13 records
+2025-05-12 22:05:26 - api - WARNING - - hurst_exponent: 60 records
+2025-05-12 22:05:26 - api - WARNING - - skewness: 20 records
+2025-05-12 22:05:26 - api - WARNING - - kurtosis: 20 records
+2025-05-12 22:05:26 - api - INFO - Getting financial indicators for 600519...
+2025-05-12 22:05:26 - api - INFO - Fetching real-time quotes...
+2025-05-12 22:06:15 - api - ERROR - Error getting financial indicators: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=23&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e7ec23d68d0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-05-12 22:06:15 - api - INFO - Getting financial statements for 600519...
+2025-05-12 22:06:15 - api - INFO - Fetching balance sheet...
+2025-05-12 22:06:18 - api - INFO - ✓ Balance sheet fetched
+2025-05-12 22:06:18 - api - INFO - Fetching income statement...
+2025-05-12 22:06:20 - api - INFO - ✓ Income statement fetched
+2025-05-12 22:06:20 - api - INFO - Fetching cash flow statement...
+2025-05-12 22:06:22 - api - INFO - ✓ Cash flow statement fetched
+2025-05-12 22:06:22 - api - INFO - ✓ Latest period data processed successfully
+2025-05-12 22:06:22 - api - INFO - ✓ Previous period data processed successfully
+2025-05-12 22:26:42 - api - INFO - 
+Getting price history for 600519...
+2025-05-12 22:26:42 - api - INFO - Start date: 2024-05-11
+2025-05-12 22:26:42 - api - INFO - End date: 2025-05-11
+2025-05-12 22:26:44 - api - INFO - Successfully fetched price history data (241 records)
+2025-05-12 22:26:44 - api - WARNING - 
+Warning: The following indicators contain NaN values:
+2025-05-12 22:26:44 - api - WARNING - - momentum_1m: 20 records
+2025-05-12 22:26:44 - api - WARNING - - momentum_3m: 60 records
+2025-05-12 22:26:44 - api - WARNING - - momentum_6m: 120 records
+2025-05-12 22:26:44 - api - WARNING - - volume_ma20: 19 records
+2025-05-12 22:26:44 - api - WARNING - - volume_momentum: 19 records
+2025-05-12 22:26:44 - api - WARNING - - historical_volatility: 20 records
+2025-05-12 22:26:44 - api - WARNING - - volatility_z_score: 139 records
+2025-05-12 22:26:44 - api - WARNING - - atr: 13 records
+2025-05-12 22:26:44 - api - WARNING - - atr_ratio: 13 records
+2025-05-12 22:26:44 - api - WARNING - - hurst_exponent: 60 records
+2025-05-12 22:26:44 - api - WARNING - - skewness: 20 records
+2025-05-12 22:26:44 - api - WARNING - - kurtosis: 20 records
+2025-05-12 22:26:44 - api - INFO - Getting financial indicators for 600519...
+2025-05-12 22:26:44 - api - INFO - Fetching real-time quotes...
+2025-05-12 22:27:42 - api - ERROR - Error getting financial indicators: HTTPSConnectionPool(host='82.push2delay.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=14&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x757820b805f0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-05-12 22:27:42 - api - INFO - Getting financial statements for 600519...
+2025-05-12 22:27:42 - api - INFO - Fetching balance sheet...
+2025-05-12 22:27:46 - api - INFO - ✓ Balance sheet fetched
+2025-05-12 22:27:46 - api - INFO - Fetching income statement...
+2025-05-12 22:27:48 - api - INFO - ✓ Income statement fetched
+2025-05-12 22:27:48 - api - INFO - Fetching cash flow statement...
+2025-05-12 22:27:49 - api - INFO - ✓ Cash flow statement fetched
+2025-05-12 22:27:49 - api - INFO - ✓ Latest period data processed successfully
+2025-05-12 22:27:49 - api - INFO - ✓ Previous period data processed successfully
+2025-05-13 10:27:40 - api - INFO - 
+Getting price history for 302132...
+2025-05-13 10:27:40 - api - INFO - Start date: 2024-05-12
+2025-05-13 10:27:40 - api - INFO - End date: 2025-05-12
+2025-05-13 10:27:42 - api - INFO - Successfully fetched price history data (242 records)
+2025-05-13 10:27:42 - api - WARNING - 
+Warning: The following indicators contain NaN values:
+2025-05-13 10:27:42 - api - WARNING - - momentum_1m: 20 records
+2025-05-13 10:27:42 - api - WARNING - - momentum_3m: 60 records
+2025-05-13 10:27:42 - api - WARNING - - momentum_6m: 120 records
+2025-05-13 10:27:42 - api - WARNING - - volume_ma20: 19 records
+2025-05-13 10:27:42 - api - WARNING - - volume_momentum: 19 records
+2025-05-13 10:27:42 - api - WARNING - - historical_volatility: 20 records
+2025-05-13 10:27:42 - api - WARNING - - volatility_z_score: 139 records
+2025-05-13 10:27:42 - api - WARNING - - atr: 13 records
+2025-05-13 10:27:42 - api - WARNING - - atr_ratio: 13 records
+2025-05-13 10:27:42 - api - WARNING - - hurst_exponent: 69 records
+2025-05-13 10:27:42 - api - WARNING - - skewness: 20 records
+2025-05-13 10:27:42 - api - WARNING - - kurtosis: 20 records
+2025-05-13 10:27:42 - api - INFO - Getting financial indicators for 302132...
+2025-05-13 10:27:42 - api - INFO - Fetching real-time quotes...
+2025-05-13 10:29:25 - api - ERROR - Error getting financial indicators: HTTPSConnectionPool(host='82.push2delay.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=56&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x788f685ecad0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-05-13 10:29:25 - api - INFO - Getting financial statements for 302132...
+2025-05-13 10:29:25 - api - INFO - Fetching balance sheet...
+2025-05-13 10:29:27 - api - INFO - ✓ Balance sheet fetched
+2025-05-13 10:29:27 - api - INFO - Fetching income statement...
+2025-05-13 10:29:29 - api - INFO - ✓ Income statement fetched
+2025-05-13 10:29:29 - api - INFO - Fetching cash flow statement...
+2025-05-13 10:29:31 - api - INFO - ✓ Cash flow statement fetched
+2025-05-13 10:29:31 - api - INFO - ✓ Latest period data processed successfully
+2025-05-13 10:29:31 - api - INFO - ✓ Previous period data processed successfully
+2025-05-13 16:36:33 - api - INFO - 
+Getting price history for 302132...
+2025-05-13 16:36:33 - api - INFO - Start date: 2024-05-12
+2025-05-13 16:36:33 - api - INFO - End date: 2025-05-12
+2025-05-13 16:36:35 - api - INFO - Successfully fetched price history data (242 records)
+2025-05-13 16:36:35 - api - WARNING - 
+Warning: The following indicators contain NaN values:
+2025-05-13 16:36:35 - api - WARNING - - momentum_1m: 20 records
+2025-05-13 16:36:35 - api - WARNING - - momentum_3m: 60 records
+2025-05-13 16:36:35 - api - WARNING - - momentum_6m: 120 records
+2025-05-13 16:36:35 - api - WARNING - - volume_ma20: 19 records
+2025-05-13 16:36:35 - api - WARNING - - volume_momentum: 19 records
+2025-05-13 16:36:35 - api - WARNING - - historical_volatility: 20 records
+2025-05-13 16:36:35 - api - WARNING - - volatility_z_score: 139 records
+2025-05-13 16:36:35 - api - WARNING - - atr: 13 records
+2025-05-13 16:36:35 - api - WARNING - - atr_ratio: 13 records
+2025-05-13 16:36:35 - api - WARNING - - hurst_exponent: 69 records
+2025-05-13 16:36:35 - api - WARNING - - skewness: 20 records
+2025-05-13 16:36:35 - api - WARNING - - kurtosis: 20 records
+2025-05-13 16:36:35 - api - INFO - Getting financial indicators for 302132...
+2025-05-13 16:36:35 - api - INFO - Fetching real-time quotes...
+2025-05-13 16:38:16 - api - INFO - ✓ Real-time quotes fetched
+2025-05-13 16:38:16 - api - INFO - Fetching Sina financial indicators...
+2025-05-13 16:38:19 - api - INFO - ✓ Financial indicators fetched (5 records)
+2025-05-13 16:38:19 - api - INFO - Latest data date: 2025-03-31 00:00:00
+2025-05-13 16:38:19 - api - INFO - Fetching income statement...
+2025-05-13 16:38:21 - api - INFO - ✓ Income statement fetched
+2025-05-13 16:38:21 - api - INFO - Building indicators...
+2025-05-13 16:38:21 - api - INFO - ✓ Indicators built successfully
+2025-05-13 16:38:21 - api - DEBUG - 
+获取到的完整指标数据：
+2025-05-13 16:38:21 - api - DEBUG - market_cap: 237537668046.0
+2025-05-13 16:38:21 - api - DEBUG - float_market_cap: 52424086681.0
+2025-05-13 16:38:21 - api - DEBUG - revenue: 3308640285.35
+2025-05-13 16:38:21 - api - DEBUG - net_income: 158600904.12
+2025-05-13 16:38:21 - api - DEBUG - return_on_equity: 0.008
+2025-05-13 16:38:21 - api - DEBUG - net_margin: 0.047935
+2025-05-13 16:38:21 - api - DEBUG - operating_margin: 0.055617
+2025-05-13 16:38:21 - api - DEBUG - revenue_growth: 9.158408
+2025-05-13 16:38:21 - api - DEBUG - earnings_growth: 7.454987999999999
+2025-05-13 16:38:21 - api - DEBUG - book_value_growth: 7.940187
+2025-05-13 16:38:21 - api - DEBUG - current_ratio: 1.0939
+2025-05-13 16:38:21 - api - DEBUG - debt_to_equity: 0.815398
+2025-05-13 16:38:21 - api - DEBUG - free_cash_flow_per_share: 0.782
+2025-05-13 16:38:21 - api - DEBUG - earnings_per_share: 0.0586
+2025-05-13 16:38:21 - api - DEBUG - pe_ratio: 379.47
+2025-05-13 16:38:21 - api - DEBUG - price_to_book: 12.12
+2025-05-13 16:38:21 - api - DEBUG - price_to_sales: 71.79313783301542
+2025-05-13 16:38:21 - api - DEBUG - 
+传递给 agent 的指标数据：
+2025-05-13 16:38:21 - api - DEBUG - return_on_equity: 0.008
+2025-05-13 16:38:21 - api - DEBUG - net_margin: 0.047935
+2025-05-13 16:38:21 - api - DEBUG - operating_margin: 0.055617
+2025-05-13 16:38:21 - api - DEBUG - revenue_growth: 9.158408
+2025-05-13 16:38:21 - api - DEBUG - earnings_growth: 7.454987999999999
+2025-05-13 16:38:21 - api - DEBUG - book_value_growth: 7.940187
+2025-05-13 16:38:21 - api - DEBUG - current_ratio: 1.0939
+2025-05-13 16:38:21 - api - DEBUG - debt_to_equity: 0.815398
+2025-05-13 16:38:21 - api - DEBUG - free_cash_flow_per_share: 0.782
+2025-05-13 16:38:21 - api - DEBUG - earnings_per_share: 0.0586
+2025-05-13 16:38:21 - api - DEBUG - pe_ratio: 379.47
+2025-05-13 16:38:21 - api - DEBUG - price_to_book: 12.12
+2025-05-13 16:38:21 - api - DEBUG - price_to_sales: 71.79313783301542
+2025-05-13 16:38:21 - api - INFO - Getting financial statements for 302132...
+2025-05-13 16:38:21 - api - INFO - Fetching balance sheet...
+2025-05-13 16:38:23 - api - INFO - ✓ Balance sheet fetched
+2025-05-13 16:38:23 - api - INFO - Fetching income statement...
+2025-05-13 16:38:24 - api - INFO - ✓ Income statement fetched
+2025-05-13 16:38:24 - api - INFO - Fetching cash flow statement...
+2025-05-13 16:38:26 - api - INFO - ✓ Cash flow statement fetched
+2025-05-13 16:38:26 - api - INFO - ✓ Latest period data processed successfully
+2025-05-13 16:38:26 - api - INFO - ✓ Previous period data processed successfully
+2025-05-13 17:06:20 - api - INFO - 
+Getting price history for 600316...
+2025-05-13 17:06:20 - api - INFO - Start date: 2024-05-12
+2025-05-13 17:06:20 - api - INFO - End date: 2025-05-12
+2025-05-13 17:06:22 - api - INFO - Successfully fetched price history data (242 records)
+2025-05-13 17:06:22 - api - WARNING - 
+Warning: The following indicators contain NaN values:
+2025-05-13 17:06:22 - api - WARNING - - momentum_1m: 20 records
+2025-05-13 17:06:22 - api - WARNING - - momentum_3m: 60 records
+2025-05-13 17:06:22 - api - WARNING - - momentum_6m: 120 records
+2025-05-13 17:06:22 - api - WARNING - - volume_ma20: 19 records
+2025-05-13 17:06:22 - api - WARNING - - volume_momentum: 19 records
+2025-05-13 17:06:22 - api - WARNING - - historical_volatility: 20 records
+2025-05-13 17:06:22 - api - WARNING - - volatility_z_score: 139 records
+2025-05-13 17:06:22 - api - WARNING - - atr: 13 records
+2025-05-13 17:06:22 - api - WARNING - - atr_ratio: 13 records
+2025-05-13 17:06:22 - api - WARNING - - hurst_exponent: 64 records
+2025-05-13 17:06:22 - api - WARNING - - skewness: 20 records
+2025-05-13 17:06:22 - api - WARNING - - kurtosis: 20 records
+2025-05-13 17:06:22 - api - INFO - Getting financial indicators for 600316...
+2025-05-13 17:06:22 - api - INFO - Fetching real-time quotes...
+2025-05-13 17:07:32 - api - ERROR - Error getting financial indicators: HTTPSConnectionPool(host='82.push2delay.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=38&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f4d275902f0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-05-13 17:07:32 - api - INFO - Getting financial statements for 600316...
+2025-05-13 17:07:32 - api - INFO - Fetching balance sheet...
+2025-05-13 17:07:36 - api - INFO - ✓ Balance sheet fetched
+2025-05-13 17:07:36 - api - INFO - Fetching income statement...
+2025-05-13 17:07:38 - api - INFO - ✓ Income statement fetched
+2025-05-13 17:07:38 - api - INFO - Fetching cash flow statement...
+2025-05-13 17:07:39 - api - INFO - ✓ Cash flow statement fetched
+2025-05-13 17:07:39 - api - INFO - ✓ Latest period data processed successfully
+2025-05-13 17:07:39 - api - INFO - ✓ Previous period data processed successfully
+2025-05-13 17:08:34 - api - ERROR - Error getting market data: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=27&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f4d27f1a450>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-05-13 17:30:21 - api - INFO - 
+Getting price history for 301050...
+2025-05-13 17:30:21 - api - INFO - Start date: 2024-05-12
+2025-05-13 17:30:21 - api - INFO - End date: 2025-05-12
+2025-05-13 17:30:26 - api - INFO - Successfully fetched price history data (242 records)
+2025-05-13 17:30:26 - api - WARNING - 
+Warning: The following indicators contain NaN values:
+2025-05-13 17:30:26 - api - WARNING - - momentum_1m: 20 records
+2025-05-13 17:30:26 - api - WARNING - - momentum_3m: 60 records
+2025-05-13 17:30:26 - api - WARNING - - momentum_6m: 120 records
+2025-05-13 17:30:26 - api - WARNING - - volume_ma20: 19 records
+2025-05-13 17:30:26 - api - WARNING - - volume_momentum: 19 records
+2025-05-13 17:30:26 - api - WARNING - - historical_volatility: 20 records
+2025-05-13 17:30:26 - api - WARNING - - volatility_z_score: 139 records
+2025-05-13 17:30:26 - api - WARNING - - atr: 13 records
+2025-05-13 17:30:26 - api - WARNING - - atr_ratio: 13 records
+2025-05-13 17:30:26 - api - WARNING - - hurst_exponent: 60 records
+2025-05-13 17:30:26 - api - WARNING - - skewness: 20 records
+2025-05-13 17:30:26 - api - WARNING - - kurtosis: 20 records
+2025-05-13 17:30:26 - api - INFO - Getting financial indicators for 301050...
+2025-05-13 17:30:26 - api - INFO - Fetching real-time quotes...
+2025-05-13 17:32:05 - api - INFO - ✓ Real-time quotes fetched
+2025-05-13 17:32:05 - api - INFO - Fetching Sina financial indicators...
+2025-05-13 17:32:08 - api - INFO - ✓ Financial indicators fetched (5 records)
+2025-05-13 17:32:08 - api - INFO - Latest data date: 2025-03-31 00:00:00
+2025-05-13 17:32:08 - api - INFO - Fetching income statement...
+2025-05-13 17:32:09 - api - INFO - ✓ Income statement fetched
+2025-05-13 17:32:09 - api - INFO - Building indicators...
+2025-05-13 17:32:09 - api - INFO - ✓ Indicators built successfully
+2025-05-13 17:32:09 - api - DEBUG - 
+获取到的完整指标数据：
+2025-05-13 17:32:09 - api - DEBUG - market_cap: 13118390847.0
+2025-05-13 17:32:09 - api - DEBUG - float_market_cap: 11151645618.0
+2025-05-13 17:32:09 - api - DEBUG - revenue: 235750000.0
+2025-05-13 17:32:09 - api - DEBUG - net_income: 68869481.37
+2025-05-13 17:32:09 - api - DEBUG - return_on_equity: 0.0225
+2025-05-13 17:32:09 - api - DEBUG - net_margin: 0.292129
+2025-05-13 17:32:09 - api - DEBUG - operating_margin: 0.343881
+2025-05-13 17:32:09 - api - DEBUG - revenue_growth: -0.34834600000000004
+2025-05-13 17:32:09 - api - DEBUG - earnings_growth: -0.301655
+2025-05-13 17:32:09 - api - DEBUG - book_value_growth: 0.148566
+2025-05-13 17:32:09 - api - DEBUG - current_ratio: 4.089
+2025-05-13 17:32:09 - api - DEBUG - debt_to_equity: 0.23366800000000001
+2025-05-13 17:32:09 - api - DEBUG - free_cash_flow_per_share: 1.4466
+2025-05-13 17:32:09 - api - DEBUG - earnings_per_share: 0.28
+2025-05-13 17:32:09 - api - DEBUG - pe_ratio: 47.62
+2025-05-13 17:32:09 - api - DEBUG - price_to_book: 4.29
+2025-05-13 17:32:09 - api - DEBUG - price_to_sales: 55.645348237539764
+2025-05-13 17:32:09 - api - DEBUG - 
+传递给 agent 的指标数据：
+2025-05-13 17:32:09 - api - DEBUG - return_on_equity: 0.0225
+2025-05-13 17:32:09 - api - DEBUG - net_margin: 0.292129
+2025-05-13 17:32:09 - api - DEBUG - operating_margin: 0.343881
+2025-05-13 17:32:09 - api - DEBUG - revenue_growth: -0.34834600000000004
+2025-05-13 17:32:09 - api - DEBUG - earnings_growth: -0.301655
+2025-05-13 17:32:09 - api - DEBUG - book_value_growth: 0.148566
+2025-05-13 17:32:09 - api - DEBUG - current_ratio: 4.089
+2025-05-13 17:32:09 - api - DEBUG - debt_to_equity: 0.23366800000000001
+2025-05-13 17:32:09 - api - DEBUG - free_cash_flow_per_share: 1.4466
+2025-05-13 17:32:09 - api - DEBUG - earnings_per_share: 0.28
+2025-05-13 17:32:09 - api - DEBUG - pe_ratio: 47.62
+2025-05-13 17:32:09 - api - DEBUG - price_to_book: 4.29
+2025-05-13 17:32:09 - api - DEBUG - price_to_sales: 55.645348237539764
+2025-05-13 17:32:09 - api - INFO - Getting financial statements for 301050...
+2025-05-13 17:32:09 - api - INFO - Fetching balance sheet...
+2025-05-13 17:32:10 - api - INFO - ✓ Balance sheet fetched
+2025-05-13 17:32:10 - api - INFO - Fetching income statement...
+2025-05-13 17:32:11 - api - INFO - ✓ Income statement fetched
+2025-05-13 17:32:11 - api - INFO - Fetching cash flow statement...
+2025-05-13 17:32:12 - api - INFO - ✓ Cash flow statement fetched
+2025-05-13 17:32:12 - api - INFO - ✓ Latest period data processed successfully
+2025-05-13 17:32:12 - api - INFO - ✓ Previous period data processed successfully
+2025-05-13 17:33:06 - api - ERROR - Error getting market data: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=27&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f4d27ffd7c0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-05-13 17:38:25 - api - INFO - 
+Getting price history for 300551...
+2025-05-13 17:38:25 - api - INFO - Start date: 2024-05-12
+2025-05-13 17:38:25 - api - INFO - End date: 2025-05-12
+2025-05-13 17:38:28 - api - INFO - Successfully fetched price history data (242 records)
+2025-05-13 17:38:28 - api - WARNING - 
+Warning: The following indicators contain NaN values:
+2025-05-13 17:38:28 - api - WARNING - - momentum_1m: 20 records
+2025-05-13 17:38:28 - api - WARNING - - momentum_3m: 60 records
+2025-05-13 17:38:28 - api - WARNING - - momentum_6m: 120 records
+2025-05-13 17:38:28 - api - WARNING - - volume_ma20: 19 records
+2025-05-13 17:38:28 - api - WARNING - - volume_momentum: 19 records
+2025-05-13 17:38:28 - api - WARNING - - historical_volatility: 20 records
+2025-05-13 17:38:28 - api - WARNING - - volatility_z_score: 139 records
+2025-05-13 17:38:28 - api - WARNING - - atr: 13 records
+2025-05-13 17:38:28 - api - WARNING - - atr_ratio: 13 records
+2025-05-13 17:38:28 - api - WARNING - - hurst_exponent: 60 records
+2025-05-13 17:38:28 - api - WARNING - - skewness: 20 records
+2025-05-13 17:38:28 - api - WARNING - - kurtosis: 20 records
+2025-05-13 17:38:28 - api - INFO - Getting financial indicators for 300551...
+2025-05-13 17:38:28 - api - INFO - Fetching real-time quotes...
+2025-05-13 17:38:59 - api - ERROR - Error getting financial indicators: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=12&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f4d275c2600>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-05-13 17:38:59 - api - INFO - Getting financial statements for 300551...
+2025-05-13 17:38:59 - api - INFO - Fetching balance sheet...
+2025-05-13 17:39:01 - api - INFO - ✓ Balance sheet fetched
+2025-05-13 17:39:01 - api - INFO - Fetching income statement...
+2025-05-13 17:39:02 - api - INFO - ✓ Income statement fetched
+2025-05-13 17:39:02 - api - INFO - Fetching cash flow statement...
+2025-05-13 17:39:04 - api - INFO - ✓ Cash flow statement fetched
+2025-05-13 17:39:04 - api - INFO - ✓ Latest period data processed successfully
+2025-05-13 17:39:04 - api - INFO - ✓ Previous period data processed successfully
+2025-05-13 17:40:22 - api - ERROR - Error getting market data: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=44&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f4d27f15070>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-05-13 17:49:42 - api - INFO - 
+Getting price history for 000519...
+2025-05-13 17:49:42 - api - INFO - Start date: 2024-05-12
+2025-05-13 17:49:42 - api - INFO - End date: 2025-05-12
+2025-05-13 17:49:44 - api - INFO - Successfully fetched price history data (242 records)
+2025-05-13 17:49:44 - api - WARNING - 
+Warning: The following indicators contain NaN values:
+2025-05-13 17:49:44 - api - WARNING - - momentum_1m: 20 records
+2025-05-13 17:49:44 - api - WARNING - - momentum_3m: 60 records
+2025-05-13 17:49:44 - api - WARNING - - momentum_6m: 120 records
+2025-05-13 17:49:44 - api - WARNING - - volume_ma20: 19 records
+2025-05-13 17:49:44 - api - WARNING - - volume_momentum: 19 records
+2025-05-13 17:49:44 - api - WARNING - - historical_volatility: 20 records
+2025-05-13 17:49:44 - api - WARNING - - volatility_z_score: 139 records
+2025-05-13 17:49:44 - api - WARNING - - atr: 13 records
+2025-05-13 17:49:44 - api - WARNING - - atr_ratio: 13 records
+2025-05-13 17:49:44 - api - WARNING - - hurst_exponent: 60 records
+2025-05-13 17:49:44 - api - WARNING - - skewness: 20 records
+2025-05-13 17:49:44 - api - WARNING - - kurtosis: 20 records
+2025-05-13 17:49:44 - api - INFO - Getting financial indicators for 000519...
+2025-05-13 17:49:44 - api - INFO - Fetching real-time quotes...
+2025-05-13 17:51:34 - api - INFO - ✓ Real-time quotes fetched
+2025-05-13 17:51:34 - api - INFO - Fetching Sina financial indicators...
+2025-05-13 17:51:38 - api - INFO - ✓ Financial indicators fetched (5 records)
+2025-05-13 17:51:38 - api - INFO - Latest data date: 2025-03-31 00:00:00
+2025-05-13 17:51:38 - api - INFO - Fetching income statement...
+2025-05-13 17:51:40 - api - INFO - ✓ Income statement fetched
+2025-05-13 17:51:40 - api - INFO - Building indicators...
+2025-05-13 17:51:40 - api - INFO - ✓ Indicators built successfully
+2025-05-13 17:51:40 - api - DEBUG - 
+获取到的完整指标数据：
+2025-05-13 17:51:40 - api - DEBUG - market_cap: 24690070751.0
+2025-05-13 17:51:40 - api - DEBUG - float_market_cap: 24690070751.0
+2025-05-13 17:51:40 - api - DEBUG - revenue: 619596480.71
+2025-05-13 17:51:40 - api - DEBUG - net_income: -139256237.48
+2025-05-13 17:51:40 - api - DEBUG - return_on_equity: -0.0127
+2025-05-13 17:51:40 - api - DEBUG - net_margin: -0.224753
+2025-05-13 17:51:40 - api - DEBUG - operating_margin: -0.21343800000000002
+2025-05-13 17:51:40 - api - DEBUG - revenue_growth: -0.300557
+2025-05-13 17:51:40 - api - DEBUG - earnings_growth: nan
+2025-05-13 17:51:40 - api - DEBUG - book_value_growth: -0.029759999999999998
+2025-05-13 17:51:40 - api - DEBUG - current_ratio: 2.0428
+2025-05-13 17:51:40 - api - DEBUG - debt_to_equity: 0.367523
+2025-05-13 17:51:40 - api - DEBUG - free_cash_flow_per_share: 0.0008
+2025-05-13 17:51:40 - api - DEBUG - earnings_per_share: -0.0926
+2025-05-13 17:51:40 - api - DEBUG - pe_ratio: -47.86
+2025-05-13 17:51:40 - api - DEBUG - price_to_book: 2.44
+2025-05-13 17:51:40 - api - DEBUG - price_to_sales: 39.848629744809834
+2025-05-13 17:51:40 - api - DEBUG - 
+传递给 agent 的指标数据：
+2025-05-13 17:51:40 - api - DEBUG - return_on_equity: -0.0127
+2025-05-13 17:51:40 - api - DEBUG - net_margin: -0.224753
+2025-05-13 17:51:40 - api - DEBUG - operating_margin: -0.21343800000000002
+2025-05-13 17:51:40 - api - DEBUG - revenue_growth: -0.300557
+2025-05-13 17:51:40 - api - DEBUG - earnings_growth: nan
+2025-05-13 17:51:40 - api - DEBUG - book_value_growth: -0.029759999999999998
+2025-05-13 17:51:40 - api - DEBUG - current_ratio: 2.0428
+2025-05-13 17:51:40 - api - DEBUG - debt_to_equity: 0.367523
+2025-05-13 17:51:40 - api - DEBUG - free_cash_flow_per_share: 0.0008
+2025-05-13 17:51:40 - api - DEBUG - earnings_per_share: -0.0926
+2025-05-13 17:51:40 - api - DEBUG - pe_ratio: -47.86
+2025-05-13 17:51:40 - api - DEBUG - price_to_book: 2.44
+2025-05-13 17:51:40 - api - DEBUG - price_to_sales: 39.848629744809834
+2025-05-13 17:51:40 - api - INFO - Getting financial statements for 000519...
+2025-05-13 17:51:40 - api - INFO - Fetching balance sheet...
+2025-05-13 17:51:43 - api - INFO - ✓ Balance sheet fetched
+2025-05-13 17:51:43 - api - INFO - Fetching income statement...
+2025-05-13 17:51:45 - api - INFO - ✓ Income statement fetched
+2025-05-13 17:51:45 - api - INFO - Fetching cash flow statement...
+2025-05-13 17:51:46 - api - INFO - ✓ Cash flow statement fetched
+2025-05-13 17:51:46 - api - INFO - ✓ Latest period data processed successfully
+2025-05-13 17:51:46 - api - INFO - ✓ Previous period data processed successfully
+2025-05-13 18:27:02 - api - INFO - 
+Getting price history for 300581...
+2025-05-13 18:27:02 - api - INFO - Start date: 2024-05-12
+2025-05-13 18:27:02 - api - INFO - End date: 2025-05-12
+2025-05-13 18:27:04 - api - INFO - Successfully fetched price history data (242 records)
+2025-05-13 18:27:04 - api - WARNING - 
+Warning: The following indicators contain NaN values:
+2025-05-13 18:27:04 - api - WARNING - - momentum_1m: 20 records
+2025-05-13 18:27:04 - api - WARNING - - momentum_3m: 60 records
+2025-05-13 18:27:04 - api - WARNING - - momentum_6m: 120 records
+2025-05-13 18:27:04 - api - WARNING - - volume_ma20: 19 records
+2025-05-13 18:27:04 - api - WARNING - - volume_momentum: 19 records
+2025-05-13 18:27:04 - api - WARNING - - historical_volatility: 20 records
+2025-05-13 18:27:04 - api - WARNING - - volatility_z_score: 139 records
+2025-05-13 18:27:04 - api - WARNING - - atr: 13 records
+2025-05-13 18:27:04 - api - WARNING - - atr_ratio: 13 records
+2025-05-13 18:27:04 - api - WARNING - - hurst_exponent: 63 records
+2025-05-13 18:27:04 - api - WARNING - - skewness: 20 records
+2025-05-13 18:27:04 - api - WARNING - - kurtosis: 20 records
+2025-05-13 18:27:04 - api - INFO - Getting financial indicators for 300581...
+2025-05-13 18:27:04 - api - INFO - Fetching real-time quotes...
+2025-05-13 18:28:20 - api - ERROR - Error getting financial indicators: HTTPSConnectionPool(host='82.push2delay.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=23&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff4d43faa20>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-05-13 18:28:20 - api - INFO - Getting financial statements for 300581...
+2025-05-13 18:28:20 - api - INFO - Fetching balance sheet...
+2025-05-13 18:28:22 - api - INFO - ✓ Balance sheet fetched
+2025-05-13 18:28:22 - api - INFO - Fetching income statement...
+2025-05-13 18:28:23 - api - INFO - ✓ Income statement fetched
+2025-05-13 18:28:23 - api - INFO - Fetching cash flow statement...
+2025-05-13 18:28:24 - api - INFO - ✓ Cash flow statement fetched
+2025-05-13 18:28:24 - api - INFO - ✓ Latest period data processed successfully
+2025-05-13 18:28:24 - api - INFO - ✓ Previous period data processed successfully
+2025-05-13 18:32:48 - api - INFO - 
+Getting price history for 300581...
+2025-05-13 18:32:48 - api - INFO - Start date: 2024-05-12
+2025-05-13 18:32:48 - api - INFO - End date: 2025-05-12
+2025-05-13 18:32:50 - api - INFO - Successfully fetched price history data (242 records)
+2025-05-13 18:32:50 - api - WARNING - 
+Warning: The following indicators contain NaN values:
+2025-05-13 18:32:50 - api - WARNING - - momentum_1m: 20 records
+2025-05-13 18:32:50 - api - WARNING - - momentum_3m: 60 records
+2025-05-13 18:32:50 - api - WARNING - - momentum_6m: 120 records
+2025-05-13 18:32:50 - api - WARNING - - volume_ma20: 19 records
+2025-05-13 18:32:50 - api - WARNING - - volume_momentum: 19 records
+2025-05-13 18:32:50 - api - WARNING - - historical_volatility: 20 records
+2025-05-13 18:32:50 - api - WARNING - - volatility_z_score: 139 records
+2025-05-13 18:32:50 - api - WARNING - - atr: 13 records
+2025-05-13 18:32:50 - api - WARNING - - atr_ratio: 13 records
+2025-05-13 18:32:50 - api - WARNING - - hurst_exponent: 63 records
+2025-05-13 18:32:50 - api - WARNING - - skewness: 20 records
+2025-05-13 18:32:50 - api - WARNING - - kurtosis: 20 records
+2025-05-13 18:32:50 - api - INFO - Getting financial indicators for 300581...
+2025-05-13 18:32:50 - api - INFO - Fetching real-time quotes...
+2025-05-13 18:34:09 - api - ERROR - Error getting financial indicators: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Read timed out. (read timeout=15)
+2025-05-13 18:34:09 - api - INFO - Getting financial statements for 300581...
+2025-05-13 18:34:09 - api - INFO - Fetching balance sheet...
+2025-05-13 18:34:11 - api - INFO - ✓ Balance sheet fetched
+2025-05-13 18:34:11 - api - INFO - Fetching income statement...
+2025-05-13 18:34:12 - api - INFO - ✓ Income statement fetched
+2025-05-13 18:34:12 - api - INFO - Fetching cash flow statement...
+2025-05-13 18:34:13 - api - INFO - ✓ Cash flow statement fetched
+2025-05-13 18:34:13 - api - INFO - ✓ Latest period data processed successfully
+2025-05-13 18:34:13 - api - INFO - ✓ Previous period data processed successfully
+2025-05-13 18:57:13 - api - INFO - 
+Getting price history for 300581...
+2025-05-13 18:57:13 - api - INFO - Start date: 2024-05-12
+2025-05-13 18:57:13 - api - INFO - End date: 2025-05-12
+2025-05-13 18:57:14 - api - INFO - Successfully fetched price history data (242 records)
+2025-05-13 18:57:14 - api - WARNING - 
+Warning: The following indicators contain NaN values:
+2025-05-13 18:57:14 - api - WARNING - - momentum_1m: 20 records
+2025-05-13 18:57:14 - api - WARNING - - momentum_3m: 60 records
+2025-05-13 18:57:14 - api - WARNING - - momentum_6m: 120 records
+2025-05-13 18:57:14 - api - WARNING - - volume_ma20: 19 records
+2025-05-13 18:57:14 - api - WARNING - - volume_momentum: 19 records
+2025-05-13 18:57:14 - api - WARNING - - historical_volatility: 20 records
+2025-05-13 18:57:14 - api - WARNING - - volatility_z_score: 139 records
+2025-05-13 18:57:14 - api - WARNING - - atr: 13 records
+2025-05-13 18:57:14 - api - WARNING - - atr_ratio: 13 records
+2025-05-13 18:57:14 - api - WARNING - - hurst_exponent: 63 records
+2025-05-13 18:57:14 - api - WARNING - - skewness: 20 records
+2025-05-13 18:57:14 - api - WARNING - - kurtosis: 20 records
+2025-05-13 18:57:14 - api - INFO - Getting financial indicators for 300581...
+2025-05-13 18:57:14 - api - INFO - Fetching real-time quotes...
+2025-05-13 18:58:46 - api - ERROR - Error getting financial indicators: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=46&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7819a80258e0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-05-13 18:58:46 - api - INFO - Getting financial statements for 300581...
+2025-05-13 18:58:46 - api - INFO - Fetching balance sheet...
+2025-05-13 18:58:48 - api - INFO - ✓ Balance sheet fetched
+2025-05-13 18:58:48 - api - INFO - Fetching income statement...
+2025-05-13 18:58:49 - api - INFO - ✓ Income statement fetched
+2025-05-13 18:58:49 - api - INFO - Fetching cash flow statement...
+2025-05-13 18:58:51 - api - INFO - ✓ Cash flow statement fetched
+2025-05-13 18:58:51 - api - INFO - ✓ Latest period data processed successfully
+2025-05-13 18:58:51 - api - INFO - ✓ Previous period data processed successfully
+2025-05-13 19:10:03 - api - INFO - 
+Getting price history for 300581...
+2025-05-13 19:10:03 - api - INFO - Start date: 2024-05-12
+2025-05-13 19:10:03 - api - INFO - End date: 2025-05-12
+2025-05-13 19:10:05 - api - INFO - Successfully fetched price history data (242 records)
+2025-05-13 19:10:05 - api - WARNING - 
+Warning: The following indicators contain NaN values:
+2025-05-13 19:10:05 - api - WARNING - - momentum_1m: 20 records
+2025-05-13 19:10:05 - api - WARNING - - momentum_3m: 60 records
+2025-05-13 19:10:05 - api - WARNING - - momentum_6m: 120 records
+2025-05-13 19:10:05 - api - WARNING - - volume_ma20: 19 records
+2025-05-13 19:10:05 - api - WARNING - - volume_momentum: 19 records
+2025-05-13 19:10:05 - api - WARNING - - historical_volatility: 20 records
+2025-05-13 19:10:05 - api - WARNING - - volatility_z_score: 139 records
+2025-05-13 19:10:05 - api - WARNING - - atr: 13 records
+2025-05-13 19:10:05 - api - WARNING - - atr_ratio: 13 records
+2025-05-13 19:10:05 - api - WARNING - - hurst_exponent: 63 records
+2025-05-13 19:10:05 - api - WARNING - - skewness: 20 records
+2025-05-13 19:10:05 - api - WARNING - - kurtosis: 20 records
+2025-05-13 19:10:05 - api - INFO - Getting financial indicators for 300581...
+2025-05-13 19:10:05 - api - INFO - Fetching real-time quotes...
+2025-05-13 19:10:41 - api - ERROR - Error getting financial indicators: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Read timed out. (read timeout=15)
+2025-05-13 19:10:41 - api - INFO - Getting financial statements for 300581...
+2025-05-13 19:10:41 - api - INFO - Fetching balance sheet...
+2025-05-13 19:10:43 - api - INFO - ✓ Balance sheet fetched
+2025-05-13 19:10:43 - api - INFO - Fetching income statement...
+2025-05-13 19:10:44 - api - INFO - ✓ Income statement fetched
+2025-05-13 19:10:44 - api - INFO - Fetching cash flow statement...
+2025-05-13 19:10:45 - api - INFO - ✓ Cash flow statement fetched
+2025-05-13 19:10:45 - api - INFO - ✓ Latest period data processed successfully
+2025-05-13 19:10:45 - api - INFO - ✓ Previous period data processed successfully
+2025-05-13 19:11:23 - api - ERROR - Error getting market data: HTTPSConnectionPool(host='82.push2delay.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=15&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x77fd8b94b9e0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-05-13 19:18:23 - api - INFO - 
+Getting price history for 302312...
+2025-05-13 19:18:23 - api - INFO - Start date: 2024-05-12
+2025-05-13 19:18:23 - api - INFO - End date: 2025-05-12
+2025-05-13 19:18:24 - api - WARNING - Warning: No price history data found for 302312
+2025-05-13 19:18:24 - api - INFO - Getting financial indicators for 302312...
+2025-05-13 19:18:24 - api - INFO - Fetching real-time quotes...
+2025-05-13 19:20:06 - api - WARNING - No real-time quotes found for 302312
+2025-05-13 19:20:06 - api - INFO - Getting financial statements for 302312...
+2025-05-13 19:20:06 - api - INFO - Fetching balance sheet...
+2025-05-13 19:20:07 - api - WARNING - Failed to get balance sheet
+2025-05-13 19:20:07 - api - ERROR - Error getting balance sheet: 'NoneType' object is not subscriptable
+2025-05-13 19:20:07 - api - INFO - Fetching income statement...
+2025-05-13 19:20:08 - api - WARNING - Failed to get income statement
+2025-05-13 19:20:08 - api - ERROR - Error getting income statement: 'NoneType' object is not subscriptable
+2025-05-13 19:20:08 - api - INFO - Fetching cash flow statement...
+2025-05-13 19:20:09 - api - WARNING - Failed to get cash flow statement
+2025-05-13 19:20:09 - api - ERROR - Error getting cash flow statement: 'NoneType' object is not subscriptable
+2025-05-13 19:20:09 - api - INFO - ✓ Latest period data processed successfully
+2025-05-13 19:20:09 - api - INFO - ✓ Previous period data processed successfully
+2025-05-13 19:21:49 - api - ERROR - Error getting market data: single positional indexer is out-of-bounds
+2025-05-13 19:25:27 - api - INFO - 
+Getting price history for 302312...
+2025-05-13 19:25:27 - api - INFO - Start date: 2024-05-12
+2025-05-13 19:25:27 - api - INFO - End date: 2025-05-12
+2025-05-13 19:25:29 - api - WARNING - Warning: No price history data found for 302312
+2025-05-13 19:25:29 - api - INFO - Getting financial indicators for 302312...
+2025-05-13 19:25:29 - api - INFO - Fetching real-time quotes...
+2025-05-13 19:27:49 - api - WARNING - No real-time quotes found for 302312
+2025-05-13 19:27:49 - api - INFO - Getting financial statements for 302312...
+2025-05-13 19:27:49 - api - INFO - Fetching balance sheet...
+2025-05-13 19:27:49 - api - WARNING - Failed to get balance sheet
+2025-05-13 19:27:49 - api - ERROR - Error getting balance sheet: 'NoneType' object is not subscriptable
+2025-05-13 19:27:49 - api - INFO - Fetching income statement...
+2025-05-13 19:27:50 - api - WARNING - Failed to get income statement
+2025-05-13 19:27:50 - api - ERROR - Error getting income statement: 'NoneType' object is not subscriptable
+2025-05-13 19:27:50 - api - INFO - Fetching cash flow statement...
+2025-05-13 19:27:51 - api - WARNING - Failed to get cash flow statement
+2025-05-13 19:27:51 - api - ERROR - Error getting cash flow statement: 'NoneType' object is not subscriptable
+2025-05-13 19:27:51 - api - INFO - ✓ Latest period data processed successfully
+2025-05-13 19:27:51 - api - INFO - ✓ Previous period data processed successfully
+2025-05-13 19:29:38 - api - ERROR - Error getting market data: single positional indexer is out-of-bounds
+2025-05-13 20:25:02 - api - INFO - 
+Getting price history for 302312...
+2025-05-13 20:25:02 - api - INFO - Start date: 2024-05-12
+2025-05-13 20:25:02 - api - INFO - End date: 2025-05-12
+2025-05-13 20:25:03 - api - WARNING - Warning: No price history data found for 302312
+2025-05-13 20:25:03 - api - INFO - Getting financial indicators for 302312...
+2025-05-13 20:25:03 - api - INFO - Fetching real-time quotes...
+2025-05-13 20:26:44 - api - WARNING - No real-time quotes found for 302312
+2025-05-13 20:26:44 - api - INFO - Getting financial statements for 302312...
+2025-05-13 20:26:44 - api - INFO - Fetching balance sheet...
+2025-05-13 20:26:45 - api - WARNING - Failed to get balance sheet
+2025-05-13 20:26:45 - api - ERROR - Error getting balance sheet: 'NoneType' object is not subscriptable
+2025-05-13 20:26:45 - api - INFO - Fetching income statement...
+2025-05-13 20:26:46 - api - WARNING - Failed to get income statement
+2025-05-13 20:26:46 - api - ERROR - Error getting income statement: 'NoneType' object is not subscriptable
+2025-05-13 20:26:46 - api - INFO - Fetching cash flow statement...
+2025-05-13 20:26:47 - api - WARNING - Failed to get cash flow statement
+2025-05-13 20:26:47 - api - ERROR - Error getting cash flow statement: 'NoneType' object is not subscriptable
+2025-05-13 20:26:47 - api - INFO - ✓ Latest period data processed successfully
+2025-05-13 20:26:47 - api - INFO - ✓ Previous period data processed successfully
+2025-05-13 20:28:21 - api - ERROR - Error getting market data: single positional indexer is out-of-bounds
+2025-05-13 20:34:01 - api - INFO - 
+Getting price history for 302312...
+2025-05-13 20:34:01 - api - INFO - Start date: 2024-05-12
+2025-05-13 20:34:01 - api - INFO - End date: 2025-05-12
+2025-05-13 20:34:02 - api - WARNING - Warning: No price history data found for 302312
+2025-05-13 20:34:02 - api - INFO - Getting financial indicators for 302312...
+2025-05-13 20:34:02 - api - INFO - Fetching real-time quotes...
+2025-05-13 20:35:09 - api - WARNING - No real-time quotes found for 302312
+2025-05-13 20:35:09 - api - INFO - Getting financial statements for 302312...
+2025-05-13 20:35:09 - api - INFO - Fetching balance sheet...
+2025-05-13 20:35:10 - api - WARNING - Failed to get balance sheet
+2025-05-13 20:35:10 - api - ERROR - Error getting balance sheet: 'NoneType' object is not subscriptable
+2025-05-13 20:35:10 - api - INFO - Fetching income statement...
+2025-05-13 20:35:11 - api - WARNING - Failed to get income statement
+2025-05-13 20:35:11 - api - ERROR - Error getting income statement: 'NoneType' object is not subscriptable
+2025-05-13 20:35:11 - api - INFO - Fetching cash flow statement...
+2025-05-13 20:35:12 - api - WARNING - Failed to get cash flow statement
+2025-05-13 20:35:12 - api - ERROR - Error getting cash flow statement: 'NoneType' object is not subscriptable
+2025-05-13 20:35:12 - api - INFO - ✓ Latest period data processed successfully
+2025-05-13 20:35:12 - api - INFO - ✓ Previous period data processed successfully
+2025-05-13 20:35:45 - api - ERROR - Error getting market data: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=11&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x75b899f460c0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-05-13 21:11:27 - api - INFO - 
+Getting price history for 000519...
+2025-05-13 21:11:27 - api - INFO - Start date: 2024-05-12
+2025-05-13 21:11:27 - api - INFO - End date: 2025-05-12
+2025-05-13 21:11:29 - api - INFO - Successfully fetched price history data (242 records)
+2025-05-13 21:11:29 - api - WARNING - 
+Warning: The following indicators contain NaN values:
+2025-05-13 21:11:29 - api - WARNING - - momentum_1m: 20 records
+2025-05-13 21:11:29 - api - WARNING - - momentum_3m: 60 records
+2025-05-13 21:11:29 - api - WARNING - - momentum_6m: 120 records
+2025-05-13 21:11:29 - api - WARNING - - volume_ma20: 19 records
+2025-05-13 21:11:29 - api - WARNING - - volume_momentum: 19 records
+2025-05-13 21:11:29 - api - WARNING - - historical_volatility: 20 records
+2025-05-13 21:11:29 - api - WARNING - - volatility_z_score: 139 records
+2025-05-13 21:11:29 - api - WARNING - - atr: 13 records
+2025-05-13 21:11:29 - api - WARNING - - atr_ratio: 13 records
+2025-05-13 21:11:29 - api - WARNING - - hurst_exponent: 60 records
+2025-05-13 21:11:29 - api - WARNING - - skewness: 20 records
+2025-05-13 21:11:29 - api - WARNING - - kurtosis: 20 records
+2025-05-13 21:11:29 - api - INFO - Getting financial indicators for 000519...
+2025-05-13 21:11:29 - api - INFO - Fetching real-time quotes...
+2025-05-13 21:13:13 - api - INFO - ✓ Real-time quotes fetched
+2025-05-13 21:13:13 - api - INFO - Fetching Sina financial indicators...
+2025-05-13 21:13:17 - api - INFO - ✓ Financial indicators fetched (5 records)
+2025-05-13 21:13:17 - api - INFO - Latest data date: 2025-03-31 00:00:00
+2025-05-13 21:13:17 - api - INFO - Fetching income statement...
+2025-05-13 21:13:19 - api - INFO - ✓ Income statement fetched
+2025-05-13 21:13:19 - api - INFO - Building indicators...
+2025-05-13 21:13:19 - api - INFO - ✓ Indicators built successfully
+2025-05-13 21:13:19 - api - DEBUG - 
+获取到的完整指标数据：
+2025-05-13 21:13:19 - api - DEBUG - market_cap: 24690070751.0
+2025-05-13 21:13:19 - api - DEBUG - float_market_cap: 24690070751.0
+2025-05-13 21:13:19 - api - DEBUG - revenue: 619596480.71
+2025-05-13 21:13:19 - api - DEBUG - net_income: -139256237.48
+2025-05-13 21:13:19 - api - DEBUG - return_on_equity: -0.0127
+2025-05-13 21:13:19 - api - DEBUG - net_margin: -0.224753
+2025-05-13 21:13:19 - api - DEBUG - operating_margin: -0.21343800000000002
+2025-05-13 21:13:19 - api - DEBUG - revenue_growth: -0.300557
+2025-05-13 21:13:19 - api - DEBUG - earnings_growth: nan
+2025-05-13 21:13:19 - api - DEBUG - book_value_growth: -0.029759999999999998
+2025-05-13 21:13:19 - api - DEBUG - current_ratio: 2.0428
+2025-05-13 21:13:19 - api - DEBUG - debt_to_equity: 0.367523
+2025-05-13 21:13:19 - api - DEBUG - free_cash_flow_per_share: 0.0008
+2025-05-13 21:13:19 - api - DEBUG - earnings_per_share: -0.0926
+2025-05-13 21:13:19 - api - DEBUG - pe_ratio: -47.86
+2025-05-13 21:13:19 - api - DEBUG - price_to_book: 2.44
+2025-05-13 21:13:19 - api - DEBUG - price_to_sales: 39.848629744809834
+2025-05-13 21:13:19 - api - DEBUG - 
+传递给 agent 的指标数据：
+2025-05-13 21:13:19 - api - DEBUG - return_on_equity: -0.0127
+2025-05-13 21:13:19 - api - DEBUG - net_margin: -0.224753
+2025-05-13 21:13:19 - api - DEBUG - operating_margin: -0.21343800000000002
+2025-05-13 21:13:19 - api - DEBUG - revenue_growth: -0.300557
+2025-05-13 21:13:19 - api - DEBUG - earnings_growth: nan
+2025-05-13 21:13:19 - api - DEBUG - book_value_growth: -0.029759999999999998
+2025-05-13 21:13:19 - api - DEBUG - current_ratio: 2.0428
+2025-05-13 21:13:19 - api - DEBUG - debt_to_equity: 0.367523
+2025-05-13 21:13:19 - api - DEBUG - free_cash_flow_per_share: 0.0008
+2025-05-13 21:13:19 - api - DEBUG - earnings_per_share: -0.0926
+2025-05-13 21:13:19 - api - DEBUG - pe_ratio: -47.86
+2025-05-13 21:13:19 - api - DEBUG - price_to_book: 2.44
+2025-05-13 21:13:19 - api - DEBUG - price_to_sales: 39.848629744809834
+2025-05-13 21:13:19 - api - INFO - Getting financial statements for 000519...
+2025-05-13 21:13:19 - api - INFO - Fetching balance sheet...
+2025-05-13 21:13:22 - api - INFO - ✓ Balance sheet fetched
+2025-05-13 21:13:22 - api - INFO - Fetching income statement...
+2025-05-13 21:13:23 - api - INFO - ✓ Income statement fetched
+2025-05-13 21:13:23 - api - INFO - Fetching cash flow statement...
+2025-05-13 21:13:25 - api - INFO - ✓ Cash flow statement fetched
+2025-05-13 21:13:25 - api - INFO - ✓ Latest period data processed successfully
+2025-05-13 21:13:25 - api - INFO - ✓ Previous period data processed successfully
+2025-05-13 21:26:34 - api - INFO - 
+Getting price history for 000519...
+2025-05-13 21:26:34 - api - INFO - Start date: 2024-05-12
+2025-05-13 21:26:34 - api - INFO - End date: 2025-05-12
+2025-05-13 21:26:36 - api - INFO - Successfully fetched price history data (242 records)
+2025-05-13 21:26:36 - api - WARNING - 
+Warning: The following indicators contain NaN values:
+2025-05-13 21:26:36 - api - WARNING - - momentum_1m: 20 records
+2025-05-13 21:26:36 - api - WARNING - - momentum_3m: 60 records
+2025-05-13 21:26:36 - api - WARNING - - momentum_6m: 120 records
+2025-05-13 21:26:36 - api - WARNING - - volume_ma20: 19 records
+2025-05-13 21:26:36 - api - WARNING - - volume_momentum: 19 records
+2025-05-13 21:26:36 - api - WARNING - - historical_volatility: 20 records
+2025-05-13 21:26:36 - api - WARNING - - volatility_z_score: 139 records
+2025-05-13 21:26:36 - api - WARNING - - atr: 13 records
+2025-05-13 21:26:36 - api - WARNING - - atr_ratio: 13 records
+2025-05-13 21:26:36 - api - WARNING - - hurst_exponent: 60 records
+2025-05-13 21:26:36 - api - WARNING - - skewness: 20 records
+2025-05-13 21:26:36 - api - WARNING - - kurtosis: 20 records
+2025-05-13 21:26:36 - api - INFO - Getting financial indicators for 000519...
+2025-05-13 21:26:36 - api - INFO - Fetching real-time quotes...
+2025-05-13 21:26:59 - api - ERROR - Error getting financial indicators: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=6&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7138f68b1310>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-05-13 21:26:59 - api - INFO - Getting financial statements for 000519...
+2025-05-13 21:26:59 - api - INFO - Fetching balance sheet...
+2025-05-13 21:27:02 - api - INFO - ✓ Balance sheet fetched
+2025-05-13 21:27:02 - api - INFO - Fetching income statement...
+2025-05-13 21:27:04 - api - INFO - ✓ Income statement fetched
+2025-05-13 21:27:04 - api - INFO - Fetching cash flow statement...
+2025-05-13 21:27:06 - api - INFO - ✓ Cash flow statement fetched
+2025-05-13 21:27:06 - api - INFO - ✓ Latest period data processed successfully
+2025-05-13 21:27:06 - api - INFO - ✓ Previous period data processed successfully

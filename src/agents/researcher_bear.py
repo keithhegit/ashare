@@ -32,62 +32,69 @@ def researcher_bear_agent(state: AgentState):
         sentiment_signals = ast.literal_eval(sentiment_message.content)
         valuation_signals = ast.literal_eval(valuation_message.content)
 
+    # 兼容中英文key
+    def get_signal(obj):
+        return obj.get("signal") or obj.get("技术信号")
+    def get_confidence(obj):
+        v = obj.get("confidence") or obj.get("置信度")
+        if isinstance(v, str) and v.endswith('%'):
+            return float(v.replace('%',''))/100
+        try:
+            return float(v)
+        except:
+            return 0.0
+    def get_thesis_points(obj):
+        return obj.get("thesis_points") or obj.get("空方论点") or []
+
     # Analyze from bearish perspective
     bearish_points = []
     confidence_scores = []
 
     # Technical Analysis
-    if technical_signals["signal"] == "bearish":
+    if get_signal(technical_signals) == "bearish" or get_signal(technical_signals) == "看空":
         bearish_points.append(
-            f"Technical indicators show bearish momentum with {technical_signals['confidence']} confidence")
-        confidence_scores.append(
-            float(str(technical_signals["confidence"]).replace("%", "")) / 100)
+            f"技术指标显示看空动能，置信度{get_confidence(technical_signals):.0%}")
+        confidence_scores.append(get_confidence(technical_signals))
     else:
-        bearish_points.append(
-            "Technical rally may be temporary, suggesting potential reversal")
+        bearish_points.append("技术反弹或为暂时，存在回调风险")
         confidence_scores.append(0.3)
 
     # Fundamental Analysis
-    if fundamental_signals["signal"] == "bearish":
+    if get_signal(fundamental_signals) == "bearish" or get_signal(fundamental_signals) == "看空":
         bearish_points.append(
-            f"Concerning fundamentals with {fundamental_signals['confidence']} confidence")
-        confidence_scores.append(
-            float(str(fundamental_signals["confidence"]).replace("%", "")) / 100)
+            f"基本面存在隐忧，置信度{get_confidence(fundamental_signals):.0%}")
+        confidence_scores.append(get_confidence(fundamental_signals))
     else:
-        bearish_points.append(
-            "Current fundamental strength may not be sustainable")
+        bearish_points.append("当前基本面强劲或难以持续")
         confidence_scores.append(0.3)
 
     # Sentiment Analysis
-    if sentiment_signals["signal"] == "bearish":
+    if get_signal(sentiment_signals) == "bearish" or get_signal(sentiment_signals) == "看空":
         bearish_points.append(
-            f"Negative market sentiment with {sentiment_signals['confidence']} confidence")
-        confidence_scores.append(
-            float(str(sentiment_signals["confidence"]).replace("%", "")) / 100)
+            f"市场情绪消极，置信度{get_confidence(sentiment_signals):.0%}")
+        confidence_scores.append(get_confidence(sentiment_signals))
     else:
-        bearish_points.append(
-            "Market sentiment may be overly optimistic, indicating potential risks")
+        bearish_points.append("市场情绪过于乐观，存在风险")
         confidence_scores.append(0.3)
 
     # Valuation Analysis
-    if valuation_signals["signal"] == "bearish":
+    if get_signal(valuation_signals) == "bearish" or get_signal(valuation_signals) == "看空":
         bearish_points.append(
-            f"Stock appears overvalued with {valuation_signals['confidence']} confidence")
-        confidence_scores.append(
-            float(str(valuation_signals["confidence"]).replace("%", "")) / 100)
+            f"估值偏高，置信度{get_confidence(valuation_signals):.0%}")
+        confidence_scores.append(get_confidence(valuation_signals))
     else:
-        bearish_points.append(
-            "Current valuation may not fully reflect downside risks")
+        bearish_points.append("当前估值未充分反映下行风险")
         confidence_scores.append(0.3)
 
     # Calculate overall bearish confidence
     avg_confidence = sum(confidence_scores) / len(confidence_scores)
 
+    # 中文结构化输出
     message_content = {
-        "perspective": "bearish",
-        "confidence": avg_confidence,
-        "thesis_points": bearish_points,
-        "reasoning": "Bearish thesis based on comprehensive analysis of technical, fundamental, sentiment, and valuation factors"
+        "研究视角": "空方",
+        "置信度": f"{avg_confidence:.0%}",
+        "空方论点": bearish_points,
+        "分析说明": "基于技术面、基本面、情感面和估值等多维度综合分析，提出空方风险警示。"
     }
 
     message = HumanMessage(
