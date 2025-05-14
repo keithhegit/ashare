@@ -777,3 +777,24 @@ Warning: The following indicators contain NaN values:
 2025-05-13 21:27:06 - api - INFO - ✓ Cash flow statement fetched
 2025-05-13 21:27:06 - api - INFO - ✓ Latest period data processed successfully
 2025-05-13 21:27:06 - api - INFO - ✓ Previous period data processed successfully
+2025-05-13 21:50:50 - api - INFO - 
+Getting price history for 302312...
+2025-05-13 21:50:50 - api - INFO - Start date: 2024-05-12
+2025-05-13 21:50:50 - api - INFO - End date: 2025-05-12
+2025-05-13 21:50:51 - api - WARNING - Warning: No price history data found for 302312
+2025-05-13 21:50:51 - api - INFO - Getting financial indicators for 302312...
+2025-05-13 21:50:51 - api - INFO - Fetching real-time quotes...
+2025-05-13 21:52:53 - api - WARNING - No real-time quotes found for 302312
+2025-05-13 21:52:53 - api - INFO - Getting financial statements for 302312...
+2025-05-13 21:52:53 - api - INFO - Fetching balance sheet...
+2025-05-13 21:52:54 - api - WARNING - Failed to get balance sheet
+2025-05-13 21:52:54 - api - ERROR - Error getting balance sheet: 'NoneType' object is not subscriptable
+2025-05-13 21:52:54 - api - INFO - Fetching income statement...
+2025-05-13 21:52:55 - api - WARNING - Failed to get income statement
+2025-05-13 21:52:55 - api - ERROR - Error getting income statement: 'NoneType' object is not subscriptable
+2025-05-13 21:52:55 - api - INFO - Fetching cash flow statement...
+2025-05-13 21:52:56 - api - WARNING - Failed to get cash flow statement
+2025-05-13 21:52:56 - api - ERROR - Error getting cash flow statement: 'NoneType' object is not subscriptable
+2025-05-13 21:52:56 - api - INFO - ✓ Latest period data processed successfully
+2025-05-13 21:52:56 - api - INFO - ✓ Previous period data processed successfully
+2025-05-13 21:53:45 - api - ERROR - Error getting market data: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Read timed out. (read timeout=15)
